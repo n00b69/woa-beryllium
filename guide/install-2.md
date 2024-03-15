@@ -11,9 +11,9 @@
 
 - [Windows on ARM image](https://worproject.com/esd)
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
-- [Drivers]()
-- [Msc script]()
-- [TWRP]() (should already be installed)
+- [Drivers]()  FILE NEEDED
+- [Msc script]()  FILE NEEDED
+- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Files/twrp.img) (should already be installed)
 
 ##### Boot to TWRP
 > If rebooting on the last page has replaced your recovery back to stock, flash it again in fastboot with:
@@ -101,11 +101,9 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 
 ##### Installing Drivers
 
-> Put driverupdater.exe in the same folder as your drivers folder
-
-```cmd
-DriverUpdater.exe -p X: -d .\definitions\Desktop\ARM64\Internal\raphael.txt -r .
-```
+> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+>
+> Enter the drive letter of `Windows`, which should be X, then press enter
   
 ##### Create Windows bootloader files
 ```cmd
@@ -113,21 +111,8 @@ bcdboot X:\Windows /s Y: /f UEFI
 ```
 
 ###### Configuring bootloader files
-> Run these 4 commands seperately
-```cmd
-cd Y:\EFI\Microsoft\Boot
-```
-```cmd
-Y:
-```
 ```cmd
 bcdedit /store BCD /set "{default}" testsigning on
-```
-```cmd
-bcdedit /store BCD /set "{default}" nointegritychecks on
-```
-```cmd
-bcdedit /store BCD /set "{default}" recoveryenabled no
 ```
 
 ## Unassign disk letters
@@ -171,7 +156,7 @@ adb reboot recovery
 ```
 
 ##### Push the UEFI to your phone
-> Drag and drop the UEFI (xiaomi-raphael.img) to your phone
+> Drag and drop the UEFI to your phone
 
 ##### Back up your Android boot image
 Use the TWRP backup feature to backup your Android boot image. Name this backup "Android"
