@@ -25,23 +25,24 @@
 This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
 
 ### Setup - Android
-- Create a folder named "UEFI" on your internal storage and place the UEFI image here
-- Download both the WOA Helper app as well as the StA Installer
-- Install and open WOA Helper and allow any root access it wants
-- Press the "BACKUP ANDROID BOOT" button, which will back up your boot image to /sdcard/boot.img (internal storage)
-- Also press the "Mount/Unmount Windows" button to mount Windows to /sdcard/Windows
-- Move/copy the StA Installer and boot.img to /sdcard/Windows
-- Return to the WOA Helper app and press "Quickboot to Windows"
+> [!NOTE]
+> If you are unable to move files to the Windows folder, it means you shut down Windows instead of restarting it. To fix this issue, boot back to Windows and use restart, then as it restarts boot to fastboot and use it to return to Android
+
+- Download and install the WOA Helper app, then open it and grant it root access.
+- Download the UEFI image and place it inside the folder named `UEFI` in your internal storage. If this folder does not exist, create it.
+- Return to the WOA Helper app and press the `Back up Android boot` button. Select both the `Windows` and `Android` options.
+- Press the `Mount Windows` button to mount Windows to your internal storage at `/sdcard/Windows`
+- Create a folder called `sta` in Windows and unpack the two files in the 'Switch to Android package` file here (the files should go to `/sdcard/Windows/sta`
+- Return to the WOA Helper app and press `Quickboot to Windows`.
 
 ### Setup - Windows
 - Navigate to C:\sta and create a shortcut of `sta.exe` to your desktop.
 
-##### Booting to android
-  - Run the new shortcut on your desktop as **ADMINISTRATOR**
+##### Booting to Android
+  - Run the new shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access)
 
-##### Booting to windows
-  - Run the app
-  - Press "Quickboot to windows"
+##### Booting to Windows
+  - Press `Quickboot to Windows` inside the app, or use the newly created toggle in your quick settings panel
   
 ## Finished!
 
