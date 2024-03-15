@@ -10,9 +10,9 @@
 
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
 
-- [Recovery image]()
+- [Recovery image]() FILE NEEDED
 
-- [Drivers]()
+- [Drivers]() FILE NEEDED
 
 ### Start recovery through the PC with the command
 
