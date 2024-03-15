@@ -8,10 +8,10 @@
 > This guide is used whenever you want to update or change your windows and / or driver installation.
 
 ### Prerequisites
-- [TWRP]() (should already be installed)
-- [Drivers]()
+- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Files/twrp.img) (should already be installed)
+- [Drivers]() FILE NEEDED
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
-- [Msc script]()
+- [Msc script]() FILE NEEDED
 
 ## Reinstalling Windows
 > [!IMPORTANT]
