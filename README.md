@@ -20,22 +20,22 @@ This project is in an early stage, all the files here have been contributed by o
 
 ## Get Started
 
-- [Project status](guide/status.md)
+- [Project status](guide/status.md) EDIT
 
-- [Installation instructions](guide/install-1.md)
+- [Installation instructions](guide/install-1.md) EDIT
 
-- [Troubleshooting](guide/troubleshooting.md)
+- [Troubleshooting](guide/troubleshooting.md) EDIT
 
 
 ## Miscellaneous
 
 - [Dualboot setup](guide/dualboot.md)
 
-- [Optional post-install stuff](guide/postinstall.md)
+- [Optional post-install stuff](guide/postinstall.md) EDIT
 
-- [Reinstall instructions](guide/reinstall.md)
+- [Reinstall instructions](guide/reinstall.md) EDIT
 
-- [Uninstall instructions](guide/uninstall.md)
+- [Uninstall instructions](guide/uninstall.md) EDIT
 
 ## Contributors
 
@@ -62,6 +62,3 @@ This project is in an early stage, all the files here have been contributed by o
 src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/142384494?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/RIllEX1)
 [<img alt="n00b69" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69)
 [<img alt="graphiks" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/136170061?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/graphiks)
-
-<img align="left" src="https://raw.githubusercontent.com/graphiks/woa-raphael/main/media/stickers.png" width="150" alt="approved"> 
-Halal beef approved ✅✅
