@@ -24,7 +24,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Installation instructions](guide/install-1.md) EDIT
 
-- [Troubleshooting](guide/troubleshooting.md) EDIT
+- [Troubleshooting](guide/troubleshooting.md)
 
 
 ## Miscellaneous
