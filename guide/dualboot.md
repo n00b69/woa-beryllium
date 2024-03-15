@@ -5,22 +5,19 @@
 
 ## Dualboot guide
 
-> [!NOTE] 
-> There are two methods, use whichever one suits your situation the most. Method 1 requires root, while method 2 does not.
-
 ### Prerequisites
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [UEFI image]() EDIT
+- [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
 
 - [WOA Helper app](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/woahelper.apk)
 
 - [Switch To Android package](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/beryllium.zip)
 
 
-## Setting up a seamless dualboot
+## Dualboot guide
 
 This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
 
@@ -29,7 +26,7 @@ This guide assumes you are rooted, if you aren't, please follow [this guide](roo
 > If you are unable to move files to the Windows folder, it means you shut down Windows instead of restarting it. To fix this issue, boot back to Windows and use restart, then as it restarts boot to fastboot and use it to return to Android
 
 - Download and install the WOA Helper app, then open it and grant it root access.
-- Download the UEFI image and place it inside the folder named `UEFI` in your internal storage. If this folder does not exist, create it.
+- Download the UEFI image for your panel and place it inside the folder named `UEFI` in your internal storage. If this folder does not exist, create it.
 - Return to the WOA Helper app and press the `Back up Android boot` button. Select both the `Windows` and `Android` options.
 - Press the `Mount Windows` button to mount Windows to your internal storage at `/sdcard/Windows`
 - Create a folder called `sta` in Windows and unpack the two files in the 'Switch to Android package` file here (the files should go to `/sdcard/Windows/sta`
