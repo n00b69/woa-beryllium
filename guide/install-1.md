@@ -14,7 +14,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Parted]() EDIT
+- [Parted]() FILE NEEDED
 
 ### Notes
 > [!WARNING]  
