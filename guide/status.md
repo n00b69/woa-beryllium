@@ -25,12 +25,12 @@ The project is in development. Expect some updates in the future.
 - [x] Wi-Fi
 
 #### Sensors
-- [ ] Accelerometer
+- [x] Accelerometer
 - [ ] Fingerprint
 - [x] GPS
-- [ ] Gyroscope
+- [x] Gyroscope
 - [ ] Light sensor
-- [ ] Magnetometer
+- [x] Magnetometer
 - [ ] Proximity
 
 #### Security
