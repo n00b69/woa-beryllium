@@ -33,6 +33,8 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Optional post-install stuff](guide/postinstall.md) EDIT
 
+- [Update drivers](guide/update.md) EDIT
+
 - [Reinstall instructions](guide/reinstall.md) EDIT
 
 - [Uninstall instructions](guide/uninstall.md) EDIT
