@@ -20,6 +20,7 @@ The project is in development. Expect some updates in the future.
 - [x] GPU  ```No x64 acceleration```
 - [x] Touchscreen 
 - [x] UFS
+- [ ] SD card ```Very unreliable```
 - [x] USB
 - [x] Wi-Fi
 
