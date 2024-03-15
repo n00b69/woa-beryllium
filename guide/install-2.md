@@ -10,10 +10,14 @@
 ### Prerequisites
 
 - [Windows on ARM image](https://worproject.com/esd)
+  
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
+  
 - [Drivers]() FILE NEEDED
+  
 - [Msc script]() FILE NEEDED
-- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Files/twrp.img) (should already be installed)
+  
+- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
 ##### Boot to TWRP
 > If rebooting on the last page has replaced your recovery back to stock, flash it again in fastboot with:
