@@ -5,31 +5,29 @@
 
 ## Project Status
 
-The project is in development. Expect some driver updates in the near future.
-
-
+The project is in development. Expect some updates in the future.
 
 #### Features
 
 - [X] Audio 
-- [X] Battery status```Rumors say it might fry your PMIC```
+- [X] Battery status
 - [x] Bluetooth
 - [x] Brightness 
 - [ ] Camera
-- [x] Cellular ```Only SIM1; requires provisioning before every boot; calling doesn't work```
-- [ ] Charging ```VERY slow```
+- [x] Cellular
+- [x] Charging ```VERY slow```
 - [x] Display
-- [x] GPU  ```Some artifacting due to lack of DSC```
+- [x] GPU  ```No x64 acceleration```
 - [x] Touchscreen 
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
 
 #### Sensors
-- [x] Accelerometer
+- [ ] Accelerometer
 - [ ] Fingerprint
-- [ ] GPS
-- [x] Gyroscope
+- [x] GPS
+- [ ] Gyroscope
 - [ ] Light sensor
 - [ ] Magnetometer
 - [ ] Proximity
@@ -39,13 +37,18 @@ The project is in development. Expect some driver updates in the near future.
 - [ ] Security Processor ```Impossible to get working, Xiaomi broke the firmware```
 - [ ] TPM (Software Backed)
 
-#### Panels
-- [x] dsi_ss_fh_ea8076_global_cmd ```Main support, most common```
-- [x] samsung-fhd-ea8076-f1mp-cmd ```Main support```
-- [x] samsung-fhd-ea8076-f1p2-cmd ```Slightly different to f1mp but still usable```
-- [ ] samsung-fhd-ea8076-f1p2_2-cmd ```Not tested```
-- [ ] samsung-fhd-ea8076-f1-cmd ```Not tested```
-- [ ] samsung-fhd-ea8076-cmd ```Not tested```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
