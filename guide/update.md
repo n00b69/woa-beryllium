@@ -10,7 +10,7 @@
 
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
 
-- [Recovery image]() FILE NEEDED
+- [Recovery image](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img)
 
 - [Drivers]() FILE NEEDED
 
@@ -59,11 +59,9 @@ exit
 
 
 ### Install Drivers
-
-> If it writes `"Automatic WINNABU detection failed! Enter Drive Letter manually"` type **`X`**
-```cmd
- Open the folder with Drivers and run OfflineUpdater.cmd
-```
+> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+>
+> Enter the drive letter of `Windows`, which should be X, then press enter
 
 ### Reboot to fastboot to flash UEFI
 > Or if your UEFI has already been flashed, simply reboot with ```adb reboot```
