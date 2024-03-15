@@ -8,11 +8,10 @@
 > This guide is used whenever you want to update or change your windows and / or driver installation.
 
 ### Prerequisites
-- [TWRP](https://github.com/graphiks/woa-raphael/releases/download/raphael-partitioning/twrp.img) (should already be installed)
-- [Drivers](https://github.com/graphiks/woa-raphael/releases/download/raphael-drivers/raphael-drivers.zip) |
-  [DriverUpdater](https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0) 
-- [UEFI image](https://github.com/graphiks/woa-raphael/releases/download/raphael-uefi/xiaomi-raphael.img)
-- [Msc script](https://github.com/graphiks/woa-raphael/releases/download/raphael-partitioning/msc.sh)
+- [TWRP]() (should already be installed)
+- [Drivers]()
+- [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
+- [Msc script]()
 
 ## Reinstalling Windows
 > [!IMPORTANT]
