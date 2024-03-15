@@ -8,11 +8,11 @@
 ### Prerequisites
 
 
-- [```UEFI image```](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/download/UEFI/uefi-v3.img)
+- [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
 
-- [```Recovery image```](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/download/1.0/recovery.img)
+- [Recovery image]()
 
-- [```Drivers```](https://github.com/map220v/MiPad5-Drivers/releases/latest)
+- [Drivers]()
 
 ### Start recovery through the PC with the command
 
@@ -59,8 +59,6 @@ exit
 
 
 ### Install Drivers
-
-> You can download Drivers [here](https://github.com/map220v/MiPad5-Drivers/releases/latest)
 
 > If it writes `"Automatic WINNABU detection failed! Enter Drive Letter manually"` type **`X`**
 ```cmd
