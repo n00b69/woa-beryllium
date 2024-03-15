@@ -14,7 +14,7 @@
 
 - [WOA Helper app](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/woahelper.apk)
 
-- [Switch To Android package](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/beryllium.zip)
+- [Switch To Android package](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/beryllium-sta.zip)
 
 
 ## Dualboot guide
