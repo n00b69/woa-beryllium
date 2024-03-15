@@ -11,8 +11,8 @@
 
 - [Windows on ARM image](https://worproject.com/esd)
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
-- [Drivers]()  FILE NEEDED
-- [Msc script]()  FILE NEEDED
+- [Drivers]() FILE NEEDED
+- [Msc script]() FILE NEEDED
 - [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Files/twrp.img) (should already be installed)
 
 ##### Boot to TWRP
@@ -112,7 +112,7 @@ bcdboot X:\Windows /s Y: /f UEFI
 
 ###### Configuring bootloader files
 ```cmd
-bcdedit /store BCD /set "{default}" testsigning on
+bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
 ```
 
 ## Unassign disk letters
