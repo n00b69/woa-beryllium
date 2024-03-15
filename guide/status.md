@@ -18,9 +18,9 @@ The project is in development. Expect some updates in the future.
 - [x] Charging ```VERY slow```
 - [x] Display
 - [x] GPU  ```No x64 acceleration```
+- [ ] SD card ```Very unreliable```
 - [x] Touchscreen 
 - [x] UFS
-- [ ] SD card ```Very unreliable```
 - [x] USB
 - [x] Wi-Fi
 
