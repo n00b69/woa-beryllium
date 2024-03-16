@@ -172,25 +172,30 @@ Use the TWRP backup feature to backup your Windows boot image. Name this backup 
 ##### Boot into Windows
 After having flashed the UEFI image, reboot your phone.
 
+## Setting up Windows
 Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
-## Setting up Windows
-> [!IMPORTANT]
-> USB will not work except if you have a powered USB hub. We can fix this after we get into the desktop.
-
-Before continuing with setup, open the accessibility menu in the bottom right corner and enable the on-screen keyboard, then tap FN+SHIFT + F10 (if it asks you to tap somewhere to type just tap the background) which will open a command prompt, in which you will need to type:
-```cmd
-cd oobe
-```
-After that, type:
-```cmd
-bypassnro.cmd
-```
-> This command will skip the Microsoft Account requirement.
-> 
-Your device will now reboot. Continue setup as normal. Make sure to press the "I don't have internet" button when you reach the **Let's connect you to a network** section.
-
-It is recommened to also read the [post install guide](postinstall.md).
+> [!Note]
+> To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local accoun.t
 
 
-## [Next step: Setting up dualboot](/guide/dualboot.md)
+
+
+## [Last step: Setting up dualboot](/guide/dualboot.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
