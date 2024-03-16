@@ -35,6 +35,9 @@ fastboot flash partition:0 path\to\gpt_both0.bin
 fastboot -w
 ```
 
+> [!Note]
+> If erasing userdata fails, reboot to recovery and wipe all data there instead
+
 ## Finished!
 
 
