@@ -20,11 +20,11 @@
 > [!WARNING]  
 > If you ever delete any partitions via diskpart, Windows will send a UFS command which would erase the entire UFS storage!
 > 
-> All your data will be erased! Backup now if needed.
+> All your data will be erased! Back up now if needed.
 > 
-> Do not run the same command twice.
+> Do not run the same command twice unless specified.
 > 
-> DO NOT REBOOT YOUR PHONE if you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnF1).
+> DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnF1).
 > 
 >
 > Do not run all commands at once, execute them in order!
