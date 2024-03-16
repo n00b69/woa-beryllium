@@ -3,9 +3,7 @@
 
 # Running Windows on the Xiaomi Pocophone F1
 
-## Installation
-
-## Installing Windows
+## Updating drivers
 
 ### Prerequisites
 
