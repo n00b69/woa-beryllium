@@ -15,7 +15,7 @@
   
 - [Drivers]() FILE NEEDED
   
-- [Msc script]() FILE NEEDED
+- [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
   
 - [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
