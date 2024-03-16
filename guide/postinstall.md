@@ -4,34 +4,58 @@
 # Running Windows on the Xiaomi Pocophone F1
 
 ## Optional post-install stuff
+> Below you will find a list of optional (but recommended) tweaks to make your Windows experience better
+
+## Hide D drive (modem partition)
 > [!NOTE]
-> All of these are optional, but enabling USB host mode is recommended otherwise non-powerered USB devices will not work.
+> This is recommended because this drive should not be modified, while some applications may try to write to it
 
-### Enabling USB Host mode
-> [!NOTE]
-> This will also disable charging (not that you would want to charge in Windows anyways)
+- Open a command prompt window and run ```diskpart```
+- Run ```list volume``` to see all available volumes
+- Select the disk that has letter D with ```select volume $```, replacing "$" with the volume number
+- Remove the letter with ```remove letter d```
+- Exit diskpart with ```exit```
 
-### Prerequisites
-- [This registry file](https://github.com/graphiks/Port-Windows-11-Raphael/releases/download/raphael-usb/USB-OTG_ON.reg) 
-- [This batch script](https://github.com/graphiks/Port-Windows-11-Raphael/releases/download/raphael-usb/OTG.and.Charge.switcher.bat)
+#### Finished!
 
- - Run the .reg file you just downloaded on your phone, click yes.
- - Run the batch script that you just downloaded on your phone. Select option 1 <br>
-(Re-run the batch script and select 2 if you want charging back)
+## Toggling USB host mode
+> [!Warning]
+> Disable USB host mode if you use a poweref USB hub, as this can irreversibly damage your device. If you don't use a powered USB hub, enable USB host mode or you will not be able to use any USB devices.
 
-This makes USB work properly. If USB doesn't work, you may have to plug it in before boot.
+Run [USB Host Control](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/download/USBHost/USB.Host.Mode.Control.V4.0.vbs) to enable/disable USB host mode, confirm that you want to disable/enable USB host mode and then confirm the reboot
+
+#### Finished!
+
+## Install Microsoft Office / Microsoft 365
+- Download this [ISO file](https://mega.nz/file/hjAiSL4T#G7kOKpsUFpyL2UW9RQmY2e96urcQW5xZKdc7ciaNOy8) to the tablet
+- Right-click on the iso file and select Mount to open it in explorer
+- Double-click on ```Office Tool Plus.exe``` to start the installation wizard
+- In the window that appears, click `Yes`
+- Wait for the installation to complete
+
+#### Finished!
+
+## Activate Windows / Office
+Follow the instructions by Massgravel [here](https://github.com/massgravel/Microsoft-Activation-Scripts)
+
+#### Finished!
 
 
-### Copying over calibration files/configuration files for the sensors
-> [!NOTE]
-> - These steps are temporary and will not be needed in future releases. These steps are also not as fully detailed as others and may get updated at a later time
-> - In order to get most sensors currently working, some manual steps are required.
-> - Mount persist in TWRP first!
-* You will need to backup from mass storage or twrp the following directory: /persist/sensors/
-* Copy over the contents to [Windows Drive Letter]\Windows\System32\Drivers\DriverData\QUALCOMM\fastRPC\persist\sensors (the following directory should already exist after booting Windows once, otherwise create it)
 
 
-## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
