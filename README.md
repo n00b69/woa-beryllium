@@ -32,7 +32,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Dualboot setup](guide/dualboot.md)
 
-- [Optional post-install stuff](guide/postinstall.md) EDIT
+- [Optional post-install stuff](guide/postinstall.md)
 
 - [Update drivers](guide/update.md) EDIT
 
