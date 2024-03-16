@@ -53,22 +53,11 @@ lis dis
 sel dis $
 ```
 
-##### Selecting the ESP partition
+##### Selecting the Windows partition
 ```cmd
 lis par
 ```
-> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the ESP partition (usually 30 or 31)
-```cmd
-sel par $
-```
-
-##### Assign letter Y to ESP
-```cmd
-assign letter y
-```
-
-##### Selecting the Windows partitiom
-> Replace "$" in the command below with the number of the Windows partition, usually 31 or 32. If you don't know the number, run "lis par" again
+> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the Windows partition (usually 31 or 32)
 ```cmd
 sel par $
 ```
@@ -89,7 +78,7 @@ exit
 > Enter the drive letter of `Windows`, which should be X, then press enter
 
 ##### Boot back into Windows
-> Simply reboot your device.
+> Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
 
 
 ## Finished!
