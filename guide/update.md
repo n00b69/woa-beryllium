@@ -6,8 +6,6 @@
 ## Updating drivers
 
 ### Prerequisites
-
-- [Windows on ARM image](https://worproject.com/esd)
   
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
   
@@ -64,12 +62,7 @@ lis par
 sel par $
 ```
 
-##### Formatting the ESP partition
-> This will format ESP to FAT32
-```cmd
-format quick fs=fat32 label="System"
-```
-> Now add letter Y to the ESP partition
+##### Assign letter Y to ESP
 ```cmd
 assign letter y
 ```
@@ -80,12 +73,7 @@ assign letter y
 sel par $
 ```
 
-##### Formatting the Windows partition
-> This will format Windows to NTFS
-```cmd
-format quick fs=ntfs label=Windows
-```
-> Now add letter X to the Windows partition
+##### Assign letter X to Windows
 ```cmd
 assign letter x
 ```
@@ -95,105 +83,13 @@ assign letter x
 exit
 ```
 
-## Installing Windows
-> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
-
-```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
-```
-
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
-
 ##### Installing Drivers
-
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 >
 > Enter the drive letter of `Windows`, which should be X, then press enter
-  
-##### Create Windows bootloader files
-```cmd
-bcdboot X:\Windows /s Y: /f UEFI
-```
 
-###### Configuring bootloader files
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
-```
-
-## Unassign disk letters
-> So that they don't stay there after disconnecting the device
-```cmd
-diskpart
-```
-
-##### Select the Windows volume of the phone
-> Use `lis vol` to find it, it's the one named "Windows"
-```diskpart
-select volume <number>
-```
-##### Unassign the letter X
-```diskpart
-remove letter x
-```
-
-##### Select the ESP volume of the phone
-> Use `list volume` to find it, it's the one named "ESP"
-```diskpart
-select volume <number>
-```
-##### Unassign the letter Y
-```diskpart
-remove letter y
-```
-
-##### Exit diskpart
-```diskpart
-exit
-```
-
-## Backing up boot images
-
-##### Reboot your recovery
-> To remove the msc script
-- Reboot to recovery through TWRP, or run
-```cmd
-adb reboot recovery
-```
-
-##### Push the UEFI to your phone
-> Drag and drop the UEFI to your phone
-
-##### Back up your Android boot image
-Use the TWRP backup feature to backup your Android boot image. Name this backup "Android"
-
-##### Flash the UEFI
-Use the TWRP install feature to flash the UEFI image to your boot partition. Select "install image", then locate the image.
-
-##### Back up your Windows boot image
-Use the TWRP backup feature to backup your Windows boot image. Name this backup "Windows"
-
-##### Boot into Windows
-After having flashed the UEFI image, reboot your phone.
-
-Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
-
-## Setting up Windows
-> [!IMPORTANT]
-> USB will not work except if you have a powered USB hub. We can fix this after we get into the desktop.
-
-Before continuing with setup, open the accessibility menu in the bottom right corner and enable the on-screen keyboard, then tap FN+SHIFT + F10 (if it asks you to tap somewhere to type just tap the background) which will open a command prompt, in which you will need to type:
-```cmd
-cd oobe
-```
-After that, type:
-```cmd
-bypassnro.cmd
-```
-> This command will skip the Microsoft Account requirement.
-> 
-Your device will now reboot. Continue setup as normal. Make sure to press the "I don't have internet" button when you reach the **Let's connect you to a network** section.
-
-It is recommened to also read the [post install guide](postinstall.md).
+##### Boot back into Windows
+> Simply reboot your device.
 
 
-## [Next step: Setting up dualboot](/guide/dualboot.md)
+## Finished!
