@@ -34,3 +34,18 @@ fastboot flash partition:0 path\to\gpt_both0.bin
 ```cmd
 fastboot -w
 ```
+
+## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
+
