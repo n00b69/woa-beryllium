@@ -1,5 +1,6 @@
 > [!Important]
 > DO NOT USE THIS GUIDE YET, THIS GUIDE CURRENTLY LINKS TO FILES / METHODS OF OTHER DEVICES, WHICH WILL PROBABLY BRICK YOUR POCOPHONE F1
+> 
 > THIS PAGE IS UNDER MAINTENANCE
 
 <img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
@@ -11,7 +12,7 @@
 
 ## ⚠️ Warning
 
-We're not responsible for bricked devices, missing recovery partitions, dead xiaomi factoryline ~~workers~~ cowboys, dead pmics, dead ram, dead sim cards, dead display ics, dead cpus, any xiaomi/redmi shenanigans, exploding batteries, dead cats or dogs, nuclear wars or you getting fired because you forgot to boot back in to android for the alarm.
+We're not responsible for bricked devices, missing recovery partitions, dead xiaomi factoryline ~~workers~~ cowboys, dead pmics, dead sd cards, dead ram, dead sim cards, dead display ics, dead cpus, any xiaomi/poco shenanigans, exploding batteries, dead cats or dogs, nuclear wars or you getting fired because you forgot to boot back in to android for the alarm.
 
 This project is in an early stage, all the files here have been contributed by other users, here you will find a guide with the working files we managed to get. This is a delicate process, do it under your own risk and follow all the steps carefully.
 
@@ -37,7 +38,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Reinstall instructions](guide/reinstall.md) EDIT
 
-- [Uninstall instructions](guide/uninstall.md) EDIT
+- [Uninstall instructions](guide/uninstall.md)
 
 ## Contributors
 
