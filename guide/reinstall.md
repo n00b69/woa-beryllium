@@ -9,9 +9,14 @@
 
 ### Prerequisites
 - [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Files/twrp.img) (should already be installed)
+
+- [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
+  
 - [Drivers]() FILE NEEDED
+  
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
-- [Msc script]() FILE NEEDED
+  
+
 
 ## Reinstalling Windows
 > [!IMPORTANT]
