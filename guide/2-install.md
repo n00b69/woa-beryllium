@@ -1,6 +1,5 @@
 <img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-
 # Running Windows on the Xiaomi Pocophone F1
 
 ## Installing Windows
@@ -151,13 +150,13 @@ adb reboot recovery
 > Drag and drop the UEFI to your phone
 
 #### Back up your Android boot image
-Use the TWRP backup feature to backup your Android boot image. Name this backup "Android"
+Use the TWRP backup feature to backup your Android boot image. Name this backup `Android`
 
 #### Flash the UEFI
-Use the TWRP install feature to flash the UEFI image to your boot partition. Select "install image", then locate the image.
+Use the TWRP install feature to flash the UEFI image to your boot partition. Select `install image`, then locate the image.
 
 #### Back up your Windows boot image
-Use the TWRP backup feature to backup your Windows boot image. Name this backup "Windows"
+Use the TWRP backup feature to backup your Windows boot image. Name this backup `Windows`
 
 #### Boot into Windows
 After having flashed the UEFI image, reboot your phone.
@@ -166,10 +165,7 @@ After having flashed the UEFI image, reboot your phone.
 Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
 > [!Note]
-> To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local accoun.t
-
-
-
+> To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
 
 ## [Last step: Setting up dualboot](/guide/dualboot.md)
 
