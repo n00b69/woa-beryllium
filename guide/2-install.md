@@ -139,7 +139,7 @@ remove letter y
 exit
 ```
 
-### Backing up boot images
+### Backing up boot images and flashing UEFI
 
 #### Reboot your recovery
 > To remove the msc script
@@ -148,8 +148,14 @@ exit
 adb reboot recovery
 ```
 
+#### Checking panel type
+> This should output either `dsi_ebbg_fhd_ft8719_video_display` or `dsi_tianma_fhd_nt36672a_video_display`
+```cmd
+adb shell dmesg | grep dsi_display_bind
+```
+
 #### Push the UEFI to your phone
-> Drag and drop the UEFI to your phone
+Download the UEFI for your panel, then drag and drop it to your phone
 
 #### Back up your Android boot image
 Use the TWRP backup feature to backup your Android boot image. Name this backup `Android`
@@ -164,7 +170,7 @@ Use the TWRP backup feature to backup your Windows boot image. Name this backup 
 After having flashed the UEFI image, reboot your phone.
 
 ### Setting up Windows
-Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
+> Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
 
 > [!Note]
 > To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
