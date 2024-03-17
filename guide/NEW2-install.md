@@ -3,8 +3,6 @@
 
 # Running Windows on the Xiaomi Pocophone F1
 
-## Installation
-
 ## Installing Windows
 
 ### Prerequisites
@@ -14,8 +12,6 @@
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
   
 - [Drivers]() FILE NEEDED
-  
-- [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
 
 - [Touch fix script](https://github.com/n00b69/woaberyllium/releases/download/Files/touchfix.bat)
   
@@ -28,14 +24,14 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
 ##### Running the msc script
-> Put msc.sh in the platform-tools folder, then run:
+> If it asks you to run it again, do so
 ```cmd
-adb push msc.sh / && adb shell sh msc.sh
+adb shell msc
 ```
 
 ## Diskpart
 >  [!WARNING]
-> DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
+> DO NOT CLEAN OR ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
 
 After you hear your phone getting reconnected to your PC run:
 ```cmd
@@ -43,50 +39,32 @@ diskpart
 ```
 > Run the following commands in the newly opened window
 
-##### Finding your phone
+##### Find the Windows and ESP volumes
 ```cmd
-lis dis
+list volume
 ```
-> This will show all available disks. Find the disk number of your phone and replace it with "$" in the command below
-
-> (it will probably show as 0 B free)
+##### Selecting the Windows volume
+> Replace $ with the actual number of WINBERYLLIUM
 ```cmd
-sel dis $
-```
-
-##### Selecting the ESP partition
-```cmd
-lis par
-```
-> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the ESP partition (usually 21 or 22)
-```cmd
-sel par $
+select volume $
 ```
 
-##### Formatting the ESP partition
-> This will format ESP to FAT32
+##### Assign letter to WINMH2LM
+> Replace $ with the actual number of WINBERYLLIUM
 ```cmd
-format quick fs=fat32 label="System"
-```
-> Now add letter Y to the ESP partition
-```cmd
-assign letter y
+select volume $
 ```
 
-##### Selecting the Windows partitiom
-> Replace "$" in the command below with the number of the Windows partition, usually 22 or 23. If you don't know the number, run "lis par" again
+##### Selecting the ESP volume
+> Replace $ with the actual number of ESPBERYLLIUM
 ```cmd
-sel par $
+select volume $
 ```
 
-##### Formatting the Windows partition
-> This will format Windows to NTFS
+##### Assign letter to ESPBERYLLIUM
+> Replace $ with the actual number of WINMBERYLLIUM
 ```cmd
-format quick fs=ntfs label=Windows
-```
-> Now add letter X to the Windows partition
-```cmd
-assign letter x
+select volume $
 ```
 
 ##### Exit diskpart
@@ -104,9 +82,8 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
 
 ##### Installing Drivers
-
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
->
+
 > Enter the drive letter of `Windows`, which should be X, then press enter
 
 ##### Fixing touch
