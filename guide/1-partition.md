@@ -48,12 +48,7 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
 
 ### Partitioning guide
-> Your Redmi Pocophone F1 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
-
-##### Extending the partition limit
-```cmd
-adb shell sgdisk --resize-table=128 /dev/block/sda
-```
+> Your Pocophone F1 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
 
 ##### Preparing for partitioning
 > Download the parted file and move it in the platform-tools folder, before then running these commands seperately
