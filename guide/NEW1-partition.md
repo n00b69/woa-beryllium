@@ -3,8 +3,6 @@
 
 # Running Windows on the Xiaomi Pocophone F1
 
-## Installation
-
 ## Partitioning your device
 
 ### Prerequisites
