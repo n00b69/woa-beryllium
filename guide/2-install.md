@@ -56,7 +56,7 @@ sel dis $
 ```cmd
 lis par
 ```
-> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the ESP partition (usually 30 or 31)
+> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the ESP partition (usually 21 or 22)
 ```cmd
 sel par $
 ```
@@ -72,7 +72,7 @@ assign letter y
 ```
 
 ##### Selecting the Windows partitiom
-> Replace "$" in the command below with the number of the Windows partition, usually 31 or 32. If you don't know the number, run "lis par" again
+> Replace "$" in the command below with the number of the Windows partition, usually 22 or 23. If you don't know the number, run "lis par" again
 ```cmd
 sel par $
 ```
