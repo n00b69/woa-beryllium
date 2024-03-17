@@ -27,7 +27,6 @@ This guide assumes you are rooted, if you aren't, please follow [this guide](roo
 
 - Download and install the WOA Helper app, then open it and grant it root access.
 - Download the UEFI image for your panel and place it inside the folder named `UEFI` in your internal storage. If this folder does not exist, create it.
-- Return to the WOA Helper app and press the `Back up Android boot` button. Select both the `Windows` and `Android` options.
 - Press the `Mount Windows` button to mount Windows to your internal storage at `/sdcard/Windows`
 - Create a folder called `sta` in Windows and unpack the two files in the 'Switch to Android package` file here (the files should go to `/sdcard/Windows/sta`
 - Return to the WOA Helper app and press `Quickboot to Windows`.
