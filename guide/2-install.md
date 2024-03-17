@@ -16,6 +16,8 @@
 - [Drivers]() FILE NEEDED
   
 - [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
+
+- [Touch fix script](https://github.com/n00b69/woaberyllium/releases/download/Files/touchfix.bat)
   
 - [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
@@ -106,6 +108,9 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 >
 > Enter the drive letter of `Windows`, which should be X, then press enter
+
+##### Fixing touch
+> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
   
 ##### Create Windows bootloader files
 ```cmd
