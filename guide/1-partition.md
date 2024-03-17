@@ -8,9 +8,9 @@
 ### Prerequisites
 - A brain (most important of all)
 
-- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img)
-
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+  
+- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img)
 
 - [Parted](https://github.com/n00b69/woaberyllium/releases/download/Files/parted)
 
