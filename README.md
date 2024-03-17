@@ -22,7 +22,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Project status](guide/status.md)
 
-- [Installation instructions](guide/1-partition.md) EDIT
+- [Installation instructions](guide/1-partition.md)
 
 - [Troubleshooting](guide/troubleshooting.md)
 
@@ -33,11 +33,11 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Optional post-install stuff](guide/postinstall.md)
 
-- [Update drivers](guide/update.md) EDIT
+- [Update drivers](guide/update.md) DO NOT USE
 
-- [Reinstall instructions](guide/reinstall.md) EDIT
+- [Reinstall instructions](guide/reinstall.md) DO NOT USE
 
-- [Uninstall instructions](guide/uninstall.md)
+- [Uninstall instructions](guide/uninstall.md) DO NOT USE
 
 ## Contributors
 
