@@ -8,8 +8,6 @@
 ### Prerequisites
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
-
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
 
 - [WOA Helper app](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/woahelper.apk)
