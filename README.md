@@ -1,7 +1,5 @@
 > [!Warning]
-> DO NOT USE THIS GUIDE YET, THIS GUIDE CURRENTLY LINKS TO FILES / METHODS OF OTHER DEVICES, WHICH WILL PROBABLY BRICK YOUR POCOPHONE F1
-> 
-> THIS PAGE IS UNDER MAINTENANCE
+> THIS GUIDE IS W.I.P AND MIGHT NOT BE ACCURATE, USE AT YOUR OWN CAUTION
 
 <img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
