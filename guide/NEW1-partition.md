@@ -39,8 +39,8 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 
 ##### Run the partitioning script
 > Replace $ with the amount of storage you want Windows to have (do not add GB, just write the number)
+> 
 > If it asks you to run it once again, do so
-
 ```cmd
 adb shell partition $
 ```
