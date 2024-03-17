@@ -31,7 +31,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Optional post-install stuff](guide/postinstall.md)
 
-- [Update drivers](guide/update.md) DO NOT USE
+- [Update drivers](guide/update.md)
 
 - [Reinstall instructions](guide/reinstall.md) DO NOT USE
 
