@@ -11,7 +11,7 @@
   
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
   
-- [Drivers]() FILE NEEDED
+- [Drivers](https://github.com/n00b69/woaberyllium/releases/download/Drivers/2210.drivers+usbFixup+AudioFixup+rpcd.zip)
   
 - [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
 
@@ -91,10 +91,8 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
 
 #### Installing Drivers
-
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
->
-> Enter the drive letter of `Windows`, which should be X, then press enter
+> [!Important]
+> I don't know how to install drivers using this file because it is not DriverUpdater compatible like every other guide. Use another guide for this part.
 
 #### Fixing touch
 > Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
