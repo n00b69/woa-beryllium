@@ -40,6 +40,7 @@ diskpart
 > Run the following commands in the newly opened window
 
 ##### Find the Windows and ESP volumes
+> This will print a list of all current volumes connected to your PC
 ```cmd
 list volume
 ```
@@ -107,10 +108,11 @@ diskpart
 ```
 
 ##### Select the Windows volume of the phone
-> Use `lis vol` to find it, it's the one named "Windows"
+> Use `list volume` to find it, it's the one named "Windows"
 ```diskpart
 select volume <number>
 ```
+
 ##### Unassign the letter X
 ```diskpart
 remove letter x
@@ -121,6 +123,7 @@ remove letter x
 ```diskpart
 select volume <number>
 ```
+
 ##### Unassign the letter Y
 ```diskpart
 remove letter y
