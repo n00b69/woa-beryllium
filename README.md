@@ -1,5 +1,5 @@
 > [!Warning]
-> THIS GUIDE IS W.I.P AND MIGHT NOT BE ACCURATE, USE AT YOUR OWN CAUTION
+> THIS GUIDE IS W.I.P AND MIGHT NOT BE ACCURATE, USE AT YOUR OWN RISK
 
 <img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
