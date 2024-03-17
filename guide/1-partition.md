@@ -3,8 +3,6 @@
 
 # Running Windows on the Xiaomi Pocophone F1
 
-## Installation
-
 ## Partitioning your device
 
 ### Prerequisites
@@ -36,7 +34,7 @@
 > 
 > If you don't use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
 
-##### Flash TWRP recovery
+#### Flash TWRP recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
@@ -47,30 +45,22 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 
 Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
 
-### Partitioning guide
+#### Partitioning guide
 > Your Pocophone F1 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
 
-##### Preparing for partitioning
-> Download the parted file and move it in the platform-tools folder, before then running these commands seperately
+#### Preparing for partitioning
+> Download the parted file and move it in the platform-tools folder, then run
 ```cmd
-adb push parted /cache/
+adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
 ```
 
-```cmd
-adb shell "chmod 755 /cache/parted"
-```
-
-```cmd
-adb shell /cache/parted /dev/block/sda
-```
-
-##### Printing the current table partition:
+#### Printing the current table partition:
 > Parted will print the list of partitions, userdata should be the last partition in the list.
 ```cmd
 print
 ```
 
-##### Resizing userdata
+#### Resizing userdata
 > Replace $ with the number of the userdata partition
 >
 > If it asks you if you are okay with data loss, type yes
@@ -84,12 +74,12 @@ End? [122GB]? 32GB
 ```
 Note: 122GB is parted telling us the maximum end value we can select.
 
-##### Checking free space
+#### Checking free space
 ```cmd
 p free
 ```
 
-##### Creating ESP partition
+#### Creating ESP partition
 > 32GB is the **End** of the **userdata** partition in this example and 32.5GB is the end of the ESP partition we will be creating, which will be 500MB in size
 
 > Replace 32GB with the actual value you used when resizing the partition, then add 0.5 to this value and use it for the second value
@@ -102,7 +92,7 @@ mkpart esp fat32 32GB 32.5GB
 set $ esp on
 ```
 
-##### Creating Windows partition
+#### Creating Windows partition
 > In this example 122GB is the end value of your phone's total storage. Replace this with the actual end value you see when executing "p free"
 
 > 32.5GB in this example is the end of ESP, replace this with your actual value accordingly as well
@@ -110,12 +100,12 @@ set $ esp on
 mkpart win ntfs 32.5GB 122GB
 ```
 
-##### Exit parted
+#### Exit parted
 ```cmd
 quit
 ```
 
-##### Formatting data
+#### Formatting data
 Format all data in TWRP, or Android will not boot.
 ( Go to Wipe > Format data > type yes )
 
@@ -124,3 +114,24 @@ Just restart the phone, and see if Android still works
 
 
 ## [Next step: Installing Windows](/guide/2-install.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
