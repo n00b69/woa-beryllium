@@ -3,8 +3,8 @@
 
 # Running Windows on the Xiaomi Pocophone F1
 
-## Optional post-install stuff
-> Below you will find a list of optional (but recommended) tweaks to make your Windows experience better
+## Additional materials
+> Below you will find a list of tweaks and materials for Windows on your ARM device
 
 ## Hide D drive (modem partition)
 > [!NOTE]
