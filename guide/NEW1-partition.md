@@ -49,7 +49,24 @@ adb shell partition $
 Just restart the phone, and see if Android still works
 
 
-## [Next step: Installing Windows](/guide/2-install.md)
+## [Next step: Installing Windows](/guide/NEW2-install.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
