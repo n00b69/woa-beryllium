@@ -34,13 +34,25 @@ This guide assumes you are rooted, if you aren't, please follow [this guide](roo
 ### Setup - Windows
 - Navigate to C:\sta and create a shortcut of `sta.exe` to your desktop.
 
-##### Booting to Android
+#### Booting to Android
   - Run the new shortcut on your desktop (you can also pin it to your start menu / taskbar for ease of access)
 
-##### Booting to Windows
+#### Booting to Windows
   - Press `Quickboot to Windows` inside the app, or use the newly created toggle in your quick settings panel
   
 ## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
