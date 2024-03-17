@@ -6,79 +6,107 @@
 ## Updating drivers
 
 ### Prerequisites
-  
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
   
-- [Drivers]() FILE NEEDED
+- [Drivers](https://github.com/n00b69/woaberyllium/releases/download/Drivers/2210.drivers+usbFixup+AudioFixup+rpcd.zip)
   
 - [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
+
+- [Touch fix script](https://github.com/n00b69/woaberyllium/releases/download/Files/touchfix.bat)
   
 - [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
-##### Boot to TWRP
+#### Boot to TWRP
 > If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
-##### Pushing the msc script
-Put msc.sh in the platform-tools folder, then run:
+#### Running the msc script
+> Put msc.sh in the platform-tools folder, then run:
 ```cmd
-adb push msc.sh /
+adb push msc.sh / && adb shell sh msc.sh
 ```
 
-##### Running the msc script
-```cmd
-adb shell sh msc.sh
-```
-
-## Diskpart
->  [!WARNING]
-> DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
-
-After you hear your phone getting reconnected to your PC run:
+### Diskpart
 ```cmd
 diskpart
 ```
-> Run the following commands in the newly opened window
 
-##### Finding your phone
+#### List device volumes
+> To print a list of all the connected volumes, run
 ```cmd
-lis dis
-```
-> This will show all available disks. Find the disk number of your phone and replace it with "$" in the command below
-
-> (it will probably show as 0 B free)
-```cmd
-sel dis $
+list volume
 ```
 
-##### Selecting the Windows partition
+#### Select Windows volume
+> Replace $ with the actual number of the Windows volume
 ```cmd
-lis par
-```
-> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the Windows partition (usually 31 or 32)
-```cmd
-sel par $
+select volume $
 ```
 
-##### Assign letter X to Windows
+#### Assign letter to Windows
 ```cmd
 assign letter x
 ```
 
-##### Exit diskpart
+### Exit diskpart
 ```cmd
 exit
 ```
 
-##### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
->
-> Enter the drive letter of `Windows`, which should be X, then press enter
+### Installing Drivers
+> [!Important]
+> I don't know how to install drivers using this file because it is not DriverUpdater compatible like every other guide. Use another guide for this part.
+
+#### Fixing touch
+> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
+
+### Unassign disk letter
+> So that it doesn't stay there after disconnecting the device
+```cmd
+diskpart
+```
+
+#### Select the Windows volume of the phone
+> Use `lis vol` to find it, it's the one named "Windows"
+```diskpart
+select volume <number>
+```
+
+#### Unassign the letter X
+```diskpart
+remove letter x
+```
+
+#### Exit diskpart
+```diskpart
+exit
+```
 
 ##### Boot back into Windows
 > Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
 
 
 ## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
