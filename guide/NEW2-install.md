@@ -51,7 +51,7 @@ list volume
 select volume $
 ```
 
-#### Assign letter to WINMH2LM
+#### Assign letter to WINBERYLLIUM
 > Replace $ with the actual number of WINBERYLLIUM
 ```cmd
 assign letter x
