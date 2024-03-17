@@ -22,14 +22,14 @@
 This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
 
 ### Setup - Android
-> [!NOTE]
-> If you are unable to move files to the Windows folder, it means you shut down Windows instead of restarting it. To fix this issue, boot back to Windows and use restart, then as it restarts boot to fastboot and use it to return to Android
 
 - Download and install the WOA Helper app, then open it and grant it root access.
 - Download the UEFI image for your panel and place it inside the folder named `UEFI` in your internal storage. If this folder does not exist, create it.
 - Press the `Mount Windows` button to mount Windows to your internal storage at `/sdcard/Windows`
-- Create a folder called `sta` in Windows and unpack the two files in the 'Switch to Android package` file here (the files should go to `/sdcard/Windows/sta`
-- Return to the WOA Helper app and press `Quickboot to Windows`.
+- Create a folder called `sta` in Windows and unpack the two files in the `Switch to Android package` file here (the files should go to `/sdcard/Windows/sta`.
+> [!Note]
+> If the above step fails, press `flash UEFI` instead, then reboot to boot to Windows, press restart in Windows, then as it is restarting boot back to recovery to flash your Android boot.img located in your internal storage, and try again.
+- Return to the WOA Helper app and press the `Quickboot` button.
 
 ### Setup - Windows
 - Navigate to C:\sta and create a shortcut of `sta.exe` to your desktop.
