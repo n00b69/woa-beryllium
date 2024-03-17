@@ -33,7 +33,6 @@ adb shell msc
 >  [!WARNING]
 > DO NOT CLEAN OR ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
 
-After you hear your phone getting reconnected to your PC run:
 ```cmd
 diskpart
 ```
