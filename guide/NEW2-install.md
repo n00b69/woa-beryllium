@@ -43,6 +43,7 @@ diskpart
 ```cmd
 list volume
 ```
+
 ##### Selecting the Windows volume
 > Replace $ with the actual number of WINBERYLLIUM
 ```cmd
@@ -52,7 +53,7 @@ select volume $
 ##### Assign letter to WINMH2LM
 > Replace $ with the actual number of WINBERYLLIUM
 ```cmd
-select volume $
+assign letter x
 ```
 
 ##### Selecting the ESP volume
@@ -64,7 +65,7 @@ select volume $
 ##### Assign letter to ESPBERYLLIUM
 > Replace $ with the actual number of WINMBERYLLIUM
 ```cmd
-select volume $
+assign letter y
 ```
 
 ##### Exit diskpart
