@@ -9,7 +9,7 @@ body:
     id: description
     attributes:
       label: "Description"
-      description: Please enter an explicit description of your issue
+      description: Please enter a explicit description of your issue
       placeholder: Short and explicit description of your incident...
     validations:
       required: true
@@ -39,7 +39,7 @@ body:
       options:
         - label: I am using the latest Drivers.
           required: true
-        - label: I am running Windows 11 On The Phone.
+        - label: I am running Windows 11 on the phone
           required: true
         - label: There is no issue already describing my problem.
           required: true
