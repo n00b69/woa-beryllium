@@ -38,14 +38,11 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
 ##### Run the partitioning script
+> Replace $ with the amount of storage you want Windows to have (do not add GB, just write the number)
 > If it asks you to run it once again, do so
 
-> This is **optional** but you can **set custom sizes using this script**
-
-> To set custom sizes do ```adb shell partition [TARGET WINDOWS SIZE IN GB]```, for example to allocate 99GB to Windows, run `adb shell partition 99`
-
 ```cmd
-adb shell partition
+adb shell partition $
 ```
 
 #### Check if Android still starts
