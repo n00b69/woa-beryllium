@@ -29,13 +29,13 @@
 > [!IMPORTANT]
 > Make sure you use the provided recovery image in this guide. The instructions will not work on other recoveries.
 
-##### Flash the modded recovery
+#### Flash the modded recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
-##### Run the partitioning script
+#### Run the partitioning script
 > Replace $ with the amount of storage you want Windows to have (do not add GB, just write the number)
 > 
 > If it asks you to run it once again, do so
