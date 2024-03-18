@@ -42,7 +42,7 @@ diskpart
 ```cmd
 list volume
 ```
-> If you don't see unnamed NTFS and unnamed 500mb fat32 disk, go to TWRP, mount, Enable MTP, then run the command again
+> If you don't see an unnamed NTFS and unnamed 500mb fat32 disk, go to TWRP, mount, Enable MTP, then run the command again
 
 #### Select Windows volume
 > Replace $ with the actual number of the Windows volume. It is the volume that had around the same size as you picked on the previous page
