@@ -90,8 +90,10 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
 
 #### Installing Drivers
-> [!Important]
-> I don't know how to install drivers using this file because it is not DriverUpdater compatible like every other guide. Use another guide for this part.
+> Extract the drivers folder from the archive, then run the following command, replacing`<path\to\drivers>` with the actual path of the drivers folder
+```cmd
+dism /image:X:\ /add-driver /driver:<path\to\drivers> /recurse
+```
 
 #### Fixing touch
 > Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
