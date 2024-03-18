@@ -144,9 +144,9 @@ adb reboot recovery
 ```
 
 #### Checking panel type
-> This should output either `dsi_ebbg_fhd_ft8719_video_display` or `dsi_tianma_fhd_nt36672a_video_display`
+> This will output your panel type, needed to determine he UEFI to download
 ```cmd
-adb shell dmesg | grep dsi_display_bind
+adb shell panel
 ```
 
 #### Push the UEFI to your phone
