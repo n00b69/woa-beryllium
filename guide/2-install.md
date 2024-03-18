@@ -10,7 +10,7 @@
   
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
   
-- [Drivers](https://github.com/n00b69/woaberyllium/releases/download/Drivers/2210.drivers+usbFixup+AudioFixup+rpcd.zip)
+- [Drivers](https://github.com/n00b69/woaberyllium/releases/download/Drivers/NewDriver_beryllium.zip)
   
 - [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
 
