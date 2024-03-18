@@ -70,9 +70,9 @@ resizepart $
 > Parted will now ask you for the end value.
 > You can choose the size you want, as long as it is lower than the value it provides to you. In this example we resize it to 32GB
 ```cmd
-End? [122GB]? 32GB
+End? [123GB]? 32GB
 ```
-Note: 122GB is parted telling us the maximum end value we can select.
+Note: 123GB is parted telling us the maximum end value we can select.
 
 #### Checking free space
 ```cmd
@@ -87,17 +87,17 @@ p free
 mkpart esp fat32 32GB 32.5GB
 ```
 
-> Replace "$" with your ESP partition number, usually 30 or 31
+> Replace "$" with your ESP partition number, usually 22
 ```cmd
 set $ esp on
 ```
 
 #### Creating Windows partition
-> In this example 122GB is the end value of your phone's total storage. Replace this with the actual end value you see when executing "p free"
+> In this example 123GB is the end value of your phone's total storage. Replace this with the actual end value you see when executing "p free"
 
 > 32.5GB in this example is the end of ESP, replace this with your actual value accordingly as well
 ```cmd
-mkpart win ntfs 32.5GB 122GB
+mkpart win ntfs 32.5GB 123GB
 ```
 
 #### Exit parted
