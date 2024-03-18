@@ -1,215 +1,164 @@
 <img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-
 # Running Windows on the Xiaomi Pocophone F1
 
-## Reinstall guide
-> [!NOTE]
-> This guide is used whenever you want to update or change your windows and / or driver installation.
+## Reinstalling Windows
+> This guide is used for when you wish to completely reinstall Windows, without having to repartition
 
 ### Prerequisites
-- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Files/twrp.img) (should already be installed)
 
-- [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
-  
-- [Drivers]() FILE NEEDED
+- [Windows on ARM image](https://worproject.com/esd)
   
 - [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
   
+- [Drivers](https://github.com/n00b69/woaberyllium/releases/download/Drivers/2210.drivers+usbFixup+AudioFixup+rpcd.zip)
+  
+- [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
 
+- [Touch fix script](https://github.com/n00b69/woaberyllium/releases/download/Files/touchfix.bat)
+  
+- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
-## Reinstalling Windows
-> [!IMPORTANT]
-> If you have come here from the [troubleshooting page](troubleshooting-en.md) because you need to reinstall/update drivers, you can skip some steps. Make sure to read the guide properly.
-
-##### Boot to TWRP
-> If your recovery has been replaced with the stock recovery, flash it again in fastboot with:
+#### Boot to TWRP
+> If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
-##### Pushing the msc script
-Put msc.sh in the platform-tools folder, then run:
+#### Running the msc script
+> Put msc.sh in the platform-tools folder, then run:
 ```cmd
-adb push msc.sh /
+adb push msc.sh / && adb shell sh msc.sh
 ```
 
-##### Running the msc script
-```cmd
-adb shell sh msc.sh
-```
-
-## Diskpart
+### Diskpart
 >  [!WARNING]
 > DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
 
-After you hear your phone getting reconnected to your PC run:
 ```cmd
 diskpart
 ```
-> Run the following commands in the newly opened window
 
-##### Finding your phone
+#### List device volumes
+> To print a list of all the connected volumes, run
 ```cmd
-lis dis
-```
-> This will show all available disks. Find the disk number of your phone and replace it with "$" in the command below
-```cmd
-sel dis $
+list volume
 ```
 
-##### Selecting the ESP partition
+#### Select Windows volume
+> Replace $ with the actual number of the Windows volume
 ```cmd
-lis par
-```
-> This will print out all of the partitions in the selected disk. Check if they match up with your device and replace "$" with the number of the ESP partition (usually 30 or 31)
-```cmd
-sel par $
+select volume $
 ```
 
-##### Formatting the ESP partition
-> Skip this step if you are only reinstalling/updating drivers, or you will have to also reapply the image.
-> This will format ESP to fat32
-```cmd
-format quick fs=fat32 label="System"
-```
-
-##### Add letter Y to the ESP partion
-```cmd
-assign letter y
-```
-
-##### Selecting the Windows partitiom
-> Replace "$" in the command below with the number of the Windows partition, usually 31 or 32. If you don't know the number, run "lis par" again
-```cmd
-sel par $
-```
-
-##### Formatting the Windows partition
-> Skip this step if you are only reinstalling/updating drivers, or you will have to also reapply the image.
-> This will format Windows to NTFS
-```cmd
-format quick fs=ntfs label=Windows
-```
-
-##### Add letter X to the Windows partion
+#### Assign letter to Windows
 ```cmd
 assign letter x
 ```
 
-##### Exit diskpart
+#### Select ESP volume
+> Replace $ with the actual number of the ESP volume
+```cmd
+select volume $
+```
+
+#### Assign letter to ESP
+```cmd
+assign letter y
+```
+
+### Exit diskpart
 ```cmd
 exit
 ```
+#### Formatting Windows drive
+> In Windows Explorer (under My PC) locate the X: Windows drive
+>
+> Right click and fast format it as NTFS
 
-## Installing Windows
-> [!IMPORTANT]
-> Skip this step if you are only reinstalling/updating drivers
+#### Formatting ESP drive
+> In Windows Explorer (under My PC) locate the Y: ESP drive
+> 
+> Right click and fast format it as Fat32
 
-> Replace `path\to\install.esd` with the actual path to install.esd.
+### Installing Windows
+> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
+
 ```cmd
-dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ```
 
-##### Installing Drivers
-> Put the right driverupdater.exe for your machine in the path where your command window is currently opened. For example if you are in C:\platform-tools, put the driverupdater there.
+> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
 
-> Replace `path\to` with the actual location of the drivers folder
+#### Installing Drivers
+> Extract the drivers folder from the archive, then run the following command, replacing`<path\to\drivers>` with the actual path of the drivers folder
 ```cmd
-DriverUpdater.exe -p X: -d path\to\raphael-Drivers-main\definitions\Desktop\ARM64\Internal\raphael.txt -r .
+dism /image:X:\ /add-driver /driver:<path\to\drivers> /recurse
 ```
 
-##### Create Windows bootloader files
-> Skip this step if you are only reinstalling/updating drivers
+#### Fixing touch
+> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
+  
+#### Create Windows bootloader files
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
 
-###### Configuring bootloader files
-> Skip this step if you are only reinstalling/updating drivers
-> Run these 4 commands seperately
+#### Configuring bootloader files
 ```cmd
-cd Y:\EFI\Microsoft\Boot
-```
-```cmd
-bcdedit /store BCD /set "{default}" testsigning on
-```
-```cmd
-bcdedit /store BCD /set "{default}" nointegritychecks on
-```
-```cmd
-bcdedit /store BCD /set "{default}" recoveryenabled no
+bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
 ```
 
-## Unassign disk letters
+### Unassign disk letters
 > So that they don't stay there after disconnecting the device
 ```cmd
 diskpart
 ```
 
-##### Select the Windows volume of the phone
+#### Select the Windows volume of the phone
 > Use `lis vol` to find it, it's the one named "Windows"
 ```diskpart
 select volume <number>
 ```
-##### Unassign the letter X
+
+#### Unassign the letter X
 ```diskpart
 remove letter x
 ```
 
-##### Select the ESP volume of the phone
+#### Select the ESP volume of the phone
 > Use `list volume` to find it, it's the one named "ESP"
 ```diskpart
 select volume <number>
 ```
-##### Unassign the letter Y
+
+#### Unassign the letter Y
 ```diskpart
 remove letter y
 ```
 
-##### Exit diskpart
+#### Exit diskpart
 ```diskpart
 exit
 ```
 
-## Backing up boot images
+### Boot into Windows
+Reboot your phone to boot back into Windows. If you end up in Android, use the WoA Helper app to switch to Windows. Make sure the UEFI in your UEFI folder is up to date.
 
-##### Reboot your recovery
-> To remove the msc script
-- Reboot to recovery through TWRP, or run
-```cmd
-adb reboot recovery
-```
-
-##### Push the UEFI to your phone
-> Drag and drop the UEFI (xiaomi-raphael.img) to your phone
-
-##### Back up your Android boot image
-Use the TWRP backup feature to backup your Android boot image. Name this backup "Android"
-
-##### Flash the UEFI
-Use the TWRP install feature to flash the UEFI image to your boot partition. Select "install image", then locate the image.
-
-##### Back up your Windows boot image
-Use the TWRP backup feature to backup your Windows boot image. Name this backup "Windows"
-
-## Boot into Windows
-After having flashed the UEFI image, reboot your phone.
-
-Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
-
-## Setting up Windows
-> You will have to run the limited setup because Wi-Fi does not work during boot.
-
-To do this, open the accessibility menu and open the on-screen keyboard, then press SHIFT + F10 to open CMD where you will run
-```cmd
-oobe/bypassnro
-```
-Your device will now reboot. Finish setup after it boots back up. Make sure to press the "I don't have internet" button during setup.
-
-After windows finishes booting, you may notice thay USB does not work. To fix this, enable USB host mode using the optional [post install guide](postinstall.md).
-
-After doing this, press the restart button and force boot to TWRP with the button combination after the screen shuts off.
+## Finished!
 
 
-## [Next step: Setting up dualboot](/guide/dualboot.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
