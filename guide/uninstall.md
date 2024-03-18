@@ -15,26 +15,27 @@ If you want to relock your bootloader you'll need your partition table to be sto
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 - [gpt_both0.bin](https://github.com/n00b69/woaberyllium/releases/download/Files/gpt_both0.bin)
 
-## Uninstall instructions
+### Uninstall instructions
+> [!Important]
+> This guide will likely not work, it needs to be updated
 
-##### Boot into fastboot mode
+#### Boot into fastboot mode
 > Hold the volume down + power button while the phone is turned off, or run the following command while it is booted
 ```cmd
 adb reboot bootloader
 ```
 
-##### Restore GPT
+#### Restore GPT
 > Replace ```path\to\gpt_both0.bin``` with the path to the gpt_both0.bin file.
 
 ```cmd
 fastboot flash partition:0 path\to\gpt_both0.bin
 ```
 
-##### Erase userdata to avoid a bootloop and restore FS size
+#### Erase userdata to avoid a bootloop and restore FS size
 ```cmd
 fastboot -w
 ```
-
 > [!Note]
 > If erasing userdata fails, reboot to recovery and wipe all data there instead
 
