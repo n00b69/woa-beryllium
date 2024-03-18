@@ -12,6 +12,8 @@ This is by no means a comprehensive list, it simply lists apps/games that have b
 
 You can also find a list of dedicated ARM software [at this link](https://armrepo.ver.lt/)
 
+#### Finished!
+
 ### Hide D drive (modem partition)
 > [!NOTE]
 > This is recommended because this drive should not be modified, while some applications may try to write to it
