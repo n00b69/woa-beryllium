@@ -79,25 +79,20 @@ Note: 123GB is parted telling us the maximum end value we can select.
 p free
 ```
 
-#### Creating ESP partition
-> 32GB is the **End** of the **userdata** partition in this example and 32.5GB is the end of the ESP partition we will be creating, which will be 500MB in size
-
-> Replace 32GB with the actual value you used when resizing the partition, then add 0.5 to this value and use it for the second value
-```cmd
-mkpart esp fat32 32GB 32.5GB
-```
-
-> Replace "$" with your ESP partition number, usually 22
-```cmd
-set $ esp on
-```
-
 #### Creating Windows partition
 > In this example 123GB is the end value of your phone's total storage. Replace this with the actual end value you see when executing "p free"
 
-> 32.5GB in this example is the end of ESP, replace this with your actual value accordingly as well
+> 32GB in this example is the end of userdata, replace this with your actual value accordingly as well
 ```cmd
-mkpart win ntfs 32.5GB 123GB
+mkpart win ntfs 32GB 122.5GB
+```
+
+#### Creating ESP partition
+> 122.5GB is the **End** of the **userdata** partition in this example and 123GB is the end of the ESP partition we will be creating, which will be 500MB in size
+
+> Replace 122.5GB with the actual value you used when resizing the partition, then add 0.5 to this value and use it for the second value
+```cmd
+mkpart esp fat32 122.5GB 123GB
 ```
 
 #### Exit parted
