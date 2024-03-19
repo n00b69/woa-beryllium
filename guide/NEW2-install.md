@@ -46,25 +46,25 @@ list volume
 ```
 
 #### Selecting the Windows volume
-> Replace $ with the actual number of WINBERYLLIUM
+> Replace $ with the actual number of WINF1
 ```cmd
 select volume $
 ```
 
-#### Assign letter to WINBERYLLIUM
-> Replace $ with the actual number of WINBERYLLIUM
+#### Assign letter to WINF1
+> Replace $ with the actual number of WINF1
 ```cmd
 assign letter x
 ```
 
 #### Selecting the ESP volume
-> Replace $ with the actual number of ESPBERYLLIUM
+> Replace $ with the actual number of ESPF1
 ```cmd
 select volume $
 ```
 
-#### Assign letter to ESPBERYLLIUM
-> Replace $ with the actual number of WINMBERYLLIUM
+#### Assign letter to ESPF1
+> Replace $ with the actual number of ESPF1
 ```cmd
 assign letter y
 ```
@@ -107,8 +107,12 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
 diskpart
 ```
 
-#### Select the Windows volume of the phone
-> Use `list volume` to find it, it's the one named "Windows"
+#### Find the Windows and ESP volumes
+```cmd
+list volume
+```
+
+#### Select the WINF1 volume
 ```diskpart
 select volume <number>
 ```
@@ -118,8 +122,7 @@ select volume <number>
 remove letter x
 ```
 
-#### Select the ESP volume of the phone
-> Use `list volume` to find it, it's the one named "ESP"
+#### Select the ESPF1 volume
 ```diskpart
 select volume <number>
 ```
