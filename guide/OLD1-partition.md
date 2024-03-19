@@ -10,9 +10,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img)
-
-- [Parted](https://github.com/n00b69/woaberyllium/releases/download/Files/parted)
+- [Modded recovery image](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img)
 
 ### Notes
 > [!WARNING]  
@@ -49,9 +47,8 @@ Use TWRP now to back up your Modem and EFS partition (as well as anything else i
 > Your Pocophone F1 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
 
 #### Preparing for partitioning
-> Download the parted file and move it in the platform-tools folder, then run
 ```cmd
-adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+adb shell parted
 ```
 
 #### Printing the current table partition:
@@ -106,11 +103,11 @@ quit
 ```
 
 #### Formatting data
-Format all data in TWRP, or Android will not boot.
+- Format all data in TWRP, or Android will not boot.
 ( Go to Wipe > Format data > type yes )
 
 #### Check if Android still starts
-Just restart the phone, and see if Android still works
+- Restart the phone, and see if Android still works
 
 
 ## [Next step: Installing Windows](/guide/NEW2-install.md)
