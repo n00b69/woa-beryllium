@@ -95,17 +95,23 @@ mkpart win ntfs 32GB 122.5GB
 mkpart esp fat32 122.5GB 123GB
 ```
 
+#### Making ESP bootable
+> Replace $ with the actual number of the ESP partition which you can get using the `print` command, which should be 23
+```cmd
+set $ esp on
+```
+
 #### Exit parted
 ```cmd
 quit
 ```
 
 #### Formatting data
-Format all data in TWRP, or Android will not boot.
-( Go to Wipe > Format data > type yes )
+- Format all data in TWRP, or Android will not boot.
+- ( Go to Wipe > Format data > type yes )
 
 #### Check if Android still starts
-Just restart the phone, and see if Android still works
+- Just restart the phone, and see if Android still works
 
 
 ## [Next step: Installing Windows](/guide/2-install.md)
