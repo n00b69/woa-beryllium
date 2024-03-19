@@ -22,7 +22,6 @@
 > 
 > DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnF1).
 > 
->
 > Do not run all commands at once, execute them in order!
 >
 > YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
@@ -32,7 +31,7 @@
 > 
 > If you don't use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
 
-#### Flash TWRP recovery
+#### Flash the modded recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
@@ -76,25 +75,25 @@ Note: 123GB is parted telling us the maximum end value we can select.
 p free
 ```
 
-#### Creating ESP partition
-> 32GB is the **End** of the **userdata** partition in this example and 32.5GB is the end of the ESP partition we will be creating, which will be 500MB in size
-
-> Replace 32GB with the actual value you used when resizing the partition, then add 0.5 to this value and use it for the second value
-```cmd
-mkpart esp fat32 32GB 32.5GB
-```
-
-> Replace "$" with your ESP partition number, usually 22
-```cmd
-set $ esp on
-```
-
 #### Creating Windows partition
 > In this example 123GB is the end value of your phone's total storage. Replace this with the actual end value you see when executing "p free"
 
-> 32.5GB in this example is the end of ESP, replace this with your actual value accordingly as well
+> 32GB in this example is the end of userdata, replace this with your actual value accordingly as well
 ```cmd
-mkpart win ntfs 32.5GB 123GB
+mkpart win ntfs 32GB 122.5GB
+```
+
+#### Creating ESP partition
+> 122.5GB is the **End** of the **userdata** partition in this example and 123GB is the end of the ESP partition we will be creating, which will be 500MB in size
+
+> Replace 122.5GB with the actual value you used when resizing the partition, then add 0.5 to this value and use it for the second value
+```cmd
+mkpart esp fat32 122.5GB 123GB
+```
+
+> Replace "$" with your ESP partition number, usually 23
+```cmd
+set $ esp on
 ```
 
 #### Exit parted
