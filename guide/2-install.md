@@ -103,9 +103,19 @@ dism /image:X:\ /add-driver /driver:<path\to\drivers> /recurse
 bcdboot X:\Windows /s Y: /f UEFI
 ```
 
-#### Configuring bootloader files
+#### Configure bootloader files
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
+```
+
+#### Disabling recovery
+```cmd
+bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
+```
+
+#### Disabling integrity checks
+```cmd
+bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
 ### Unassign disk letters
