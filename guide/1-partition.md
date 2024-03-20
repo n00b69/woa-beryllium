@@ -91,12 +91,6 @@ mkpart win ntfs 32GB 122.5GB
 mkpart esp fat32 122.5GB 123GB
 ```
 
-#### Making ESP bootable
-> Replace $ with the actual number of the ESP partition which you can get using the `print` command, which should be 23
-```cmd
-set $ esp on
-```
-
 #### Exit parted
 ```cmd
 quit
