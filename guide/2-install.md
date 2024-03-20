@@ -57,7 +57,7 @@ lis par
 ```
 
 #### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 32)
+> Replace $ with the partition number of Windows (should be 22)
 ```cmd
 sel par $
 ```
@@ -73,7 +73,7 @@ assign letter x
 ```
 
 #### Selecting the ESP partition
-> Replace $ with the partition number of ESP (should be 32)
+> Replace $ with the partition number of ESP (should be 23)
 ```cmd
 sel par $
 ```
@@ -148,7 +148,7 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `lis vol` to find it, it's the one named "Windows"
+> Use `lis vol` to find it, it's the one named "WINF1"
 ```diskpart
 select volume <number>
 ```
@@ -159,7 +159,7 @@ remove letter x
 ```
 
 #### Select the ESP volume of the phone
-> Use `list volume` to find it, it's the one named "ESP"
+> Use `list volume` to find it, it's the one named "ESPF1"
 ```diskpart
 select volume <number>
 ```
