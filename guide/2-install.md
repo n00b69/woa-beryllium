@@ -95,16 +95,6 @@ assign letter y
 exit
 ```
 
-#### Formatting Windows drive
-> In Windows Explorer (under My PC) locate the X: Windows drive
->
-> Right click and fast format it as NTFS
-
-#### Formatting ESP drive
-> In Windows Explorer (under My PC) locate the Y: ESP drive
-> 
-> Right click and fast format it as Fat32
-
 ### Installing Windows
 > Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
 
