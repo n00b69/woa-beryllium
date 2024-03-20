@@ -64,7 +64,7 @@ sel par $
 
 #### Formatting Windows drive
 ```cmd
-format quick fs=ntfs label="WINMF1"
+format quick fs=ntfs label="WINF1"
 ```
 
 #### Add letter to Windows
