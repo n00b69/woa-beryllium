@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
 
 # Running Windows on the Xiaomi Pocophone F1
@@ -8,11 +8,11 @@
 ### Prerequisites
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-- [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-- [WOA Helper app](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/woahelper.apk)
+- [WOA Helper app](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/woahelper.apk)
 
-- [Switch To Android package](https://github.com/n00b69/woaberyllium/releases/download/Dualboot/beryllium-sta.zip)
+- [Switch To Android package](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/beryllium-sta.zip)
 
 
 ## Dualboot guide
