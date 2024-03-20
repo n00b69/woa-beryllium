@@ -1,5 +1,4 @@
-<img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
-
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
 # Running Windows on the Xiaomi Pocophone F1
 
@@ -9,13 +8,13 @@
 
 - [Windows on ARM image](https://worproject.com/esd)
   
-- [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
   
-- [Drivers](https://github.com/n00b69/woaberyllium/releases/tag/Drivers)
+- [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
-- [Touch fix script](https://github.com/n00b69/woaberyllium/releases/download/Files/touchfix.bat)
+- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
-- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img) (should already be installed)
+- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
 #### Boot to TWRP
 > If rebooting on the last page has replaced your recovery back to stock, flash it again in fastboot with:
