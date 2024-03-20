@@ -29,21 +29,17 @@
 >
 > YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
 
-> [!IMPORTANT]
-> Make sure you use the provided TWRP Recovery throughout this whole tutorial as this will make it easier for you.
-> 
-> If you don't use it and you face any errors, consider it your fault and consider yourself alone if you try asking for support as you have deferred from the main guide.
-
 #### Flash TWRP recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
-> [!IMPORTANT]
-> If you do anything incorrectly, you may wipe your UFS and render your device unusable.
-
+#### Backing up important files
 Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
+
+> [!warning]
+> **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
 
 #### Partitioning guide
 > Your Pocophone F1 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
