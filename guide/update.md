@@ -1,5 +1,4 @@
-<img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
-
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
 # Running Windows on the Xiaomi Pocophone F1
 
@@ -8,15 +7,15 @@
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [UEFI image](https://github.com/n00b69/woaberyllium/releases/tag/UEFI)
+- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
   
-- [Drivers](https://github.com/n00b69/woaberyllium/releases/tag/Drivers)
+- [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
   
-- [Msc script](https://github.com/n00b69/woaberyllium/releases/download/Files/msc.sh)
+- [Msc script](https://github.com/n00b69/woa-beryllium/releases/download/Files/msc.sh)
 
-- [Touch fix script](https://github.com/n00b69/woaberyllium/releases/download/Files/touchfix.bat)
+- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
-- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img) (should already be installed)
+- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
 #### Boot to TWRP
 > If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
@@ -42,12 +41,12 @@ list volume
 ```
 
 #### Select Windows volume
-> Replace $ with the actual number of the Windows volume
+> Replace $ with the actual number of the WINF1 volume
 ```cmd
 select volume $
 ```
 
-#### Assign letter to Windows
+#### Assign letter to WINF1
 ```cmd
 assign letter x
 ```
