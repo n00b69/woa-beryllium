@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/n00b69/woaberyllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
 
 # Running Windows on the Xiaomi Pocophone F1
@@ -10,9 +10,9 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [TWRP](https://github.com/n00b69/woaberyllium/releases/download/Recoveries/twrp.img)
+- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img)
 
-- [Parted](https://github.com/n00b69/woaberyllium/releases/download/Files/parted)
+- [Parted](https://github.com/n00b69/woa-beryllium/releases/download/Files/parted)
 
 ### Notes
 > [!WARNING]  
