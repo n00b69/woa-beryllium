@@ -56,7 +56,7 @@ assign letter x
 ```
 
 #### Select ESP volume
-> Replace $ with the actual number of the ESP volume. It is the volumr that is around 500mb
+> Replace $ with the actual number of the ESP volume. It is the volume that is around 500mb
 ```cmd
 select volume $
 ```
