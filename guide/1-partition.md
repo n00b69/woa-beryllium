@@ -16,15 +16,10 @@
 
 ### Notes
 > [!WARNING]  
-> If you ever delete any partitions via diskpart, Windows will send a UFS command which would erase the entire UFS storage!
-> 
-> All your data will be erased! Back up now if needed.
-> 
 > Do not run the same command twice unless specified.
 > 
 > DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnF1).
 > 
->
 > Do not run all commands at once, execute them in order!
 >
 > YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
@@ -38,7 +33,9 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 #### Backing up important files
 Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
 
-> [!warning]
+> [!Warning]
+> All of your data will be erased. This is your last chance to back up.
+> 
 > **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
 
 #### Partitioning guide
