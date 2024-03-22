@@ -41,7 +41,7 @@ list volume
 ```
 
 #### Select Windows volume
-> Replace $ with the actual number of the WINF1 volume
+> Replace $ with the actual number of **WINF1**
 ```cmd
 select volume $
 ```
@@ -72,9 +72,9 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `lis vol` to find it, it's the one named "Windows"
+> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
 ```diskpart
-select volume <number>
+select volume $
 ```
 
 #### Unassign the letter X
