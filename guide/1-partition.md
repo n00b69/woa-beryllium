@@ -1,6 +1,5 @@
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-
 # Running Windows on the Xiaomi Pocophone F1
 
 ## Partitioning your device
@@ -56,39 +55,34 @@ adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cac
 print
 ```
 
-#### Resizing userdata
-> Replace $ with the number of the userdata partition
+#### Removing userdata
+> Replace $ with the number of the userdata partition, which should be **21**
+```cmd
+rm 21
+```
+
+#### Recreating userdata
+> Replace **1611MB** with the end value of the partition before userdata which we just deleted (it should be 1611MB)
 >
-> If it asks you if you are okay with data loss, type yes
+> Replace **32GB** with the end value you want **userdata** to have
 ```cmd
-resizepart $
-```
-> Parted will now ask you for the end value.
-> You can choose the size you want, as long as it is lower than the value it provides to you. In this example we resize it to 32GB
-```cmd
-End? [123GB]? 32GB
-```
-Note: 123GB is parted telling us the maximum end value we can select.
-
-#### Checking free space
-```cmd
-p free
-```
-
-#### Creating Windows partition
-> In this example, 122.5GB is the **End** of the **Windows** partition we will be creating. Replace "122.5GB" with your actual end value, making sure to subtract 0.5GB which will be used to create the ESP partition
-
-> 32GB in this example is the end of userdata, replace this with your actual end value accordingly as well
-```cmd
-mkpart win ntfs 32GB 122.5GB
+mkpart userdata ext4 1611MB 32GB
 ```
 
 #### Creating ESP partition
-> 122.5GB is the **End** of the **Windows** partition in this example and 123GB is the end of the ESP partition we will be creating, which will be 500MB in size
-
-> Replace 122.5GB with the actual value you used when resizing the partition, then add 0.5 to this value and use it for the second value
+> Replace **32.16GB** with the end value of **userdata**
+>
+> Replace **32.66GB** with the value you used before, adding **0.5GB** to it
 ```cmd
-mkpart esp fat32 122.5GB 123GB
+mkpart esp fat32 32.16GB 32.66GB
+```
+
+#### Creating Windows partition
+> Replace **32.66GB** with the end value of **esp**
+>
+> Replace **32.66GB** with the end value of your disk, use `p free` to find it
+```cmd
+mkpart win ntfs 32.66GB 123GB
 ```
 
 #### Exit parted
@@ -98,7 +92,7 @@ quit
 
 #### Formatting data
 - Format all data in TWRP, or Android will not boot.
-- ( Go to Wipe > Format data > type yes )
+- (Go to Wipe > Format data > type yes)
 
 #### Check if Android still starts
 - Just restart the phone, and see if Android still works
