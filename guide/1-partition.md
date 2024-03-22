@@ -56,9 +56,9 @@ print
 ```
 
 #### Removing userdata
-> Replace $ with the number of the userdata partition, which should be **21**
+> Replace **$** with the number of the userdata partition, which should be **21**
 ```cmd
-rm 21
+rm $
 ```
 
 #### Recreating userdata
