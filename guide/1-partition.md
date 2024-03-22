@@ -49,20 +49,20 @@ Use TWRP now to back up your Modem and EFS partition (as well as anything else i
 adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
 ```
 
-#### Printing the current table partition:
+#### Printing the current partition table
 > Parted will print the list of partitions, userdata should be the last partition in the list.
 ```cmd
 print
 ```
 
 #### Removing userdata
-> Replace **$** with the number of the userdata partition, which should be **21**
+> Replace **$** with the number of the **userdata** partition, which should be **21**
 ```cmd
 rm $
 ```
 
 #### Recreating userdata
-> Replace **1611MB** with the end value of the partition before userdata which we just deleted (it should be 1611MB)
+> Replace **1611MB** with the former start value of **userdata** which we just deleted (it is probably 1611MB)
 >
 > Replace **32GB** with the end value you want **userdata** to have
 ```cmd
