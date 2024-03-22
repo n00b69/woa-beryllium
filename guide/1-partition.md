@@ -38,11 +38,11 @@ Use TWRP now to back up your Modem and EFS partition (as well as anything else i
 > 
 > **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
 
-#### Unmount data
-- Go to "Mount" in TWRP and unmount data, if it is mounted
-
 ### Partitioning guide
 > Your Pocophone F1 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
+
+#### Unmount data
+- Go to "Mount" in TWRP and unmount data, if it is mounted
 
 #### Preparing for partitioning
 > Download the parted file and move it in the platform-tools folder, then run
