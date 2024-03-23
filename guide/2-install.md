@@ -110,7 +110,7 @@ adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cac
 ```
 
 #### Making ESP bootable
-> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 23
+> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 22
 ```cmd
 set $ esp on
 ```
