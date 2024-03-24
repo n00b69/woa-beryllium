@@ -2,8 +2,7 @@
 
 # Running Windows on the Xiaomi Pocophone F1
 
-## Reinstalling Windows
-> This guide is used for when you wish to completely reinstall Windows, without having to repartition
+## Installing Windows
 
 ### Prerequisites
 
@@ -16,11 +15,13 @@
 - [Msc script](https://github.com/n00b69/woa-beryllium/releases/download/Files/msc.sh)
 
 - [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
+
+- [Parted](https://github.com/n00b69/woa-beryllium/releases/download/Files/parted)
   
 - [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img) (should already be installed)
 
 #### Boot to TWRP
-> If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
+> If rebooting on the last page has replaced your recovery back to stock, flash it again in fastboot with:
 ```cmd
 fastboot flash recovery path\to\twrp.img reboot recovery
 ```
@@ -32,51 +33,67 @@ adb push msc.sh / && adb shell sh msc.sh
 ```
 
 ### Diskpart
+>  [!WARNING]
+> DO NOT ERASE ANY PARTITION WHILE IN DISKPART!!!! THIS WILL ERASE ALL OF YOUR UFS!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
+
 ```cmd
 diskpart
 ```
 
-#### List device volumes
-> To print a list of all the connected volumes, run
+#### Finding your phone
+> This will list all connected disks
 ```cmd
-list volume
+lis dis
 ```
 
-#### Select Windows volume
-> Replace $ with the actual number of the Windows volume
+#### Selecting your phone
+> Replace $ with the actual number of your phone (it should be the last one)
 ```cmd
-select volume $
+sel dis $
 ```
 
-#### Assign letter to Windows
+#### Listing your phone's partitions
+> This will list your device's partitions
+```cmd
+lis par
+```
+
+#### Selecting the Windows partition
+> Replace $ with the partition number of Windows (should be 23)
+```cmd
+sel par $
+```
+
+#### Formatting Windows drive
+```cmd
+format quick fs=ntfs label="WINF1"
+```
+
+#### Add letter to Windows
 ```cmd
 assign letter x
 ```
 
-#### Select ESP volume
-> Replace $ with the actual number of the ESP volume
+#### Selecting the ESP partition
+> Replace $ with the partition number of ESP (should be 22)
 ```cmd
-select volume $
+sel par $
 ```
 
-#### Assign letter to ESP
+#### Formatting ESP drive
+```cmd
+format quick fs=fat32 label="ESPF1"
+```
+
+#### Add letter to ESP
 ```cmd
 assign letter y
 ```
 
-### Exit diskpart
+#### Exit diskpart
 ```cmd
 exit
 ```
-#### Formatting Windows drive
-> In Windows Explorer (under My PC) locate the X: Windows drive
->
-> Right click and fast format it as NTFS
-
-#### Formatting ESP drive
-> In Windows Explorer (under My PC) locate the Y: ESP drive
-> 
-> Right click and fast format it as Fat32
 
 ### Installing Windows
 > Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
@@ -86,6 +103,22 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ```
 
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
+
+#### Running parted
+```cmd
+adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
+```
+
+#### Making ESP bootable
+> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 22
+```cmd
+set $ esp on
+```
+
+#### Exit parted
+```sh
+quit
+```
 
 #### Installing Drivers
 > Extract the drivers folder from the archive, then run the following command, replacing`<path\to\drivers>` with the actual path of the drivers folder
@@ -101,9 +134,19 @@ dism /image:X:\ /add-driver /driver:<path\to\drivers> /recurse
 bcdboot X:\Windows /s Y: /f UEFI
 ```
 
-#### Configuring bootloader files
+#### Enabling test signing
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
+```
+
+#### Disabling recovery
+```cmd
+bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
+```
+
+#### Disabling integrity checks
+```cmd
+bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
 ### Unassign disk letters
@@ -113,9 +156,9 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `lis vol` to find it, it's the one named "Windows"
+> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
 ```diskpart
-select volume <number>
+select volume $
 ```
 
 #### Unassign the letter X
@@ -124,9 +167,9 @@ remove letter x
 ```
 
 #### Select the ESP volume of the phone
-> Use `list volume` to find it, it's the one named "ESP"
+> Use `list volume` to find it, replace "$" with the actual number of **ESPF1**
 ```diskpart
-select volume <number>
+select volume $
 ```
 
 #### Unassign the letter Y
@@ -139,10 +182,44 @@ remove letter y
 exit
 ```
 
-### Boot into Windows
-Reboot your phone to boot back into Windows. If you end up in Android, use the WoA Helper app to switch to Windows. Make sure the UEFI in your UEFI folder is up to date.
+### Backing up boot images and flashing UEFI
 
-## Finished!
+#### Reboot your recovery
+> To remove the msc script
+- Reboot to recovery through TWRP, or run
+```cmd
+adb reboot recovery
+```
+
+#### Checking panel type
+> This should output either `dsi_ebbg_fhd_ft8719_video_display` or `dsi_tianma_fhd_nt36672a_video_display`
+```cmd
+adb shell dmesg | grep dsi_display_bind
+```
+
+#### Push the UEFI to your phone
+Download the UEFI for your panel, then drag and drop it to your phone
+
+#### Back up your Android boot image
+Use the TWRP backup feature to backup your Android boot image. Name this backup `Android`
+
+#### Flash the UEFI
+Use the TWRP install feature to flash the UEFI image to your boot partition. Select `install image`, then locate the image.
+
+#### Back up your Windows boot image
+Use the TWRP backup feature to backup your Windows boot image. Name this backup `Windows`
+
+#### Boot into Windows
+After having flashed the UEFI image, reboot your phone.
+
+### Setting up Windows
+> Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
+
+> [!Note]
+> To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
+
+## [Last step: Setting up dualboot](/guide/dualboot.md)
+
 
 
 
