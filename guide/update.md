@@ -6,8 +6,6 @@
 
 ### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
-
-- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
   
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
   
