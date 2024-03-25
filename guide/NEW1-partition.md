@@ -33,7 +33,7 @@ fastboot flash recovery path\to\twrp.img reboot recovery
 ```
 
 #### Run the partitioning script
-> Replace $ with the amount of storage you want Windows to have (do not add GB, just write the number)
+> Replace **$** with the amount of storage you want Windows to have (do not add GB, just write the number)
 > 
 > If it asks you to run it once again, do so
 ```cmd
@@ -43,8 +43,7 @@ adb shell partition $
 #### Check if Android still starts
 Just restart the phone, and see if Android still works
 
-
-## [Next step: Installing Windows](/guide/NEW2-install.md)
+## [Next step: Installing Windows](/guide/2-install.md)
 
 
 
