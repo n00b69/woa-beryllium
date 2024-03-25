@@ -10,7 +10,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Modded recovery image](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img)
+- [Modded recovery image](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/moddedtwrp.img)
 
 ### Notes
 > [!WARNING]  
