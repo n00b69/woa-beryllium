@@ -5,7 +5,6 @@
 ## Installing Windows
 
 ### Prerequisites
-
 - [Windows on ARM image](https://worproject.com/esd)
   
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
