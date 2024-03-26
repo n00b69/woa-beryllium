@@ -84,7 +84,7 @@ remove letter x
 exit
 ```
 
-##### Boot back into Windows
+#### Boot back into Windows
 > Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
 
 
