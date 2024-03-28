@@ -14,9 +14,9 @@
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 #### Boot to the UEFI
-> Replace **<path\to\polaris-uefi.img>** with the actual path of the UEFI image
+> Replace **<path\to\beryllium-uefi.img>** with the actual path of the UEFI image
 ```cmd
-fastboot boot <path\to\polaris-uefi.img>
+fastboot boot <path\to\beryllium-uefi.img>
 ```
 
 #### Enabling mass storage mode
