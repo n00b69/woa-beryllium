@@ -1,6 +1,5 @@
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-
 # Running Windows on the Xiaomi Pocophone F1
 
 ## Project Status
@@ -19,7 +18,7 @@ The project is in development. Expect some updates in the future.
 - [x] Display
 - [x] GPU  ```No x64 acceleration```
 - [ ] SD card ```Very unreliable```
-- [x] Touchscreen 
+- [x] Touchscreen ```Breaks after sleeping```
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
