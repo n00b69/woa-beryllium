@@ -13,11 +13,12 @@ The project is in development. Expect some updates in the future.
 - [x] Bluetooth
 - [x] Brightness 
 - [ ] Camera
-- [x] Cellular
+- [x] LTE
 - [x] Charging ```VERY slow```
 - [x] Display
 - [x] GPU  ```No x64 acceleration```
 - [ ] SD card ```Very unreliable```
+- [ ] SMS
 - [x] Touchscreen ```Breaks after sleeping```
 - [x] UFS
 - [x] USB
