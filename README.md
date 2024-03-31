@@ -16,6 +16,8 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Installation instructions](guide/1-partition.md)
 
+- [No PC installation instructions](guide/1-winpe.md)
+
 - [Troubleshooting](guide/troubleshooting.md)
 
 
