@@ -8,26 +8,23 @@
 
 - [Windows on ARM image](https://worproject.com/esd)
 
-
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-  
-- [Msc script](https://github.com/n00b69/woa-beryllium/releases/download/Files/msc.sh)
 
 - [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
-- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img) (should already be installed)
+- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-#### Boot to TWRP
-> If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
+### Boot to the UEFI
+> Replace **<path\to\beryllium-uefi.img>** with the actual path of the UEFI image
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot boot <path\to\beryllium-uefi.img>
 ```
 
-#### Running the msc script
-> Put msc.sh in the platform-tools folder, then run:
-```cmd
-adb push msc.sh / && adb shell sh msc.sh
-```
+#### Enabling mass storage mode
+> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
+- Select UEFI Boot Menu.
+- Select USB Attached SCSI (UAS) Storage.
+- Select Boot.
 
 ### Diskpart
 ```cmd
@@ -82,7 +79,7 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
 
-#### Installing Drivers
+### Installing Drivers
 > Extract the drivers folder from the archive, then run the following command, replacing`<path\to\drivers>` with the actual path of the drivers folder
 ```cmd
 dism /image:X:\ /add-driver /driver:<path\to\drivers> /recurse
