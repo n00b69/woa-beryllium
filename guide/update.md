@@ -8,24 +8,22 @@
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-  
-- [Msc script](https://github.com/n00b69/woa-beryllium/releases/download/Files/msc.sh)
 
 - [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
-- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img) (should already be installed)
+- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-#### Boot to TWRP
-> If Xiaomi has replaced your recovery back to stock, flash it again in fastboot with:
+### Boot to the UEFI
+> Replace **<path\to\beryllium-uefi.img>** with the actual path of the UEFI image
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot boot <path\to\beryllium-uefi.img>
 ```
 
-#### Running the msc script
-> Put msc.sh in the platform-tools folder, then run:
-```cmd
-adb push msc.sh / && adb shell sh msc.sh
-```
+#### Enabling mass storage mode
+> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
+- Select UEFI Boot Menu.
+- Select USB Attached SCSI (UAS) Storage.
+- Select Boot.
 
 ### Diskpart
 ```cmd
