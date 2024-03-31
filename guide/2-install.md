@@ -13,7 +13,7 @@
   
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-#### Boot to the UEFI
+### Boot to the UEFI
 > Replace **<path\to\beryllium-uefi.img>** with the actual path of the UEFI image
 ```cmd
 fastboot boot <path\to\beryllium-uefi.img>
