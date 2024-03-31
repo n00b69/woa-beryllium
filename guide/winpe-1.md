@@ -10,7 +10,7 @@
 
 
 
-## [Next step: Installing Windows](/guide/2-winpe.md)
+## [Next step: Installing Windows](/guide/winpe-2.md)
 
 
 
