@@ -5,3 +5,23 @@
 ## Partitioning your device without a PC
 
 ### Prerequisites
+-
+
+
+
+
+## [Next step: Installing Windows](/guide/2-winpe.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
