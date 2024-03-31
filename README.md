@@ -16,7 +16,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Installation instructions](guide/1-partition.md)
 
-- ~~[No PC installation instructions](guide/winpe-1.md)~~
+- ~~[No PC installation instructions](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)~~
 
 - [Troubleshooting](guide/troubleshooting.md)
 
@@ -58,7 +58,7 @@ src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/14238
 [<img alt="graphiks" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/136170061?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/graphiks)
 [<img alt="TAOCroatia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/34100820?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TAOcroatia)
 [<img alt="Kumar-Jy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20044626?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Kumar-Jy)
-
+[<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
 
 
 
