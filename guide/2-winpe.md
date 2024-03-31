@@ -5,3 +5,24 @@
 ## Installing Windows without a PC
 
 ### Prerequisites
+-
+
+
+
+
+
+
+## [Last step: Setting up dualboot](/guide/dualboot.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
