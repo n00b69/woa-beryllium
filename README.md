@@ -16,7 +16,7 @@ This project is in an early stage, all the files here have been contributed by o
 
 - [Installation instructions](guide/1-partition.md)
 
-- ~~[No PC installation instructions](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)~~
+- [No PC installation instructions](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
 
 - [Troubleshooting](guide/troubleshooting.md)
 
