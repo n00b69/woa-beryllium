@@ -141,7 +141,7 @@ exit
 ```
 
 ### Boot into Windows
-Reboot your phone. Flash the UEFI again using WOA Helper if you're rebooting back to Android.
+Reboot your phone. If you end up in Android instesd of Windows, flash the UEFI again using WOA Helper.
 
 #### Setting up Windows
 > Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
