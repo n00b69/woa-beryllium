@@ -21,9 +21,9 @@ fastboot boot <path\to\beryllium-uefi.img>
 
 #### Enabling mass storage mode
 > Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select UEFI Boot Menu.
-- Select USB Attached SCSI (UAS) Storage.
-- Select Boot.
+- Select **UEFI Boot Menu**.
+- Select **USB Attached SCSI (UAS) Storage**.
+- Press the **power** button twice to confirm.
 
 ### Diskpart
 ```cmd
@@ -59,28 +59,6 @@ exit
 
 #### Fixing touch
 > Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
-
-### Unassign disk letter
-> So that it doesn't stay there after disconnecting the device
-```cmd
-diskpart
-```
-
-#### Select the Windows volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
-```diskpart
-select volume $
-```
-
-#### Unassign the letter X
-```diskpart
-remove letter x
-```
-
-#### Exit diskpart
-```diskpart
-exit
-```
 
 #### Boot back into Windows
 > Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
