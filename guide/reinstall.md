@@ -48,17 +48,6 @@ select volume $
 assign letter x
 ```
 
-#### Select ESP volume
-> Replace $ with the actual number of **ESPF1**
-```cmd
-select volume $
-```
-
-#### Add letter to ESP
-```cmd
-assign letter y
-```
-
 #### Exit diskpart
 ```cmd
 exit
@@ -66,9 +55,6 @@ exit
 
 #### Formatting Windows
 > Go to Windows Exlorer > This PC and select **WINF1**. Right click and format as NTFS
-
-#### Formatting ESP
-> Go to Windows Exlorer > This PC and select **ESPF1**. Right click and format as fat32
 
 ### Installing Windows
 > Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
@@ -86,59 +72,6 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 
 #### Fixing touch
 > Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
-  
-#### Create Windows bootloader files
-```cmd
-bcdboot X:\Windows /s Y: /f UEFI
-```
-
-#### Enabling test signing
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
-```
-
-#### Disabling recovery
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
-```
-
-#### Disabling integrity checks
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
-```
-
-### Unassign disk letters
-> So that they don't stay there after disconnecting the device
-```cmd
-diskpart
-```
-
-#### Select the Windows volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
-```diskpart
-select volume $
-```
-
-#### Unassign the letter X
-```diskpart
-remove letter x
-```
-
-#### Select the ESP volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **ESPF1**
-```diskpart
-select volume $
-```
-
-#### Unassign the letter Y
-```diskpart
-remove letter y
-```
-
-#### Exit diskpart
-```diskpart
-exit
-```
 
 ### Boot into Windows
 Reboot your phone. If you end up in Android instesd of Windows, flash the UEFI again using WOA Helper.
