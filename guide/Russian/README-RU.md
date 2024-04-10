@@ -8,35 +8,35 @@
 [**English**](/README.md) | **Pусский** | ~[Polski](README-pl.md)~
 
 ## ⚠️ Предупреждение 
-We're not responsible for bricked devices, missing recovery partitions, dead xiaomi factoryline ~~workers~~ cowboys, dead pmics, dead sd cards, dead ram, dead sim cards, dead display ics, dead cpus, any xiaomi/poco shenanigans, exploding batteries, dead cats or dogs, nuclear wars or you getting fired because you forgot to boot back in to android for the alarm.
+Мы не несем ответственности за поврежденные устройства, отсутствующие разделы восстановления, неработающих ~сотрудников~ ковбоев xiaomi factoryline, неработающие pmic, неработающие sd-карты, неработающую оперативную память, неработающие sim-карты, неработающие микросхемы дисплея, неработающие процессоры, любые махинации Xiaomi/POCO, взрывающиеся батареи, мертвых кошек или собак, ядерные войны или вас увольняют из-за того, что вы забыли снова загрузиться в Android для подачи сигнала тревоги.
 
-This project is in an early stage, all the files here have been contributed by other users, here you will find a guide with the working files we managed to get. This is a delicate process, do it under your own risk and follow all the steps carefully.
+Этот проект находится на ранней стадии, все файлы представленные здесь были предоставлены другими пользователями, здесь вы найдете руководство с рабочими файлами которые нам удалось получить. Это деликатный процесс, выполняйте его на свой страх и риск и внимательно следуйте всем шагам!
 
-**IF YOU AREN'T COMFORTABLE MODDING YOUR PHONE OR ITS PARTITION TABLE OR YOU ARE PARANOID OF BRICKING YOUR DEVICE CLICK AWAY NOW!!! YOU HAVE BEEN WARNED, YOU ARE ON YOUR OWN IF YOU BRICK YOUR DEVICE!!! AGAIN! YOU HAVE BEEN WARNED!!!**
+**ЕСЛИ ВЫ НЕ ХОТИТЕ МОДИФИЦИРОВАТЬ СВОЙ ТЕЛЕФОН ИЛИ ЕГО ТАБЛИЦУ РАЗДЕЛОВ, ИЛИ ВЫ БОИТЕСЬ ОКИРПИЧИТЬ СВОЁ УСТРОЙСТВО, НЕМЕДЛЕННО ПРЕКРАТИТЕ ЧИТАТЬ!!! ВАС ПРЕДУПРЕДИЛИ, ЧТО ЕСЛИ ВЫ ОКИРПИЧИТЕ СВОЁ УСТРОЙСТВО ОТВЕТСТВЕННОСТЬ ЛЕЖИТ НА ВАС!!! ВАС ПРЕДУПРЕДИЛИ!!!**
 
 
 ## Начнём
-- [Project status](guide/status.md)
+- [Статус Проекта](/guide/status.md)
 
-- [Installation instructions](guide/1-partition.md)
+- [Установка](/guide/1-partition.md)
 
-- [No PC installation instructions](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
+- [~Установка без ПК~](/https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
 
-- [Troubleshooting](guide/troubleshooting.md)
+- [Исправление ошибок](/guide/troubleshooting.md)
 
 
 ## Прочее 
-- [Dualboot setup](guide/dualboot.md)
+- [Настройка двойной загрузки](/guide/dualboot.md)
 
-- [Additional materials](guide/materials.md)
+- [Полезные инструкции](/guide/materials.md)
 
-- [Update drivers](guide/update.md)
+- [Обновление Драйверов](/guide/update.md)
 
-- [Reinstall instructions](guide/reinstall.md)
+- [Переустановка](/guide/reinstall.md)
 
-- [Uninstall instructions](guide/uninstall.md)
+- [Инструкции по удалению](/guide/uninstall.md)
 
-## Contributors
+## Партнёры 
 [<img alt="adomerlee" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/109386069?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/adomerlee)
 [<img alt="Morc" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/13377926?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TheMorc)
 [<img alt="Icesito68" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/113939920?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Icesito68)
