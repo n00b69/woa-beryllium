@@ -1,42 +1,42 @@
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Running Windows on the Xiaomi Pocophone F1
+# Запуск Windows на Xiaomi Pocophone F1
 
-## Project Status
+## Статус проекта 
 
-The project is in development. Expect some updates in the future.
+Проект находится в стадии разработки. Ожидайте некоторых обновлений в будущем.
 
-#### Features
+#### Функции 
 
-- [X] Audio 
-- [X] Battery status
+- [X] Аудио 
+- [X] Статус Батареи
 - [x] Bluetooth
-- [x] Brightness 
-- [ ] Camera
+- [x] Яркость
+- [ ] Камера
 - [x] LTE
-- [x] Charging ```VERY slow```
-- [x] Display
-- [x] GPU  ```No x64 acceleration```
-- [ ] SD card ```Very unreliable```
-- [ ] SMS
-- [x] Touchscreen ```Breaks after sleeping```
+- [x] Зарядка ```ОЧЕНЬ медленно```
+- [x] Дисплей
+- [x] GPU  ```Нет ускорения x64```
+- [ ] SD карта ```Very unreliable```
+- [ ] СМС
+- [x] Touchscreen ```Ломается после спящего режима```
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
 
 #### Sensors
-- [x] Accelerometer
-- [ ] Fingerprint
+- [x] Акселерометр
+- [ ] Отпечаток пальца
 - [x] GPS
-- [x] Gyroscope
-- [ ] Light sensor
-- [x] Magnetometer
-- [ ] Proximity
+- [x] Гироскоп
+- [ ] Датчик освещенности
+- [x] Магнитометр
+- [ ] Датчик приближения 
 
-#### Security
+#### Безопасность 
 
-- [ ] Security Processor ```Impossible to get working, Xiaomi broke the firmware```
-- [ ] TPM (Software Backed)
+- [ ] Процессор обеспечения безопасности ```Невозможно заставить работать, Xiaomi сломали прошивку```
+- [ ] TPM (Поддерживаемое программное обеспечение)
 
 
 
