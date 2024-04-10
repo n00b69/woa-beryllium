@@ -2,61 +2,65 @@
 
 # Запуск Windows на Xiaomi Pocophone F1
 
-## Partitioning your device
+## Разметка устройства 
 
 ### Требования 
-- A brain (most important of all)
+- Мозг (самый важный из всех)
 
-- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+- [Android platform tools](https://developer.android.com/studio/releases/platform-tools)
   
 - [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img)
 
 - [Parted](https://github.com/n00b69/woa-beryllium/releases/download/Files/parted)
 
-### Notes
+### Заметки 
 > [!WARNING]  
-> Do not run the same command twice unless specified.
+> Не выполняйте одну и ту же команду дважды, если не указано иное.
 > 
-> DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnF1).
+> НЕ ПЕРЕЗАГРУЖАЙТЕ ТЕЛЕФОН! Если вы считаете, что допустили ошибку, обратитесь за помощью в [Telegram чате](https://t.me/WinOnF1).
 > 
-> Do not run all commands at once, execute them in order!
+> Не выполняйте все команды сразу, выполняйте их по порядку!
 >
-> YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
+> ВЫ МОЖЕТЕ СЛОМАТЬ СВОЕ УСТРОЙСТВО С ПОМОЩЬЮ ПРИВЕДЕННЫХ НИЖЕ КОМАНД, ЕСЛИ БУДЕТЕ ВЫПОЛНЯТЬ ИХ НЕПРАВИЛЬНО!!!
 
-#### Flash TWRP recovery
-> Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
+#### Прошейте TWRP recovery
+> Откройте окно CMD внутри папки platform-tools, затем (пока ваш телефон находится в режиме fastboot) выполните 
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot flash recovery "путь\к\twrp.img" reboot recovery
 ```
 
-#### Backing up important files
-Use TWRP now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
+```cmd
+fastboot reboot recovery
+```
+
+#### Сделайте резервное копирование важных файлов
+Теперь используйте TWRP для резервного копирования раздела modem и EFS (а также всего остального, если у вас есть важные данные). Переместите эту резервную копию в безопасное место (например, на ваш компьютер), так как последующие действия приведут к удалению ваших данных.
 
 > [!Warning]
-> All of your data will be erased. This is your last chance to back up.
+> Все ваши данные будут удалены. Это ваш последний шанс создать резервную копию.
 > 
-> **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
+> **ЕСЛИ ВЫ ПРОДОЛЖИТЕ РАБОТУ БЕЗ РЕЗЕРВНОГО КОПИРОВАНИЯ modem И EFS, ТО В СЛУЧАЕ НЕУДАЧИ ОТВЕТСТВЕННОСТЬ ЛЕЖИТ НА ВАС**
 
-### Partitioning guide
-> Your Pocophone F1 may have different storage sizes. This guide uses the values of the 128GB model as an example. When relevant, the guide will mention if other values can or should be used.
+### Руководство по разметке
+> Ваш Pocophone F1 может иметь разный объем памяти. В данном руководстве в качестве примера используются значения для модели емкостью 128 ГБ. При необходимости в руководстве будет указано, можно или нужно ли использовать другие значения.
 
-#### Unmount data
-- Go to "Mount" in TWRP and unmount data, if it is mounted
+#### Размантируйте data
+- Перейдите к `Монтировать` в TWRP и размонтируйте Data, если она смонтирована
 
-#### Preparing for partitioning
-> Download the parted file and move it in the platform-tools folder, then run
+#### Подгатовка к разметке 
+> Скачайте файл parted и переместите его в папку platform-tools, затем запустите
 ```cmd
 adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cache/parted /dev/block/sda
 ```
 
-#### Printing the current partition table
-> Parted will print the list of partitions, userdata should be the last partition in the list.
+#### Отобразить текущую таблицу разделов
+> Parted выведет список разделов, userdata должна быть последним разделом в списке.
 ```cmd
 print
 ```
 
-#### Removing userdata
-> Replace **$** with the number of the **userdata** partition, which should be **21**
+#### Удалите userdata
+> Замените `**$**` номером раздела `**userdata**`, должен быть `**21**`
 ```cmd
 rm $
 ```
