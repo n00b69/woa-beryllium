@@ -4,7 +4,7 @@
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/WinOnF1)
 
 ## Choose your language
-**English** | ~~[Pусский](/guide/Russian/README-ru.md)~~ | ~[Polski](README-pl.md)~
+**English** | ~~[Pусский](/guide/Russian/README-RU.md)~~ | ~[Polski](README-pl.md)~
 
 ## ⚠️ Warning
 We're not responsible for bricked devices, missing recovery partitions, dead xiaomi factoryline ~~workers~~ cowboys, dead pmics, dead sd cards, dead ram, dead sim cards, dead display ics, dead cpus, any xiaomi/poco shenanigans, exploding batteries, dead cats or dogs, nuclear wars or you getting fired because you forgot to boot back in to android for the alarm.
