@@ -59,53 +59,53 @@ adb push parted /cache/ && adb shell "chmod 755 /cache/parted" && adb shell /cac
 print
 ```
 
-#### Удалите userdata
+#### Удалить userdata
 > Замените **`$`** номером раздела **`userdata`**, должен быть **`21`**
 ```cmd
 rm $
 ```
 
-#### Recreating userdata
-> Replace **1611MB** with the former start value of **userdata** which we just deleted (it is probably 1611MB)
+#### Заново создать userdata
+> Замените **1611MB** с прежним начальным значением **userdata** which we just deleted (it is probably 1611MB)
 >
-> Replace **32GB** with the end value you want **userdata** to have
+> Замените **32GB** с конечным значением, которое вы хотите, чтобы **userdata** имела
 ```cmd
 mkpart userdata ext4 1611MB 32GB
 ```
 
-#### Creating ESP partition
-> Replace **32.16GB** with the end value of **userdata**
+#### Создать раздел ESP
+> Замените **32.16GB** с конечным значением **userdata**
 >
-> Replace **32.66GB** with the value you used before, adding **0.5GB** to it
+> Замените **32.66GB** тем значением, которое вы использовали ранее, добавив к нему **0,5 GB**
 ```cmd
 mkpart esp fat32 32.16GB 32.66GB
 ```
 
-#### Creating Windows partition
-> Replace **32.66GB** with the end value of **esp**
+#### Создать раздел Windows
+> Замените **32.66GB** с конечным значением **esp**
 >
-> Replace **123GB** with the end value of your disk, use `p free` to find it
+> Замените **123GB** на конечное значение вашего диска, используйте `p free`, чтобы найти его
 ```cmd
 mkpart win ntfs 32.66GB 123GB
 ```
 
-#### Making ESP bootable
-> Use `print` to see all partitions. Replace "$" with your ESP partition number, which should be 22
+#### Сделать ESP загрузочным
+> Используйте `print` чтобы отобразиь все разделы. Замените `$` с вашим номером раздела ESP, который должен быть 22
 ```cmd
 set $ esp on
 ```
 
-#### Exit parted
+#### Выйти из parted
 ```cmd
 quit
 ```
 
-#### Formatting data
-- Format all data in TWRP, or Android will not boot.
-- (Go to Wipe > Format data > type yes)
+#### Отформатировать data
+- Отформатируйте все данные в TWRP, иначе Android не загрузится.
+- (Перейдите к `Wipe` > `Format data` > напечатайте `yes`)
 
-#### Check if Android still starts
-- Just restart the phone, and see if Android still works
+#### Проверьте, запускается ли Android 
+- Просто перезагрузите телефон и посмотрите, загружается ли Android
 
 
-## [Next step: Installing Windows](/guide/2-install.md)
+## [Следующий шаг: Установка Windows](/guide/2-install.md)
