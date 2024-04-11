@@ -5,11 +5,25 @@
 ## Updating drivers
 
 ### Prerequisites
+- [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
+
+### Boot into Windows
+> Flash the UEFI image in fastboot or use the WOA Helper app
+
+### Installing Drivers
+> Unpack the driver archive on beryllium, then open the `OnlineUpdater.cmd` file
+
+> Follow any instructiona provided on the screen
+
+## Finished!
+
+## Method 2: PC required
+> This method is inferior to method 1, only use it if method 1 failed.
+
+### Prerequisites
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-
-- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
@@ -56,9 +70,6 @@ exit
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
 > Enter the drive letter of **WINF1**, which should be X, then press enter
-
-#### Fixing touch
-> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
 
 #### Boot back into Windows
 > Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
