@@ -108,4 +108,4 @@ quit
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
 
 
-## [Следующий шаг: Установка Windows](/guide/2-install.md)
+## [Следующий шаг: Установка Windows](/guide/Russian/2-install-ru.md)
