@@ -56,69 +56,69 @@ lis par
 sel par $
 ```
 
-#### Formatting Windows drive
+#### Отформатировать раздел Windows
 ```cmd
 format quick fs=ntfs label="WINF1"
 ```
 
-#### Add letter to Windows
+#### Добавить букву к разделу Windows
 ```cmd
-assign letter x
+assign letter X
 ```
 
-#### Selecting the ESP partition
-> Replace $ with the partition number of ESP (should be 22)
+#### Выбhfnm раздел ESP
+> Замените `$` номером раздела ESP (должен быть 22)
 ```cmd
 sel par $
 ```
 
-#### Formatting ESP drive
+#### Отформатировать раздел ESP
 ```cmd
 format quick fs=fat32 label="ESPF1"
 ```
 
-#### Add letter to ESP
+#### Добавьте букву к ESP
 ```cmd
-assign letter y
+assign letter Y
 ```
 
-#### Exit diskpart
+#### Выйти из diskpart
 ```cmd
 exit
 ```
 
-### Installing Windows
-> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
+### Установка Windows
+> Замените `<путь\к\install.esd>` актуальным путём к install.esd (он также может называться install.wim)
 ```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 ```
 
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:<путь\к\install.esd>`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
 
-### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+### Установка драйверов
+> Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
 
-> Enter the drive letter of **WINF1**, which should be X, then press enter
+> Введите букву диска **WINF1**, должна быть X, затем нажмите Enter
 
-#### Fixing touch
-> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
+#### Исправить touch
+> Запустите файл `touchfix.bat` от имени администратора, иначе сенсорное управление не будет работать при загрузке в Windows
   
-#### Create Windows bootloader files
+#### Создать файлы загрузчика Windows
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
 
-#### Enabling test signing
+#### Включение тестовой подписи
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
 ```
 
-#### Disabling recovery
+#### Выключение восстановления 
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 ```
 
-#### Disabling integrity checks
+#### Отключение проверки целостности
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
