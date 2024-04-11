@@ -146,24 +146,24 @@ remove letter x
 select volume $
 ```
 
-#### Unassign the letter Y
+#### Отвязать букву Y
 ```diskpart
 remove letter y
 ```
 
-#### Exit diskpart
+#### Выйти из diskpart
 ```diskpart
 exit
 ```
 
-#### Checking panel type
-> This should output either `dsi_ebbg_fhd_ft8719_video_display` or `dsi_tianma_fhd_nt36672a_video_display`
+#### Проверить тип дисплея 
+> Это должно отобразить `dsi_ebbg_fhd_ft8719_video_display` или `dsi_tianma_fhd_nt36672a_video_display`
 ```cmd
 adb shell dmesg | grep dsi_display_bind
 ```
-Remember your panel type (Tianma or EBBG), you will need this later
+Запомните тип вашей панели (Tianma или EBBG), это понадобится вам позже
 
-### Reboot to Android
-> To set up dualboot
+### Перезагрузка в Android
+> Чтобы настроить двойную загрузку
 
-## [Last step: Setting up dualboot](/guide/dualboot.md)
+## [Последний шаг: Настройка двойной загрузки](/guide/Russian/dualboot-ru.md)
