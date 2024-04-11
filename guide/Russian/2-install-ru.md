@@ -13,13 +13,13 @@
   
 - [образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-### Загрузитесь в UEFI
+### Загрузка в UEFI
 > Замените **<путь\к\beryllium-uefi.img>** с актуальным путём к образу UEFI
 ```cmd
 fastboot boot <путь\к\beryllium-uefi.img>
 ```
 
-#### Включить режим mass storage
+#### Включение режима mass storage
 > После загрузки в UEFI используйте кнопки регулировки громкости для навигации по меню и кнопку питания для подтверждения
 - Выберите **UEFI Boot Menu**.
 - Выберите **USB Attached SCSI (UAS) Storage**.
@@ -123,25 +123,25 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Unassign disk letters
-> So that they don't stay there after disconnecting the device
+### Отвязать буквы дисков
+> Чтобы они не остались после отключения устройства
 ```cmd
 diskpart
 ```
 
-#### Select the Windows volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
+#### Выбрать раздел Windows телефона
+> Используйте `list volume` чтобы найти его, замените `$` номером **WINF1**
 ```diskpart
 select volume $
 ```
 
-#### Unassign the letter X
+#### Отвязать букву X
 ```diskpart
 remove letter x
 ```
 
-#### Select the ESP volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **ESPF1**
+#### Выбрать раздел ESP телефна
+> Используйте `list volume` чтобы найти его, замените `$` номером **ESPF1**
 ```diskpart
 select volume $
 ```
