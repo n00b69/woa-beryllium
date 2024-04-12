@@ -21,9 +21,9 @@
 - Загрузите изображение UEFI для вашей панели и поместите его в папку с именем `UEFI` в вашем внутреннем хранилище.
 - Нажмите кнопку `Mount Windows` чтобы смонтировать Window в вашем внутреннем хранилище по адресу `/sdcard/Windows`
 > [!Important]
-> If `/sdcard/Windows` is empty, your rom does not support mounting and you will have to make a boot.img backup inside the app, then copy it manually to Windows once you boot to it (for example by uploading it somewhere and then downloading it while booted into Windows). The same applies to the STA files.
+> Если папка `/sdcard/Windows` ваше ПЗУ не поддерживает монтирование, и вам придётся создать резервную копию boot.img внутри приложения, а затем вручную скопировать её в Windows после загрузки (например, загрузив её куда-нибудь, а затем скачав после загрузки в Windows). То же самое относится и к файлам STA.
 >
-> Do the same thing if the folder is read-only.
+> Сделайте тоже самое если папка доступна только для чтения.
 - Создайте папку с именем `sta` в Windows и распакуйте два файла из файла `Switch to Android package` сдесь (файлы должны находится в `/sdcard/Windows/sta`
 
 - Вернитесь в приложение WOA Helper и нажмите кнопку `Quick boot`.
