@@ -28,7 +28,7 @@
 
 - [~Полезные инструкции~](/guide/Russian/materials-ru.md)
 
-- [~Обновление Драйверов~](/guide/Russian/update-ru.md)
+- [Обновление Драйверов](/guide/Russian/update-ru.md)
 
 - [~Переустановка~](/guide/Russian/reinstall-ru.md)
 
