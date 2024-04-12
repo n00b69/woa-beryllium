@@ -156,6 +156,9 @@ remove letter y
 exit
 ```
 
+### Перезагрузка в Android
+> Чтобы настроить двойную загрузку
+
 #### Проверить тип дисплея 
 > Это должно отобразить `dsi_ebbg_fhd_ft8719_video_display` или `dsi_tianma_fhd_nt36672a_video_display`
 ```cmd
@@ -163,7 +166,4 @@ adb shell dmesg | grep dsi_display_bind
 ```
 Запомните тип вашей панели (Tianma или EBBG), это понадобится вам позже
 
-### Перезагрузка в Android
-> Чтобы настроить двойную загрузку
-
-## [Последний шаг: Настройка двойной загрузки](/guide/Russian/dualboot-ru.md)
+## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)
