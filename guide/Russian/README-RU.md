@@ -20,7 +20,7 @@
 
 - ~~[Установка без ПК](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)~~ (not translated)
 
-- ~~[Исправление проблем](troubleshooting-ru.md)~~
+- [Исправление проблем](troubleshooting-ru.md)
 
 
 ## Прочее 
