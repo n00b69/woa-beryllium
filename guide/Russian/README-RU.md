@@ -1,41 +1,42 @@
+
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Running Windows on the Xiaomi Pocophone F1
+# Запуск Winows на Xiaomi Pocophone F1
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/WinOnF1)
 
-## Choose your language
-**`English`** | [`Pусский`](/guide/Russian/README-RU.md) | ~[`Polski`](README-pl.md)~
+## Выберите ваш язык 
+[`English`](/README.md) | **`Pусский`** | ~[`Polski`](README-pl.md)~
 
-## ⚠️ Warning
-We're not responsible for bricked devices, missing recovery partitions, dead xiaomi factoryline ~~workers~~ cowboys, dead pmics, dead sd cards, dead ram, dead sim cards, dead display ics, dead cpus, any xiaomi/poco shenanigans, exploding batteries, dead cats or dogs, nuclear wars or you getting fired because you forgot to boot back in to android for the alarm.
+## ⚠️ Предупреждение 
+Мы не несем ответственности за поврежденные устройства, отсутствующие разделы восстановления, неработающих ~сотрудников~ ковбоев xiaomi factoryline, неработающие pmic, неработающие sd-карты, неработающую оперативную память, неработающие sim-карты, неработающие микросхемы дисплея, неработающие процессоры, любые махинации Xiaomi/POCO, взрывающиеся батареи, мертвых кошек или собак, ядерные войны или вас увольняют из-за того, что вы забыли снова загрузиться в Android для подачи сигнала тревоги.
 
-This project is in an early stage, all the files here have been contributed by other users, here you will find a guide with the working files we managed to get. This is a delicate process, do it under your own risk and follow all the steps carefully.
+Этот проект находится на ранней стадии, все файлы представленные здесь были предоставлены другими пользователями, здесь вы найдете руководство с рабочими файлами которые нам удалось получить. Это деликатный процесс, выполняйте его на свой страх и риск и внимательно следуйте всем шагам!
 
-**IF YOU AREN'T COMFORTABLE MODDING YOUR PHONE OR ITS PARTITION TABLE OR YOU ARE PARANOID OF BRICKING YOUR DEVICE CLICK AWAY NOW!!! YOU HAVE BEEN WARNED, YOU ARE ON YOUR OWN IF YOU BRICK YOUR DEVICE!!! AGAIN! YOU HAVE BEEN WARNED!!!**
-
-
-## Get started
-- [Project status](guide/status.md)
-
-- [Installation instructions](guide/1-partition.md)
-
-- [No PC installation instructions](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
-
-- [Troubleshooting](guide/troubleshooting.md)
+**ЕСЛИ ВЫ НЕ ХОТИТЕ МОДИФИЦИРОВАТЬ СВОЙ ТЕЛЕФОН ИЛИ ЕГО ТАБЛИЦУ РАЗДЕЛОВ, ИЛИ ВЫ БОИТЕСЬ ОКИРПИЧИТЬ СВОЁ УСТРОЙСТВО, НЕМЕДЛЕННО ПРЕКРАТИТЕ ЧИТАТЬ!!! ВАС ПРЕДУПРЕДИЛИ, ЧТО ЕСЛИ ВЫ ОКИРПИЧИТЕ СВОЁ УСТРОЙСТВО ОТВЕТСТВЕННОСТЬ ЛЕЖИТ НА ВАС!!! ВАС ПРЕДУПРЕДИЛИ!!!**
 
 
-## Miscellaneous
-- [Dualboot setup](guide/dualboot.md)
+## Начнём
+- [Статус Проекта](/guide/Russian/status-ru.md)
 
-- [Additional materials](guide/materials.md)
+- [Установка](/guide/Russian/1-partition-ru.md)
 
-- [Update drivers](guide/update.md)
+- [~Установка без ПК~](/https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
 
-- [Reinstall instructions](guide/reinstall.md)
+- [~Исправление проблем~](/guide/Russian/troubleshooting-ru.md)
 
-- [Uninstall instructions](guide/uninstall.md)
 
-## Contributors
+## Прочее 
+- [Настройка двойной загрузки](/guide/Russian/dualboot-ru.md)
+
+- [~Полезные инструкции~](/guide/Russian/materials-ru.md)
+
+- [Обновление Драйверов](/guide/Russian/update-ru.md)
+
+- [Переустановка](/guide/Russian/reinstall-ru.md)
+
+- [Инструкции по удалению](/guide/Russian/uninstall-ru.md)
+
+## Партнёры 
 [<img alt="adomerlee" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/109386069?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/adomerlee)
 [<img alt="Morc" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/13377926?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TheMorc)
 [<img alt="Icesito68" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/113939920?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Icesito68)
@@ -62,21 +63,3 @@ src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/14238
 [<img alt="TAOCroatia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/34100820?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TAOcroatia)
 [<img alt="Kumar-Jy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20044626?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Kumar-Jy)
 [<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
