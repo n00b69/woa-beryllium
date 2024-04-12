@@ -31,16 +31,28 @@ fastboot boot <path\to\beryllium-uefi.img>
 diskpart
 ```
 
-### List device volumes
-> To print a list of all the connected volumes, run
+#### Finding your phone
+> This will list all connected disks
 ```cmd
-list volume
+lis dis
 ```
 
-#### Select Windows volume
-> Replace $ with the actual number of **WINF1**
+#### Selecting your phone
+> Replace $ with the actual number of your phone (it should be the last one)
 ```cmd
-select volume $
+sel dis $
+```
+
+#### Listing your phone's partitions
+> This will list your device's partitions
+```cmd
+lis par
+```
+
+#### Selecting the Windows partition
+> Replace $ with the partition number of Windows (should be 23)
+```cmd
+sel par $
 ```
 
 #### Add letter to Windows
