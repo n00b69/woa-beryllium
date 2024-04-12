@@ -157,15 +157,15 @@ remove letter y
 exit
 ```
 
+### Reboot to Android
+> To set up dualboot
+
 #### Checking panel type
 > This should output either `dsi_ebbg_fhd_ft8719_video_display` or `dsi_tianma_fhd_nt36672a_video_display`
 ```cmd
 adb shell dmesg | grep dsi_display_bind
 ```
 Remember your panel type (Tianma or EBBG), you will need this later
-
-### Reboot to Android
-> To set up dualboot
 
 ## [Last step: Setting up dualboot](/guide/dualboot.md)
 
