@@ -13,7 +13,6 @@
 
 - [Switch To Android пакет](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/beryllium-sta.zip)
 
-
 ## Руководство по двойной загрузке
 В этом руководстве предполагается, что у вас есть root-права, если это не так, пожалуйста, сначала следуйте [этому руководству](root-ru.md).
 
@@ -21,7 +20,7 @@
 - Загрузите и установите приложение WOA Helper, затем откройте его и предоставьте ему root-доступ.
 - Загрузите изображение UEFI для вашей панели и поместите его в папку с именем `UEFI` в вашем внутреннем хранилище.
 - Нажмите кнопку `Mount Windows` чтобы смонтировать Window в вашем внутреннем хранилище по адресу `/sdcard/Windows`
-  > [!Important]
+> [!Important]
 > If `/sdcard/Windows` is empty, your rom does not support mounting and you will have to make a boot.img backup inside the app, then copy it manually to Windows once you boot to it (for example by uploading it somewhere and then downloading it while booted into Windows). The same applies to the STA files.
 >
 > Do the same thing if the folder is read-only.
