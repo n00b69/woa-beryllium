@@ -1,4 +1,3 @@
-
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
 # Запуск Winows на Xiaomi Pocophone F1
@@ -13,7 +12,6 @@
 Этот проект находится на ранней стадии, все файлы представленные здесь были предоставлены другими пользователями, здесь вы найдете руководство с рабочими файлами которые нам удалось получить. Это деликатный процесс, выполняйте его на свой страх и риск и внимательно следуйте всем шагам!
 
 **ЕСЛИ ВЫ НЕ ХОТИТЕ МОДИФИЦИРОВАТЬ СВОЙ ТЕЛЕФОН ИЛИ ЕГО ТАБЛИЦУ РАЗДЕЛОВ, ИЛИ ВЫ БОИТЕСЬ ОКИРПИЧИТЬ СВОЁ УСТРОЙСТВО, НЕМЕДЛЕННО ПРЕКРАТИТЕ ЧИТАТЬ!!! ВАС ПРЕДУПРЕДИЛИ, ЧТО ЕСЛИ ВЫ ОКИРПИЧИТЕ СВОЁ УСТРОЙСТВО ОТВЕТСТВЕННОСТЬ ЛЕЖИТ НА ВАС!!! ВАС ПРЕДУПРЕДИЛИ!!!**
-
 
 ## Начнём
 - [Статус Проекта](/guide/Russian/status-ru.md)
@@ -63,3 +61,22 @@ src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/14238
 [<img alt="TAOCroatia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/34100820?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TAOcroatia)
 [<img alt="Kumar-Jy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20044626?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Kumar-Jy)
 [<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
+[<img alt="Misha803" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/118528504?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Misha803)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
