@@ -20,7 +20,7 @@
 
 - [Установка](/guide/Russian/1-partition-ru.md)
 
-- [~Установка без ПК~](/https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
+- [~Установка без ПК~](https://github.com/Kumar-Jy/woaPocoF1-withoutPC) (not translated)
 
 - [~Исправление проблем~](/guide/Russian/troubleshooting-ru.md)
 
