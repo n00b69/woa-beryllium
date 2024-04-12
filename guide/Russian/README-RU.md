@@ -16,25 +16,25 @@
 
 
 ## Начнём
-- [Статус Проекта](/guide/status.md)
+- [Статус Проекта](/guide/Russian/status-ru.md)
 
-- [Установка](/guide/1-partition.md)
+- [Установка](/guide/Russian/1-partition-ru.md)
 
 - [~Установка без ПК~](/https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
 
-- [Исправление ошибок](/guide/troubleshooting.md)
+- [~Исправление проблем~](/guide/Russian/troubleshooting-ru.md)
 
 
 ## Прочее 
-- [Настройка двойной загрузки](/guide/dualboot.md)
+- [Настройка двойной загрузки](/guide/Russian/dualboot-ru.md)
 
-- [Полезные инструкции](/guide/materials.md)
+- [~Полезные инструкции~](/guide/Russian/materials-ru.md)
 
-- [Обновление Драйверов](/guide/update.md)
+- [Обновление Драйверов](/guide/Russian/update-ru.md)
 
-- [Переустановка](/guide/reinstall.md)
+- [Переустановка](/guide/Russian/reinstall-ru.md)
 
-- [Инструкции по удалению](/guide/uninstall.md)
+- [Инструкции по удалению](/guide/Russian/uninstall-ru.md)
 
 ## Партнёры 
 [<img alt="adomerlee" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/109386069?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/adomerlee)
