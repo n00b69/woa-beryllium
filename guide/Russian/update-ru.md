@@ -53,14 +53,14 @@ exit
 ```
 
 ### Установка драйверов 
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+> Распакуйте архив с драйверами, затем откройте файл `OfflineUpdater.cmd`
 
-> Enter the drive letter of **WINF1**, which should be X, then press enter
+> Введите букву диска **WINF1**, должна быть X, затем нажмите enter
 
-#### Fixing touch
-> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
+#### Исправить touch
+> Запустите файл `touchfix.bat` от имени администратора, иначе сенсорное управление не будет работать при загрузке в Windows
 
-#### Boot back into Windows
+#### Загрузка обратно в 
 > Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
 
 
