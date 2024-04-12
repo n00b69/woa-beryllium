@@ -1,6 +1,5 @@
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-
 # Running Windows on the Xiaomi Pocophone F1
 
 ## Troubleshooting Issues
@@ -12,8 +11,14 @@ Reboot your device. This issue seems to not have a fix.
 ##### Finished!
 
 ## Cannot mount Windows in Android
-> This is caused when you shut down Windows instead of restarting it.
+If mounting Windows produces an empty folder, you either don't have Windows installed, or your rom does not have mount support.
+
+##### Finished!
+
+## Cannot write to Windows in Android
+> This is caused by shutting down Windows instead of restarting it.
 - To solve this, boot to Windows and then press "restart", then as the screen shuts off boot to TWRP and from there load up Android.
+- Or, disable hibernation in Windows. 
 > Alternatively, if you have already set up the Switch to Android app, simply use this to switch to Android.
 
 ##### Finished!
