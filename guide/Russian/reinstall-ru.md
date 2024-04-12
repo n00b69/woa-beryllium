@@ -31,16 +31,28 @@ fastboot boot <path\to\beryllium-uefi.img>
 diskpart
 ```
 
-### List device volumes
-> To print a list of all the connected volumes, run
+#### Finding your phone
+> This will list all connected disks
 ```cmd
-list volume
+lis dis
 ```
 
-#### Select Windows volume
-> Replace $ with the actual number of **WINF1**
+#### Selecting your phone
+> Replace $ with the actual number of your phone (it should be the last one)
 ```cmd
-select volume $
+sel dis $
+```
+
+#### Listing your phone's partitions
+> This will list your device's partitions
+```cmd
+lis par
+```
+
+#### Selecting the Windows partition
+> Replace $ with the partition number of Windows (should be 23)
+```cmd
+sel par $
 ```
 
 #### Add letter to Windows
@@ -54,7 +66,7 @@ exit
 ```
 
 #### Formatting Windows
-> Go to Windows Exlorer > This PC and select **WINF1**. Right click and format as NTFS.
+> Go to Windows Explorer > This PC and select **WINF1**. Right click and format as NTFS.
 
 ### Installing Windows
 > Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
@@ -83,3 +95,18 @@ Reboot your phone. If you end up in Android instead of Windows, flash the UEFI a
 > To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
 
 ## Finished!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
