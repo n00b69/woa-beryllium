@@ -5,11 +5,6 @@
 ## Troubleshooting Issues
 > Below you will find a list of common problems and their solutions
 
-## Touch does not work after sleep
-Reboot your device. This issue seems to not have a fix.
-
-##### Finished!
-
 ## Cannot mount Windows in Android
 If mounting Windows produces an empty folder, you either don't have Windows installed, or your rom does not have mount support.
 
