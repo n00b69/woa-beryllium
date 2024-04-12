@@ -13,8 +13,8 @@
 ## Не удается выполнить запись в Windows из Android
 > Это вызвано выключением Windows вместо её перезапуска.
 - Чтобы решить эту проблему, загрузитесь в Windows и затем нажмите "перезагрузка", затем, когда экран выключится, загрузитесь в TWRP и оттуда загрузите Android.
-- Или, отключите режим гибернации в Windows используя [этот]() скрипт 
-> Alternatively, if you have already set up the Switch to Android app, simply use this to switch to Android.
+- Или, отключите режим гибернации в Windows используя [этот](https://github.com/n00b69/woa-beryllium/releases/tag/1.0) скрипт 
+> В качестве альтернативы, если вы уже настроили приложение Switch to Android, просто используйте его для переключения на Android.
 
 ##### Готово!
 
@@ -23,23 +23,23 @@
 
 ##### Готово!
 
-## DISM Error:87 The add-driver option is unkown
-This usually means that you have an unclean Windows image with some other drivers. You need to get a clean Windows image (which means you didn't follow instructions).
+## DISM Ошибка:87 The add-driver option is unkown
+Обычно это означает, что у вас поврежден образ Windows с некоторыми другими драйверами. Вам необходимо получить чистый образ Windows (что означает, что вы не следовали инструкциям).
 
-##### Finished!
+##### Готово!
 
 ## 0xc000021a BSOD
-This usually means that winlogon.exe has failed, and you may need to reapply the Windows image.
+Обычно это означает, что произошел сбой winlogon.exe, и вам, возможно, потребуется повторно применить образ Windows.
 
-##### Finished!
+##### Готово!
 
-## The computer restarted unexpectedly or encountered an unexpected error
-If you stumble upon this error, you may need to redeploy the Windows image. Use the [reinstall guide](reinstall.md) for this.
+## Компьютер неожиданно перезагрузился или возникла непредвиденная ошибка
+Если вы столкнётесь с этой проблемой, возможно, вам потребуется повторно развернуть образ Windows. Для этого воспользуйтесь [руководством по переустановке](reinstall-ru.md).
 
-##### Finished!
+##### Готово!
 
 ## INACCESSIBLE_BOOT_DEVICE BSOD
-This Blue Screen of Death likely means some broken driver installation. To fix this, reinstall the drivers using the [reinstall guide](reinstall.md).
+Этот синий экран смерти, вероятно, означает сбой в установке какого-либо драйвера. Чтобы исправить это, переустановите драйверы, используя [руководство по переустановке драйверов](update-ru.md).
 
-##### Finished!
+##### готово!
 
