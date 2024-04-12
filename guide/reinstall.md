@@ -54,7 +54,7 @@ exit
 ```
 
 #### Formatting Windows
-> Go to Windows Exlorer > This PC and select **WINF1**. Right click and format as NTFS.
+> Go to Windows Explorer > This PC and select **WINF1**. Right click and format as NTFS.
 
 ### Installing Windows
 > Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
