@@ -26,7 +26,11 @@
 #### Прошейте TWRP recovery
 > Откройте окно CMD внутри папки platform-tools, затем (пока ваш телефон находится в режиме fastboot) выполните 
 ```cmd
-fastboot flash recovery путь\к\twrp.img reboot recovery
+fastboot flash recovery "путь\к\twrp.img"
+```
+
+```cmd
+fastboot reboot recovery
 ```
 
 #### Сделайте резервное копирование важных файлов
