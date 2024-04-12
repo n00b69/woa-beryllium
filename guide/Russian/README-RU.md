@@ -4,7 +4,7 @@
 [![telegram](https://img.shields.io/badge/chat-telegram-brightgreen.svg?logo=telegram&style=flat-square)](https://t.me/WinOnF1)
 
 ## Выберите ваш язык 
-[`English`](/README.md) | **`Pусский`** | ~[`Polski`](README-pl.md)~
+[`English`](/README.md) | **Pусский** | ~~[`Polski`](/guide/Polski/README-pl.md)~~
 
 ## ⚠️ Предупреждение 
 Мы не несем ответственности за поврежденные устройства, отсутствующие разделы восстановления, неработающих ~сотрудников~ ковбоев xiaomi factoryline, неработающие pmic, неработающие sd-карты, неработающую оперативную память, неработающие sim-карты, неработающие микросхемы дисплея, неработающие процессоры, любые махинации Xiaomi/POCO, взрывающиеся батареи, мертвых кошек или собак, ядерные войны или вас увольняют из-за того, что вы забыли снова загрузиться в Android для подачи сигнала тревоги.
@@ -14,25 +14,25 @@
 **ЕСЛИ ВЫ НЕ ХОТИТЕ МОДИФИЦИРОВАТЬ СВОЙ ТЕЛЕФОН ИЛИ ЕГО ТАБЛИЦУ РАЗДЕЛОВ, ИЛИ ВЫ БОИТЕСЬ ОКИРПИЧИТЬ СВОЁ УСТРОЙСТВО, НЕМЕДЛЕННО ПРЕКРАТИТЕ ЧИТАТЬ!!! ВАС ПРЕДУПРЕДИЛИ, ЧТО ЕСЛИ ВЫ ОКИРПИЧИТЕ СВОЁ УСТРОЙСТВО ОТВЕТСТВЕННОСТЬ ЛЕЖИТ НА ВАС!!! ВАС ПРЕДУПРЕДИЛИ!!!**
 
 ## Начнём
-- [Статус Проекта](/guide/Russian/status-ru.md)
+- [Статус Проекта](status-ru.md)
 
-- [Установка](/guide/Russian/1-partition-ru.md)
+- [Установка](1-partition-ru.md)
 
-- [~Установка без ПК~](https://github.com/Kumar-Jy/woaPocoF1-withoutPC) (not translated)
+- ~~[Установка без ПК](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)~~ (not translated)
 
-- [~Исправление проблем~](/guide/Russian/troubleshooting-ru.md)
+- ~~[Исправление проблем](troubleshooting-ru.md)~~
 
 
 ## Прочее 
-- [Настройка двойной загрузки](/guide/Russian/dualboot-ru.md)
+- [Настройка двойной загрузки](dualboot-ru.md)
 
-- [~Полезные инструкции~](/guide/Russian/materials-ru.md)
+- ~~[Полезные инструкции](materials-ru.md)~~
 
-- [Обновление Драйверов](/guide/Russian/update-ru.md)
+- [Обновление Драйверов](update-ru.md)
 
-- [~Переустановка~](/guide/Russian/reinstall-ru.md)
+- ~~[Переустановка](reinstall-ru.md)~~
 
-- [Инструкции по удалению](/guide/Russian/uninstall-ru.md)
+- [Инструкции по удалению](uninstall-ru.md)
 
 ## Партнёры 
 [<img alt="adomerlee" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/109386069?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/adomerlee)
@@ -61,6 +61,7 @@ src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/14238
 [<img alt="TAOCroatia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/34100820?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TAOcroatia)
 [<img alt="Kumar-Jy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20044626?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Kumar-Jy)
 [<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
+[<img alt="TrustedFloppa" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/85476585?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TrustedFloppa)
 [<img alt="Misha803" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/118528504?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Misha803)
 
 
