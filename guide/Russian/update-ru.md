@@ -60,8 +60,8 @@ exit
 #### Исправить touch
 > Запустите файл `touchfix.bat` от имени администратора, иначе сенсорное управление не будет работать при загрузке в Windows
 
-#### Загрузка обратно в 
-> Reboot your device to boot back into Windows. If this boots you to Android, reflash the UEFI image through fastboot or by using the WOA Helper app
+#### Загрузка обратно в Windows
+> Перезагрузите устройство, чтобы снова загрузиться в Windows. Если после этого планшет загрузится в Android, перепрошейте образ UEFI с помощью fastboot или с помощью приложения WOA Helper
 
 
-## Finished!
+## Готово!
