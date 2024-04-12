@@ -1,32 +1,27 @@
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Running Windows on the Xiaomi Pocophone F1
+# Запуск Windows на Xiaomi Pocophone F1
 
-## Troubleshooting Issues
-> Below you will find a list of common problems and their solutions
+## Исправление Проблем 
+> Ниже вы найдете список распространенных проблем и путей их решения
 
-## Touch does not work after sleep
-Reboot your device. This issue seems to not have a fix.
+## Не удается смонтировать Windows в Android
+Если при монтировании Windows образуется пустая папка, значит у вас не установлена Windows, либо в вашем ПЗУ нет поддержки монтирования.
 
-##### Finished!
+##### Готово!
 
-## Cannot mount Windows in Android
-If mounting Windows produces an empty folder, you either don't have Windows installed, or your rom does not have mount support.
-
-##### Finished!
-
-## Cannot write to Windows in Android
-> This is caused by shutting down Windows instead of restarting it.
-- To solve this, boot to Windows and then press "restart", then as the screen shuts off boot to TWRP and from there load up Android.
-- Or, disable hibernation in Windows. 
+## Не удается выполнить запись в Windows из Android
+> Это вызвано выключением Windows вместо её перезапуска.
+- Чтобы решить эту проблему, загрузитесь в Windows и затем нажмите "перезагрузка", затем, когда экран выключится, загрузитесь в TWRP и оттуда загрузите Android.
+- Или, отключите режим гибернации в Windows используя [этот]() скрипт 
 > Alternatively, if you have already set up the Switch to Android app, simply use this to switch to Android.
 
-##### Finished!
+##### Готово!
 
-## USB does not work
-Enable USB host mode using the optional [post install guide](postinstall.md).
+## USB не работает 
+Включите режим USB хост ипользуя инструкцию на странице [полезные приложения и инструкции](additional-materials-ru.md).
 
-##### Finished!
+##### Готово!
 
 ## DISM Error:87 The add-driver option is unkown
 This usually means that you have an unclean Windows image with some other drivers. You need to get a clean Windows image (which means you didn't follow instructions).
@@ -47,17 +42,4 @@ If you stumble upon this error, you may need to redeploy the Windows image. Use 
 This Blue Screen of Death likely means some broken driver installation. To fix this, reinstall the drivers using the [reinstall guide](reinstall.md).
 
 ##### Finished!
-
-
-
-
-
-
-
-
-
-
-
-
-
 
