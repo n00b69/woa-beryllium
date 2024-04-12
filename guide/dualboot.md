@@ -13,7 +13,6 @@
 
 - [Switch To Android package](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/beryllium-sta.zip)
 
-
 ## Dualboot guide
 This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
 
@@ -21,9 +20,11 @@ This guide assumes you are rooted, if you aren't, please follow [this guide](roo
 - Download and install the WOA Helper app, then open it and grant it root access.
 - Download the UEFI image for your panel and place it inside the folder named `UEFI` in your internal storage.
 - Press the `Mount Windows` button to mount Windows to your internal storage at `/sdcard/Windows`
+> [!Important]
+> If `/sdcard/Windows` is empty, your rom does not support mounting and you will have to make a boot.img backup inside the app, then copy it manually to Windows once you boot to it (for example by uploading it somewhere and then downloading it while booted into Windows). The same applies to the STA files.
+>
+> Do the same thing if the folder is read-only.
 - Create a folder called `sta` in Windows and unpack the two files in the `Switch to Android package` file here (the files should go to `/sdcard/Windows/sta`
-> [!Note]
-> If the above step fails, press `flash UEFI` instead, then reboot to boot to Windows, press restart in Windows, then as it is restarting boot back to recovery to flash your Android boot.img located in your internal storage, and try again.
 - Return to the WOA Helper app and press the `Quickboot` button.
 
 ### Setup - Windows
