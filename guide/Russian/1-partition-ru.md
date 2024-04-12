@@ -26,7 +26,7 @@
 #### Прошейте TWRP recovery
 > Откройте окно CMD внутри папки platform-tools, затем (пока ваш телефон находится в режиме fastboot) выполните 
 ```cmd
-fastboot flash recovery "путь\к\twrp.img" reboot recovery
+fastboot flash recovery путь\к\twrp.img reboot recovery
 ```
 
 #### Сделайте резервное копирование важных файлов
@@ -104,4 +104,4 @@ quit
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
 
 
-## [Следующий шаг: Установка Windows](/guide/Russian/2-install-ru.md)
+## [Следующий шаг: Установка Windows](2-install-ru.md)
