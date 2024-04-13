@@ -1,66 +1,65 @@
 <img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Running Windows on the Xiaomi Pocophone F1
+# Запуск Windows на Xiaomi Pocophone F1
 
 ## Reinstalling Windows
 
-### Prerequisites
-
-- [Windows on ARM image](https://worproject.com/esd)
-
-- [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-
-- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
+### Требования
+- [ARM образ Windows](https://worproject.com/esd)
   
-- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+- [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
-### Boot to the UEFI
-> Replace **<path\to\beryllium-uefi.img>** with the actual path of the UEFI image
+- [Скрипт исправления touch](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
+  
+- [образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+
+### Загрузка в UEFI
+> Замените **<путь\к\beryllium-uefi.img>** с актуальным путём к образу UEFI
 ```cmd
-fastboot boot <path\to\beryllium-uefi.img>
+fastboot boot <путь\к\beryllium-uefi.img>
 ```
 
-#### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
+#### Включение режима mass storage
+> После загрузки в UEFI используйте кнопки регулировки громкости для навигации по меню и кнопку питания для подтверждения
+- Выберите **UEFI Boot Menu**.
+- Выберите **USB Attached SCSI (UAS) Storage**.
+- Нажмите кнопку **питания** дважды чтобы подтвердить.
 
 ### Diskpart
 ```cmd
 diskpart
 ```
 
-#### Finding your phone
-> This will list all connected disks
+#### Найдите ваш телефон
+> При этом отобразится список всех подключенных дисков
 ```cmd
 lis dis
 ```
 
-#### Selecting your phone
-> Replace $ with the actual number of your phone (it should be the last one)
+#### Выберите ваш телефон
+> Замените `$` актуальным номером вашего телефона (должен быть последним)
 ```cmd
 sel dis $
 ```
 
-#### Listing your phone's partitions
-> This will list your device's partitions
+#### Отобразить список разделов вашего телефона
+> Это отобразит список разделов вашего телефона 
 ```cmd
 lis par
 ```
 
-#### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 23)
+#### Выбрать раздел Windows 
+> Замените `$` номером раздела Windows (должен быть 23)
 ```cmd
 sel par $
 ```
 
-#### Add letter to Windows
+#### Добавить букву к разделу Windows
 ```cmd
-assign letter x
+assign letter X
 ```
 
-#### Exit diskpart
+#### Выйти из diskpart
 ```cmd
 exit
 ```
@@ -68,22 +67,21 @@ exit
 #### Formatting Windows
 > Go to Windows Explorer > This PC and select **WINF1**. Right click and format as NTFS.
 
-### Installing Windows
-> Replace `<path\to\install.esd>` with the actual path of install.esd (it may also be named install.wim)
-
+### Установка Windows
+> Замените `<путь\к\install.esd>` актуальным путём к install.esd (он также может называться install.wim)
 ```cmd
-dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 ```
 
-> If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:<path\to\install.esd>`, then replace `index:6` with the actual index number of Windows 11 Pro in your image
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:<путь\к\install.esd>`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
 
-### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file
+### Установка драйверов
+> Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
 
-> Enter the drive letter of **WINF1**, which should be X, then press enter
+> Введите букву диска **WINF1**, должна быть X, затем нажмите Enter
 
-#### Fixing touch
-> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
+#### Исправить touch
+> Запустите файл `touchfix.bat` от имени администратора, иначе сенсорное управление не будет работать при загрузке в Windows
 
 ### Boot into Windows
 Reboot your phone. If you end up in Android instead of Windows, flash the UEFI again using WOA Helper.
@@ -95,6 +93,9 @@ Reboot your phone. If you end up in Android instead of Windows, flash the UEFI a
 > To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
 
 ## Finished!
+
+
+
 
 
 
