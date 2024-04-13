@@ -7,7 +7,7 @@
 ### Требования 
 - Мозг (самый важный из всех)
 
-- [Android platform tools](https://developer.android.com/studio/releases/platform-tools)
+- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
 - [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img)
 
@@ -26,11 +26,7 @@
 #### Прошейте TWRP recovery
 > Откройте окно CMD внутри папки platform-tools, затем (пока ваш телефон находится в режиме fastboot) выполните 
 ```cmd
-fastboot flash recovery "путь\к\twrp.img"
-```
-
-```cmd
-fastboot reboot recovery
+fastboot flash recovery путь\к\twrp.img reboot recovery"
 ```
 
 #### Сделайте резервное копирование важных файлов
@@ -76,7 +72,7 @@ mkpart userdata ext4 1611MB 32GB
 #### Создать раздел ESP
 > Замените **32.16GB** с конечным значением **userdata**
 >
-> Замените **32.66GB** тем значением, которое вы использовали ранее, добавив к нему **0,5 GB**
+> Замените **32.66GB** тем значением, которое вы использовали ранее, добавив к нему **0.5 GB**
 ```cmd
 mkpart esp fat32 32.16GB 32.66GB
 ```
@@ -109,3 +105,13 @@ quit
 
 
 ## [Следующий шаг: Установка Windows](2-install-ru.md)
+
+
+
+
+
+
+
+
+
+
