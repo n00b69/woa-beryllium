@@ -11,7 +11,7 @@
 
 - [Скрипт исправления touch](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
-- [образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+- [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 ### Загрузка в UEFI
 > Замените **<путь\к\beryllium-uefi.img>** с актуальным путём к образу UEFI
