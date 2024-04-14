@@ -92,7 +92,7 @@ Reboot your phone. If you end up in Android instead of Windows, flash the UEFI a
 > [!Note]
 > To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
 
-## Finished!
+## Готово!
 
 
 
