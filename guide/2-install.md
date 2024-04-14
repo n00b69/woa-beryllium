@@ -99,7 +99,9 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Installing Drivers
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
-> Enter the drive letter of **WINF1**, which should be X, then press enter
+> If it asks you to enter a letter, enter the drive letter of **WINF1**, which should be X, then press enter
+
+> If any errors appear under **Installing App Packages**, ignore them and continue
 
 #### Fixing touch
 > Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
