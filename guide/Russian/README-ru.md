@@ -30,7 +30,7 @@
 
 - [Обновление Драйверов](update-ru.md)
 
-- ~~[Переустановка](reinstall-ru.md)~~
+- [Переустановка](reinstall-ru.md)
 
 - [Инструкции по удалению](uninstall-ru.md)
 
