@@ -64,8 +64,8 @@ assign letter X
 exit
 ```
 
-#### Formatting Windows
-> Go to Windows Explorer > This PC and select **WINF1**. Right click and format as NTFS.
+#### Форматирование Windows 
+> Перейдите в Проводник Windows > Этот компьютер и выберите **WIN F1**. Щелкните правой кнопкой мыши и отформатируйте как NTFS.
 
 ### Установка Windows
 > Замените `<путь\к\install.esd>` актуальным путём к install.esd (он также может называться install.wim)
@@ -83,14 +83,14 @@ dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 #### Исправить touch
 > Запустите файл `touchfix.bat` от имени администратора, иначе сенсорное управление не будет работать при загрузке в Windows
 
-### Boot into Windows
-Reboot your phone. If you end up in Android instead of Windows, flash the UEFI again using WOA Helper.
+### Загрузка в Windows
+Перезагрузите телефон. Если в итоге он загрузится в Android, а не на Windows, перепрошейте UEFI заново с помощью WOA Helper.
 
-#### Setting up Windows
-> Your device will now set up Windows. This will take some time. It will eventually reboot, and after that the initial setup (oobe) should launch.
+#### Настройка Windows
+> Сейчас Windows на вашем устройстве настроится. Это займет некоторое время. В конечном итоге оно перезагрузится, и после этого должна запуститься программа начальной установки (oobe).
 
 > [!Note]
-> To skip the Microsoft Account login, use "g" for the email and password. Windows will then let you make a local account
+> Чтобы не входить в учетную запись Майкрософт, введите "g" в качестве адреса электронной почты и пароля. После этого Windows позволит вам создать локальную учетную запись
 
 ## Готово!
 
