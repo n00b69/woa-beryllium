@@ -11,7 +11,7 @@
 
 - [WOA Helper app](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
-- [Switch To Android package](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/beryllium-sta.zip)
+- [Switch To Android package](https://github.com/n00b69/woa-beryllium/releases/download/Files/beryllium-sta.zip)
 
 ## Dualboot guide
 This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
