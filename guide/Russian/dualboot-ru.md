@@ -11,7 +11,7 @@
 
 - [Приложение WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
-- [Switch To Android пакет](https://github.com/n00b69/woa-beryllium/releases/download/Dualboot/beryllium-sta.zip)
+- [Switch To Android пакет](https://github.com/n00b69/woa-beryllium/releases/download/Files/beryllium-sta.zip)
 
 ## Руководство по двойной загрузке
 В этом руководстве предполагается, что у вас есть root-права, если это не так, пожалуйста, сначала следуйте [этому руководству](root-ru.md).
