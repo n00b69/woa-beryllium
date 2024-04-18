@@ -5,7 +5,7 @@
 ## Переустановка Windows
 
 ### Требования
-- [ARM образ Windows](https://worproject.com/esd)
+- [образ ARM Windows](https://worproject.com/esd)
   
 - [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
@@ -13,7 +13,7 @@
   
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-### Загрузка в UEFI
+### Загрузитесь в UEFI
 > Замените **<путь\к\beryllium-uefi.img>** с актуальным путём к образу UEFI
 ```cmd
 fastboot boot <путь\к\beryllium-uefi.img>
@@ -36,39 +36,39 @@ diskpart
 lis dis
 ```
 
-#### Выберите ваш телефон
-> Замените `$` актуальным номером вашего телефона (должен быть последним)
+#### Выберите диск вашего телефона
+> Замените `$` актуальным номером диска вашего телефона (должен быть последним)
 ```cmd
 sel dis $
 ```
 
-#### Отобразить список разделов вашего телефона
+#### Отобразите список разделов вашего телефона
 > Это отобразит список разделов вашего телефона 
 ```cmd
 lis par
 ```
 
-#### Выбрать раздел Windows 
+#### Выберите раздел Windows 
 > Замените `$` номером раздела Windows (должен быть 23)
 ```cmd
 sel par $
 ```
 
-#### Добавить букву к разделу Windows
+#### Добавьте букву к разделу Windows
 ```cmd
 assign letter X
 ```
 
-#### Выйти из diskpart
+#### Выйдите из diskpart
 ```cmd
 exit
 ```
 
-#### Форматирование Windows 
+#### Отформатируйте раздел Windows
 > Перейдите в Проводник Windows > Этот компьютер и выберите **WIN F1**. Щелкните правой кнопкой мыши и отформатируйте как NTFS.
 
 ### Установка Windows
-> Замените `<путь\к\install.esd>` актуальным путём к install.esd (он также может называться install.wim)
+> Замените `<путь\к\install.esd>` актуальным путём к install.esd (файл также может называться install.wim)
 ```cmd
 dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 ```
@@ -78,7 +78,7 @@ dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 ### Установка драйверов
 > Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
 
-> Введите букву диска **WINF1**, должна быть X, затем нажмите Enter
+> Введите букву диска **WINF1** (должна быть X) затем нажмите Enter
 
 #### Исправить touch
 > Запустите файл `touchfix.bat` от имени администратора, иначе сенсорное управление не будет работать при загрузке в Windows
