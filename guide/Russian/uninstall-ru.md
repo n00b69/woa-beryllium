@@ -7,7 +7,7 @@
 ### Зачем это нужно?
 Если вы хотите удалить Windows, этот гайд используется вместо удаления разделов вручную, чтобы избежать ошибки + написания целого специального руководства по просто деинсталляции.
 
-If you want to relock your bootloader you'll need your partition table to be stock.
+Если вы хотите заблокировать ваш загрузчик, ваша таблица разделов должна быть стоковой!
 
 ### Требования
 - [Android platform tools](https://developer.android.com/studio/releases/platform-tools)
@@ -20,7 +20,7 @@ adb reboot bootloader
 ```
 
 #### Восстановите GPT
-> Замните ```путь\к\gpt_both0.bin``` с указанием пути к файлу gpt_both 0.bin.
+> Замните ```путь\к\gpt_both0.bin``` действительным путём к файлу gpt_both 0.bin.
 
 ```cmd
 fastboot flash partition:0 путь\к\gpt_both0.bin
