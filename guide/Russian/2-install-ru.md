@@ -32,33 +32,10 @@ fastboot boot <путь\к\beryllium-uefi.img>
 diskpart
 ```
 
-#### Найдите ваш телефон
-> При этом отобразится список всех подключенных дисков
-```cmd
-lis dis
-```
-
-#### Выберите диск вашего телефона
-> Замените `$` актуальным номером диска вашего телефона (должен быть последним в списке)
-```cmd
-sel dis $
-```
-
-#### Отобразите список разделов
-> Это отобразит список разделов вашего телефона 
-```cmd
-lis par
-```
-
-#### Выберите раздел Windows 
-> Замените `$` номером раздела Windows (должен быть 23)
-```cmd
-sel par $
-```
-
-#### Отформатируйте раздел Windows
-```cmd
-format quick fs=ntfs label="WINF1"
+#### Выберите раздел Windows телефона
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINF1**
+```diskpart
+select volume $
 ```
 
 #### Добавьте букву к разделу Windows
@@ -66,15 +43,10 @@ format quick fs=ntfs label="WINF1"
 assign letter X
 ```
 
-#### Выберите раздел ESP
-> Замените `$` номером раздела ESP (должен быть 22)
+#### Выберите раздел ESP телефна
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **ESPF1**
 ```cmd
-sel par $
-```
-
-#### Отформатируйте раздел ESP
-```cmd
-format quick fs=fat32 label="ESPF1"
+select volume $
 ```
 
 #### Добавьте букву к ESP
@@ -131,39 +103,32 @@ diskpart
 
 #### Выберите раздел Windows телефона
 > Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINF1**
-```diskpart
+```cmd
 select volume $
 ```
 
 #### Отвяжите букву X
-```diskpart
+```cmd
 remove letter x
 ```
 
 #### Выберите раздел ESP телефна
 > Используйте `list volume` чтобы найти его, замените `$` номером раздела **ESPF1**
-```diskpart
+```cmd
 select volume $
 ```
 
 #### Отвяжите букву Y
-```diskpart
+```cmd
 remove letter y
 ```
 
 #### Выйдите из diskpart
-```diskpart
+```cmd
 exit
 ```
 
 ### Перезагрузка в Android
 > Чтобы настроить двойную загрузку
-
-#### Проверьте тип дисплея 
-> Это должно отобразить `dsi_ebbg_fhd_ft8719_video_display` или `dsi_tianma_fhd_nt36672a_video_display`
-```cmd
-adb shell dmesg | grep dsi_display_bind
-```
-Запомните тип вашего дисплея (Tianma или EBBG), это понадобится вам позже
 
 ## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)
