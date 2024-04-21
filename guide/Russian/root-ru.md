@@ -9,12 +9,12 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img)
+- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Запустите TWRP
+### Запустите OFOX
 > Если ваше recovery было заменено на стандартное, прошейте его ещё раз в fastboot с помощью:
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery 
+fastboot flash recovery path\to\ofox-beryllium.img reboot recovery 
 ```
 
 #### Создайте резервную копию вашего загрузочного образа
