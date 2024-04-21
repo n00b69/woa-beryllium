@@ -19,7 +19,7 @@ fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 #### Backing up your boot image
 > Sometimes flashing Magisk can cause a bootloop. To fix this, you'll need to restore a boot.img backup.
 
-Use the TWRP backup feature to make a backup of the boot partition.
+Use the OFOX backup feature to make a backup of the boot partition.
 
 ### Flashing Magisk
 - Flash the magisk.apk (you may have to rename it to magisk.zip) and reboot your phone. 
