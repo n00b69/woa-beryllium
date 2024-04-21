@@ -28,33 +28,14 @@ fastboot boot <path\to\beryllium-uefi.img>
 ### Diskpart
 > [!WARNING]
 > DO NOT ERASE, CREATE OR OTHERWISE MODIFY ANY PARTITION WHILE IN DISKPART!!!! THIS CAN ERASE ALL OF YOUR UFS OR PREVENT YOU FROM BOOTING TO FASTBOOT!!!! THIS MEANS THAT YOUR DEVICE WILL BE PERMANENTLY BRICKED WITH NO SOLUTION! (except for taking the device to Xiaomi or flashing it with EDL, both of which will likely cost money)
-
 ```cmd
 diskpart
 ```
 
-#### Finding your phone
-> This will list all connected disks
-```cmd
-lis dis
-```
-
-#### Selecting your phone
-> Replace $ with the actual number of your phone (it should be the last one)
-```cmd
-sel dis $
-```
-
-#### Listing your phone's partitions
-> This will list your device's partitions
-```cmd
-lis par
-```
-
 #### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 23)
-```cmd
-sel par $
+> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
+```diskpart
+select volume $
 ```
 
 #### Add letter to Windows
@@ -63,9 +44,9 @@ assign letter x
 ```
 
 #### Selecting the ESP partition
-> Replace $ with the partition number of ESP (should be 22)
-```cmd
-sel par $
+> Use `list volume` to find it, replace "$" with the actual number of **ESPF1**
+```diskpart
+select volume $
 ```
 
 #### Add letter to ESP
