@@ -9,12 +9,12 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Recoveries/twrp.img)
+- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Boot TWRP
+### Boot to OFOX
 > If your recovery has been replaced back to stock, flash it again in fastboot with:
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
 #### Backing up your boot image
 > Sometimes flashing Magisk can cause a bootloop. To fix this, you'll need to restore a boot.img backup.
