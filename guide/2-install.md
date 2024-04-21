@@ -57,11 +57,6 @@ lis par
 sel par $
 ```
 
-#### Formatting Windows drive
-```cmd
-format quick fs=ntfs label="WINF1"
-```
-
 #### Add letter to Windows
 ```cmd
 assign letter x
@@ -71,11 +66,6 @@ assign letter x
 > Replace $ with the partition number of ESP (should be 22)
 ```cmd
 sel par $
-```
-
-#### Formatting ESP drive
-```cmd
-format quick fs=fat32 label="ESPF1"
 ```
 
 #### Add letter to ESP
@@ -161,13 +151,6 @@ exit
 
 ### Reboot to Android
 > To set up dualboot
-
-#### Checking panel type
-> This should output either `dsi_ebbg_fhd_ft8719_video_display` or `dsi_tianma_fhd_nt36672a_video_display`
-```cmd
-adb shell dmesg | grep dsi_display_bind
-```
-Remember your panel type (Tianma or EBBG), you will need this later
 
 ## [Last step: Setting up dualboot](/guide/dualboot.md)
 
