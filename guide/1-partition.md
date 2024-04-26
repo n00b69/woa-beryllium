@@ -18,8 +18,6 @@
 > DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnF1).
 > 
 > Do not run all commands at once, execute them in order!
->
-> YOU CAN BREAK YOUR DEVICE WITH THE COMMANDS BELOW IF YOU DO THEM WRONG!!!
 
 #### Flash the modded OFOX recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
@@ -44,7 +42,7 @@ adb shell partition $
 ```
 
 #### Checking your panel type
-> Remember the output, you will need this later in the guide
+> Remember the output (Tianma or EBBG), you will need this later in the guide
 ```cmd
 adb shell panel
 ```
