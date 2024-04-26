@@ -19,7 +19,7 @@
 > 
 > Do not run all commands at once, execute them in order!
 
-#### Flash the modded OFOX recovery
+### Flash the modded OFOX recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
 fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
