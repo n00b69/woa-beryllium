@@ -44,7 +44,7 @@ adb shell partition $
 ```
 
 #### Checking your panel type
-> Remember the output, you will need this later in the guide
+> Remember the output (Tianma or EBBG), you will need this later in the guide
 ```cmd
 adb shell panel
 ```
