@@ -43,8 +43,8 @@ fastboot flash recovery путь\к\ofox-beryllium.img reboot recovery"
 adb shell partition $
 ```
 
-#### Checking your panel type
-> Remember the output (Tianma or EBBG), you will need this later in the guide
+#### Узнайте тип вашего дисплея 
+> Запомните вывод (Tianma or EBBG), это понадобится вам позже
 ```cmd
 adb shell panel
 ```
