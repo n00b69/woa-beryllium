@@ -13,7 +13,7 @@ The project is in development. Expect some updates in the future.
 - [x] Bluetooth
 - [x] Brightness 
 - [ ] Camera
-- [x] LTE
+- [x] LTE ```Problematic```
 - [x] Charging ```VERY slow```
 - [x] Display
 - [x] GPU  ```No x64 acceleration```
