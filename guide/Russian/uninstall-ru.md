@@ -21,7 +21,6 @@ adb reboot bootloader
 
 #### Восстановите GPT
 > Замните ```путь\к\gpt_both0.bin``` действительным путём к файлу gpt_both 0.bin.
-
 ```cmd
 fastboot flash partition:0 путь\к\gpt_both0.bin
 ```
@@ -32,4 +31,5 @@ fastboot -w
 ```
 > [!Note]
 > Если форматирование userdata завершится неудачно, перезагрузтесь в recovery и сделайте wipe data там вместо этого
+
 ## Готово!
