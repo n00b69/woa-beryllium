@@ -5,7 +5,7 @@
 ## Установка Windows
 
 ### Требования
-- [образ ARM Windows](https://worproject.com/esd)
+- [Образ ARM Windows](https://worproject.com/esd)
   
 - [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
