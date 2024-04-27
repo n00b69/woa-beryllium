@@ -16,6 +16,7 @@ The project is in development. Expect some updates in the future.
 - [x] LTE ```Problematic```
 - [x] Charging ```VERY slow```
 - [x] Display
+- [x] Flashlight
 - [x] GPU  ```No x64 acceleration```
 - [ ] SD card ```Very unreliable```
 - [ ] SMS
