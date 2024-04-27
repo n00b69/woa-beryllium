@@ -35,10 +35,10 @@ fastboot flash recovery путь\к\ofox-beryllium.img reboot recovery
 > 
 > **ЕСЛИ ВЫ ПРОДОЛЖИТЕ РАБОТУ БЕЗ РЕЗЕРВНОГО КОПИРОВАНИЯ modem И EFS, ТО В СЛУЧАЕ НЕУДАЧИ ОТВЕТСТВЕННОСТЬ ЛЕЖИТ НА ВАС!**
 
-### Run the partitioning script
-> Replace **$** with the amount of storage you want Windows to have (do not add GB, just write the number)
+### Запустите скрипт разметки 
+> Замените **$** объёмом памяти, который вы хотите выделить для Windows (не добавляйте ГБ, просто введите число).
 > 
-> If it asks you to run it once again, do so
+> Если скрипт попросит запустить его ещё раз, то так и сделайте
 ```cmd
 adb shell partition $
 ```
