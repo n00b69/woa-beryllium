@@ -1,28 +1,20 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Pocophone F1
 
 ## Aktualizowanie sterowników
 
 ### Wymagania
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Sterowniki](https://github.com/n00b69/woa-equuleus/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
-- [Skrypt Msc](https://github.com/n00b69/woa-equuleus/releases/download/Files/msc.sh)
-  
-- [TWRP](https://github.com/n00b69/woa-equuleus/releases/download/Files/twrp.img) (powinno już być zainstalowane)
+- [obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-#### Uruchom do TWRP
-> Jeśli Xiaomi zastąpiło Twoje recovery z powrotem do stanu magazynowego, sflashuj je ponownie w trybie fastboot za pomocą:
+### Uruchom do UEFI
+> Zastąp **<path\to\beryllium-uefi.img>** rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot flash recovery path\to\twrp.img
-```
-
-#### Uruchamianie skryptu msc
-> Umieść msc.sh w folderze platform-tools, a następnie uruchom:
-```cmd
-adb push msc.sh / && adb shell sh msc.sh
+fastboot boot <path\to\beryllium-uefi.img>
 ```
 
 ### Diskpart
@@ -67,7 +59,7 @@ exit
 ### Instalowanie sterowników
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WIN8PRO** (która powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być X), a następnie naciśnij enter.
 
 ### Usuń przypisanie litery dysku
 > Żeby nie pozostał tam po odłączeniu urządzenia
@@ -76,7 +68,7 @@ część dysku
 ```
 
 #### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WIN8PRO**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINF1**
 ```część dysku
 wybierz głośność $
 ```
