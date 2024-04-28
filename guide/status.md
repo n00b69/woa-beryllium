@@ -3,11 +3,9 @@
 # Running Windows on the Xiaomi Pocophone F1
 
 ## Project Status
-
 The project is in development. Expect some updates in the future.
 
 #### Features
-
 - [X] Audio 
 - [X] Battery status
 - [x] Bluetooth
@@ -35,7 +33,6 @@ The project is in development. Expect some updates in the future.
 - [ ] Proximity
 
 #### Security
-
 - [ ] Security Processor ```Impossible to get working, Xiaomi broke the firmware```
 - [ ] TPM (Software Backed)
 
