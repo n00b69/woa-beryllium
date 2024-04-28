@@ -9,13 +9,14 @@
 
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [TWRP](https://github.com/n00b69/woa-beryllium/releases/download/Files/twrp.img)
+- [OFOX](https://github.com/n00b69/woa-beryllium/releases/download/Recovery/ofox-beryllium.img)
 
-### Uruchom TWRP
+### Uruchom OFOX
 > Jeśli Twoje recovery zostało przywrócone do stanu fabrycznego, wykonaj flashowanie ponownie w trybie fastboot za pomocą:
 ```cmd
-fastboot flash recovery path\to\twrp.img
+fastboot flash recovery path\to\ofox.img
 ```
+
 #### Tworzenie kopii zapasowej obrazu rozruchowego
 > Czasami flashowanie Magiska może spowodować bootloop. Aby to naprawić, musisz przywrócić kopię zapasową pliku boot.img.
 
