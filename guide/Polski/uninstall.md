@@ -1,6 +1,6 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Pocophone F1
 
 ## Dezinstalacja
 
@@ -12,7 +12,7 @@ Jeśli chcesz ponownie zablokować program ładujący, musisz mieć zapasową ta
 ### Wymagania
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [gpt_both0.bin](https://github.com/n00b69/woa-equuleus/releases/download/Files/gpt_both0.bin)
+- [gpt_both0.bin](https://github.com/n00b69/woa-beryllium/releases/download/Files/gpt_both0.bin)
 
 ### Instrukcje odinstalowania
 > [!Important]
