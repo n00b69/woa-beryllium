@@ -9,7 +9,7 @@
 
 - [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [OFOX](https://github.com/n00b69/woa-beryllium/releases/download/Recovery/ofox-beryllium.img)
+- [OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 ### Uruchom OFOX
 > Jeśli Twoje recovery zostało przywrócone do stanu fabrycznego, wykonaj flashowanie ponownie w trybie fastboot za pomocą:
