@@ -1,17 +1,17 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Pocophone F1
 
 ## Dualboot
 
 ### Wymagania
 - [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
 
-- [Obraz UEFI](https://github.com/n00b69/woa-equuleus/releases/tag/UEFI)
+- [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 - [WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
 
-- [StA](https://github.com/n00b69/woa-equuleus/releases/download/Files/equuleus-sta.zip)
+- [StA](https://github.com/n00b69/woa-beryllium/releases/download/Files/beryllium-sta.zip)
 
 ## Przewodnik Dualboot
 W tym przewodniku założono, że jesteś zrootowany, jeśli tak nie jest, postępuj zgodnie z [tym przewodnikiem](root.md)
