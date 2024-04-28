@@ -1,22 +1,22 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Pocophone F1
 
 ## Instalacja Windowsa
 
 ### Wymagania
 - [Windows dla ARM](https://worproject.com/esd)
   
-- [Sterowniki](https://github.com/n00b69/woa-equuleus/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
-- [Devcfg (naprawia dotyk)](https://github.com/n00b69/woa-equuleus/releases/download/Files/devcfg-polaris.img)
+- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
-- [obraz UEFI](https://github.com/n00b69/woa-equuleus/releases/tag/UEFI)
+- [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 ### Uruchom do UEFI
-> Zastąp **<path\to\equuleus-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+> Zastąp **<path\to\beryllium-uefi.img>** rzeczywistą ścieżką obrazu UEFI
 ```cmd
-fastboot boot <path\to\equuleus-uefi.img>
+fastboot boot <path\to\beryllium-uefi.img>
 ```
 
 #### Włączanie trybu pamięci masowej
@@ -58,7 +58,7 @@ sel par $
 
 #### Formatowanie dysku z systemem Windows
 ```cmd
-format quick fs=ntfs label="WIN8PRO"
+format quick fs=ntfs label="WINF1"
 ```
 
 #### Dodaj literę do systemu Windows
@@ -74,7 +74,7 @@ sel par $
 
 #### Formatowanie ESP
 ```cmd
-format quick fs=fat32 label="ESP8PRO"
+format quick fs=fat32 label="ESPF1"
 ```
 
 #### Dodaj literę do ESP
@@ -99,7 +99,10 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 ### Instalowanie Sterowników
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
-> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WIN8PRO** (która powinna być X), a następnie naciśnij enter.
+> Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być X), a następnie naciśnij enter.
+
+#### Fixing touch
+> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
 
 #### Utwórz pliki bootloadera systemu Windows
 ```cmd
@@ -128,7 +131,7 @@ diskpart
 ```
 
 #### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WIN8PRO**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINF1**
 ```część dysku
 sel vol $
 ```
@@ -139,7 +142,7 @@ remove letter x
 ```
 
 #### Wybierz głośność systemu ESP w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESP8PRO**
+> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESPF1**
 ```część dysku
 sel vol $
 ```
@@ -152,12 +155,6 @@ remove letter y
 #### Wyjdź z dysku
 ```część dysku
 exit
-```
-
-### Naprawianie dotyku
-> Uruchom ponownie telefon w trybie fastboot, a następnie zamień **path\to** rzeczywistą ścieżką do obrazu devcfg (który pobrałeś wczesniej)
-```cmd
-fastboot flash devcfg_ab path\to\devcgf-equuleus.img
 ```
 
 ### Uruchom ponownie do Androida
