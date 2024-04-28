@@ -1,17 +1,17 @@
-<img align="right" src="https://github.com/n00b69/woa-equuleus/blob/main/equuleus.png" width="350" alt="Windows 11 running on equuleus">
+<img align="right" src="https://github.com/n00b69/woa-beryllium/blob/main/beryllium.png" width="350" alt="Windows 11 running on beryllium">
 
-# Windows na Xiaomi Mi 8 Pro
+# Windows na Xiaomi Pocophone F1
 
 ## Aktualizowanie sterowników
 
 ### Wymagania
-- [Sterowniki](https://github.com/n00b69/woa-equuleus/releases/tag/Drivers)
+- [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
 ### Boot into Windows
 > Zflashuj UEFI w fastboot lub użyj aplikacji WOA Helper
 
 ### Instalowanie Sterowników
-> Rozpakuj archiwum sterowników na swoim Xiaomi Mi 8 Pro w systemie Windows, a następnie otwórz plik `OnlineUpdater.cmd`
+> Rozpakuj archiwum sterowników na swoim Xiaomi Pocophone F1 w systemie Windows, a następnie otwórz plik `OnlineUpdater.cmd`
 
 > Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie
 
