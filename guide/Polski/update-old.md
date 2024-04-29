@@ -61,29 +61,7 @@ exit
  
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być X), a następnie naciśnij enter.
 
-### Usuń przypisanie litery dysku
-> Żeby nie pozostał tam po odłączeniu urządzenia
-```cmd
-część dysku
-```
-
-#### Wybierz głośność systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINF1**
-```część dysku
-wybierz głośność $
-```
-
-#### Usuń przypisanie litery X
-```część dysku
-usuń literę x
-```
-
-#### Wyjdź z dysku
-```część dysku
-Wyjście
-```
-
-#### Uruchom ponownie system Windows
+### Uruchom ponownie system Windows
 > Uruchom ponownie urządzenie, aby ponownie uruchomić system Windows. Jeśli spowoduje to uruchomienie systemu Android, ponownie wykonaj flashowanie obrazu UEFI poprzez fastboot lub za pomocą aplikacji WOA Helper
 
 
