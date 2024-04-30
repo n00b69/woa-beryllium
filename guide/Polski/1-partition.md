@@ -41,7 +41,7 @@ adb shell partition $
 ```
 
 #### Sprawdzanie typu panelu dotykowego
-> Zapamiętaj (Tianma lub EBBG), będziesz go potrzebować w dalszej części instrukcji
+> Zapamiętaj (**Tianma** lub **EBBG**), będziesz go potrzebować w dalszej części instrukcji
 ```cmd
 adb shell panel
 ```
