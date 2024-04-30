@@ -130,7 +130,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 diskpart
 ```
 
-#### Wybierz głośność systemu Windows w telefonie
+#### Wybierz partycję systemu Windows w telefonie
 > Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINF1**
 ```część dysku
 sel vol $
