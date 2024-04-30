@@ -11,7 +11,7 @@
   
 - [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Notes
+### Informacje
 > [!Warning]  
 > Nie uruchamiaj tego samego polecenia dwa razy, chyba że określono inaczej.
 > 
@@ -19,8 +19,8 @@
 > 
 > Nie uruchamiaj wszystkich poleceń na raz, wykonuj je po kolei!
 
-### Flash the modded OFOX recovery
-> Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
+### Flashuj zmodyfikowane recovery OFOX
+> Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie fastboot) uruchom
 ```cmd
 fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
@@ -32,16 +32,16 @@ Użyj OFOX teraz, aby wykonać kopię zapasową modemu i partycji EFS (a także 
 > 
 > **JEŚLI KONTYNUUJESZ BEZ KOPII ZAPASOWEJ MODEMU I EFS JEST DUŻE RYZYKO ZE TELEFON NIE BĘDZIE MOGŁ UŻYWAĆ LTE LUB POŁĄCZEŃ**
 
-### Run the partitioning script
-> Replace **$** with the amount of storage you want Windows to have (do not add GB, just write the number)
+### Uruchom skrypt partycjonowania
+> Zastąp **$** ilością miejsca, jaką ma mieć system Windows (nie dodawaj GB, po prostu wpisz liczbę)
 > 
-> If it asks you to run it once again, do so
+> Jeśli poprosi Cię o ponowne uruchomienie, zrób to
 ```cmd
 adb shell partition $
 ```
 
-#### Checking your panel type
-> Remember the output (Tianma or EBBG), you will need this later in the guide
+#### Sprawdzanie typu panelu dotykowego
+> Zapamiętaj (Tianma lub EBBG), będziesz go potrzebować w dalszej części instrukcji
 ```cmd
 adb shell panel
 ```
