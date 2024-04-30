@@ -5,11 +5,11 @@
 ## Tworzenie partycji
 
 ### Wymagania
-- Mózg (najważniejsze ze wszystkich)
+- [Mózg (najważniejsze ze wszystkich)](https://www.aliexpress.com/item/1005006118921197.html?spm=a2g0o.productlist.main.5.3e89775fPTGaZd&algo_pvid=37457a20-a74d-43af-9676-cb1a769a6949&algo_exp_id=37457a20-a74d-43af-9676-cb1a769a6949-2&pdp_npi=4%40dis%21PLN%2191.96%21142.88%21%21%21161.25%21250.53%21%40211b613917144991065558617ee81a%2112000035838292501%21sea%21PL%210%21AB&curPageLogUid=jokTM7dkBKeC&utparam-url=scene%3Asearch%7Cquery_from%3A)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 ### Informacje
 > [!Warning]  
