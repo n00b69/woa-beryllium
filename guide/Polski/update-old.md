@@ -9,7 +9,7 @@
   
 - [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
-- [obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+- [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 ### Uruchom do UEFI
 > Zastąp **<path\to\beryllium-uefi.img>** rzeczywistą ścieżką obrazu UEFI
