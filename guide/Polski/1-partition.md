@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 ### Informacje
 > [!Warning]  
