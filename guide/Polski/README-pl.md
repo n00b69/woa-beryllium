@@ -19,6 +19,8 @@ Ten projekt jest na wczesnym etapie, wszystkie pliki tutaj zostały przesłane p
 
 - [Instrukcja instalacji](1-partition.md)
 
+- [No PC installation instructions](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
+
 - [Rozwiązywanie problemów](troubleshooting.md)
 
 
