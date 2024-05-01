@@ -13,7 +13,7 @@
 ##### Skończone!
 
 ## USB nie działa
-Włącz tryb hosta USB, korzystając z [przewodnika dotyczącego przełączania trybu hosta USB](materials.md#toggling-usb-host-mode).
+Włącz tryb hosta USB, korzystając z [przewodnika dotyczącego przełączania trybu hosta USB](materials.md#przełączanie-trybu-hosta-usb).
 
 ##### Skończone!
 
