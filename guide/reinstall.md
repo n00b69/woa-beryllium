@@ -9,8 +9,6 @@
 - [Windows on ARM image](https://worproject.com/esd)
 
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-
-- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
@@ -81,9 +79,6 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > Unpack the driver archive, then open the `OfflineUpdater.cmd` file
 
 > Enter the drive letter of **WINF1**, which should be X, then press enter
-
-#### Fixing touch
-> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
 
 ### Boot into Windows
 Reboot your phone. If you end up in Android instead of Windows, flash the UEFI again using WOA Helper.
