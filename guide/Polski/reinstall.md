@@ -8,8 +8,6 @@
 - [Windows dla ARM](https://worproject.com/esd)
 
 - [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-
-- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
 - [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
@@ -82,9 +80,6 @@ dism /apply-image /ImageFile:<path\to\install.esd> /index:6 /ApplyDir:X:\
 > Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
  
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być X), a następnie naciśnij enter.
-
-#### Fixing touch
-> Run the `touchfix.bat` file as an administrator, or touch will not work when you boot into Windows
 
 ### Uruchom do Androida
 Uruchom ponownie telefon. Jeśli zamiast systemu Windows wylądujesz w systemie Android, ponownie wykonaj flashowanie UEFI za pomocą WOA Helper.
