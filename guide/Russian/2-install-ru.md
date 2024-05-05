@@ -8,8 +8,6 @@
 - [Образ ARM Windows](https://worproject.com/esd)
   
 - [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-
-- [Скрипт исправления touch](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
   
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
@@ -71,9 +69,6 @@ dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
 > Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
 
 > Введите букву диска **WINF1** (должна быть **X**) затем нажмите Enter
-
-#### Исправить touch
-> Запустите файл `touchfix.bat` от имени администратора, иначе сенсор не будет работать при загрузке в Windows
   
 #### Создайте файлы загрузчика Windows
 ```cmd
