@@ -25,7 +25,7 @@ fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
 
 #### Tworzenie kopii zapasowych ważnych plików
-> Spowoduje to utworzenie kopii zapasowej plików fsc, fsg, modemst1 i modemst2 w bieżącej ścieżce, w której otwarto CMD (na przykład C:\platform-tools). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
+> Spowoduje to utworzenie kopii zapasowej plików **fsc**, **fsg**, **modemst1** i **modemst2** w bieżącej ścieżce, w której otwarto CMD (na przykład **C:\platform-tools**). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
 >
 > Jeśli chcesz utworzyć kopię zapasową czegoś innego, zrób to teraz. Twoje dane Androida zostaną usunięte w kolejnych krokach.
 ```cmd
