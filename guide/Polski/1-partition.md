@@ -24,10 +24,10 @@
 fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
 
-#### Backing up important files
-> This will back up **fsc**, **fsg**, **modemst1** and **modemst2** to the current path your CMD is opened in (for example **C:\platform-tools**). Confirm these files are actually there before proceeding.
+#### Tworzenie kopii zapasowych ważnych plików
+> Spowoduje to utworzenie kopii zapasowej plików fsc, fsg, modemst1 i modemst2 w bieżącej ścieżce, w której otwarto CMD (na przykład C:\platform-tools). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
 >
-> If you've got anything else you want to back up, do this now. Your Android data will be erased in the next steps.
+> Jeśli chcesz utworzyć kopię zapasową czegoś innego, zrób to teraz. Twoje dane Androida zostaną usunięte w kolejnych krokach.
 ```cmd
 adb shell "dd if=/dev/block/by-name/fsc of=/tmp/fsc" || true && adb pull /tmp/fsc || true && adb shell "dd if=/dev/block/by-name/fsg of=/tmp/fsg" || true && adb pull /tmp/fsg || true && adb shell "dd if=/dev/block/by-name/modemst1 of=/tmp/modemst1" || true && adb pull /tmp/modemst1 || true && adb shell "dd if=/dev/block/by-name/modemst2 of=/tmp/modemst2" || true && adb pull /tmp/modemst2
 ```
