@@ -13,7 +13,6 @@
 
 ### Notes
 > [!WARNING]  
-> Do not run the same command twice unless specified.
 > 
 > DO NOT REBOOT YOUR PHONE! If you think you made a mistake, ask for help in the [Telegram chat](https://t.me/WinOnF1).
 > 
@@ -26,12 +25,12 @@ fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
 
 #### Backing up important files
-Use OFOX now to back up your Modem and EFS partition (as well as anything else if you have important data). Move this backup to a safe place (e.g your PC) as the next steps will wipe your data.
-
-> [!Warning]
-> All of your data will be erased. This is your last chance to back up.
-> 
-> **IF YOU PROCEED WITHOUT BACKING UP MODEM AND EFS, YOU ARE ON YOUR OWN IF YOU MESS UP**
+> This will back up **fsc**, **fsg**, **modemst1** and **modemst2** to the current path your CMD is opened in (for example **C:\platform-tools**). Confirm these files are actually there before proceeding.
+>
+> If you've got anything else you want to back up, do this now. Your Android data will be erased in the next steps.
+```cmd
+adb shell "dd if=/dev/block/by-name/fsc of=/tmp/fsc" || true && adb pull /tmp/fsc || true && adb shell "dd if=/dev/block/by-name/fsg of=/tmp/fsg" || true && adb pull /tmp/fsg || true && adb shell "dd if=/dev/block/by-name/modemst1 of=/tmp/modemst1" || true && adb pull /tmp/modemst1 || true && adb shell "dd if=/dev/block/by-name/modemst2 of=/tmp/modemst2" || true && adb pull /tmp/modemst2
+```
 
 ### Run the partitioning script
 > Replace **$** with the amount of storage you want Windows to have (do not add GB, just write the number)
