@@ -31,7 +31,7 @@ fastboot flash recovery путь\к\ofox-beryllium.img reboot recovery
 >
 > Если вы хотите создать резервную копию чего-либо ещё, сделайте это сейчас. Ваши данные в Android будут удалены в ходе следующих действий.
 ```cmd
-cmd /c "for %i in (fsg,fsc,trolled,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
 ```
 
 ### Запустите скрипт разметки 
