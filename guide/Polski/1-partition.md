@@ -29,7 +29,7 @@ fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 >
 > Jeśli chcesz utworzyć kopię zapasową czegoś innego, zrób to teraz. Twoje dane Androida zostaną usunięte w kolejnych krokach.
 ```cmd
-cmd /c "for %i in (fsg,fsc,trolled,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
 ```
 
 ### Uruchom skrypt partycjonowania
