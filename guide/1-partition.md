@@ -29,7 +29,7 @@ fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 >
 > If you've got anything else you want to back up, do this now. Your Android data will be erased in the next steps.
 ```cmd
-cmd /c "for %i in (fsg,fsc,trolled,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
 ```
 
 ### Run the partitioning script
