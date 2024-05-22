@@ -14,7 +14,7 @@
 ### Boot to OFOX recovery
 > If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
-fastboot flash recovery path\to\ofox.img reboot recovery
+fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
 
 #### Enabling mass storage mode
