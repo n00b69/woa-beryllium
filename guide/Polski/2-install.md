@@ -9,19 +9,19 @@
   
 - [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
   
-- [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Uruchom do UEFI
-> Zastąp **<path\to\beryllium-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+### Boot to OFOX recovery
+> If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
-fastboot boot <path\to\beryllium-uefi.img>
+fastboot flash recovery path\to\ofox.img reboot recovery
 ```
 
 #### Włączanie trybu pamięci masowej
-> Po uruchomieniu systemu UEFI użyj przycisków głośności do poruszania się po menu i przycisku zasilania, aby potwierdzić
-- Wybierz **UEFI Boot Menu**.
-- Wybierz **USB Attached SCSI (UAS) Storage**.
-- Naciśnij przycisk dwa razy aby potwierdzić.
+> If it asks you to run it once again, do so
+```cmd
+adb shell msc
+```
 
 ### Diskpart
 > [!WARNING]
@@ -30,33 +30,10 @@ fastboot boot <path\to\beryllium-uefi.img>
 diskpart
 ```
 
-#### Znajdowanie telefonu
-> Spowoduje to wyświetlenie listy wszystkich podłączonych dysków
-```cmd
-lis dis
-```
-
-#### Wybieranie telefonu
-> Zastąp $ rzeczywistym numerem partycji telefonu (powinien być ostatnim)
-```cmd
-sel dis $
-```
-
-#### Lista partycji Twojego telefonu
-> Spowoduje to wyświetlenie listy partycji urządzenia
-```cmd
-lis par
-```
-
 #### Wybór partycji Windows
-> Zastąp $ numerem partycji systemu Windows (powinno być 23)
-```cmd
-sel par $
-```
-
-#### Formatowanie dysku z systemem Windows
-```cmd
-format quick fs=ntfs label="WINF1"
+> Use `list volume` to find it, replace `$` with the actual number of **WINF1**
+```diskpart
+select volume $
 ```
 
 #### Dodaj literę do systemu Windows
@@ -65,14 +42,9 @@ assign letter x
 ```
 
 #### Wybieranie Partycji ESP
-> Zamień $ na numer partycji ESP (powinno być 22)
-```cmd
-sel par $
-```
-
-#### Formatowanie ESP
-```cmd
-format quick fs=fat32 label="ESPF1"
+> Use `list volume` to find it, replace `$` with the actual number of **ESPF1**
+```diskpart
+select volume $
 ```
 
 #### Dodaj literę do ESP
@@ -126,7 +98,7 @@ diskpart
 ```
 
 #### Wybierz partycję systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **WINF1**
+> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **WINF1**
 ```część dysku
 sel vol $
 ```
@@ -137,7 +109,7 @@ remove letter x
 ```
 
 #### Wybierz głośność systemu ESP w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień „$” na rzeczywistą liczbę **ESPF1**
+> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **ESPF1**
 ```część dysku
 sel vol $
 ```
