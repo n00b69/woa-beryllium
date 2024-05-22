@@ -12,45 +12,23 @@
   
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-### Boot to the UEFI
-> Replace **<path\to\beryllium-uefi.img>** with the actual path of the UEFI image
-```cmd
-fastboot boot <path\to\beryllium-uefi.img>
-```
+- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-#### Enabling mass storage mode
-> Once booted into the UEFI, use the volume buttons to navigate the menu and the power button to confirm
-- Select **UEFI Boot Menu**.
-- Select **USB Attached SCSI (UAS) Storage**.
-- Press the **power** button twice to confirm.
+### Boot to OFOX recovery
+> If your recovery has been replaced by the stock recovery, flash it again using
+```cmd
+fastboot flash recovery path\to\ofox.img reboot recovery
+```
 
 ### Diskpart
 ```cmd
 diskpart
 ```
 
-#### Finding your phone
-> This will list all connected disks
-```cmd
-lis dis
-```
-
-#### Selecting your phone
-> Replace $ with the actual number of your phone (it should be the last one)
-```cmd
-sel dis $
-```
-
-#### Listing your phone's partitions
-> This will list your device's partitions
-```cmd
-lis par
-```
-
 #### Selecting the Windows partition
-> Replace $ with the partition number of Windows (should be 23)
-```cmd
-sel par $
+> Use `list volume` to find it, replace `$` with the actual number of **WINF1**
+```diskpart
+select volume $
 ```
 
 #### Add letter to Windows
