@@ -11,45 +11,29 @@
   
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-### Загрузитесь в UEFI
-> Замените **<путь\к\beryllium-uefi.img>** действительным путём к образу UEFI
+- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+
+### Прошейте OFOX recovery
+> Если ваше recovery было заменено стоковым, прошейте его снова используя
 ```cmd
-fastboot boot <путь\к\beryllium-uefi.img>
+fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
 
 #### Включите режим mass storage
-> После загрузки в UEFI используйте кнопки регулировки громкости для навигации по меню и кнопку питания для подтверждения
-- Выберите **UEFI Boot Menu**.
-- Выберите **USB Attached SCSI (UAS) Storage**.
-- Нажмите кнопку **питания** дважды чтобы подтвердить.
+> Если он попросит вас запустить его ещё раз, сделайте это
+```cmd
+adb shell msc
+```
 
 ### Diskpart
 ```cmd
 diskpart
 ```
 
-#### Найдите диск вашего телефона
-> При этом отобразится список всех подключенных дисков
-```cmd
-lis dis
-```
-
-#### Выберите диск вашего телефона
-> Замените `$` актуальным номером диска вашего телефона (должен быть последним)
-```cmd
-sel dis $
-```
-
-#### Отобразите список разделов вашего телефона
-> Это отобразит список разделов вашего телефона 
-```cmd
-lis par
-```
-
-#### Выберите раздел Windows 
-> Замените `$` номером раздела Windows (должен быть 23)
-```cmd
-sel par $
+#### Выберите раздел Windows телефона
+> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINF1**
+```diskpart
+select volume $
 ```
 
 #### Добавьте букву к разделу Windows
