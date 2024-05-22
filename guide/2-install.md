@@ -97,7 +97,7 @@ diskpart
 ```
 
 #### Select the Windows volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
+> Use `list volume` to find it, replace `$` with the actual number of **WINF1**
 ```diskpart
 select volume $
 ```
@@ -108,7 +108,7 @@ remove letter x
 ```
 
 #### Select the ESP volume of the phone
-> Use `list volume` to find it, replace "$" with the actual number of **ESPF1**
+> Use `list volume` to find it, replace `$` with the actual number of **ESPF1**
 ```diskpart
 select volume $
 ```
