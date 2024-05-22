@@ -14,7 +14,7 @@
 ### Прошейте OFOX recovery
 > Если ваше recovery было заменено стоковым, прошейте его снова используя
 ```cmd
-fastboot flash recovery path\to\ofox.img reboot recovery
+fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
 ```
 
 #### Включите режим mass storage
