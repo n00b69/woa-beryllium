@@ -9,19 +9,19 @@
   
 - [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
   
-- [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Загрузитесь в UEFI
-> Замените **<путь\к\beryllium-uefi.img>** актуальным путём к образу UEFI
+### Прошейте OFOX recovery
+> Если ваше recovery было заменено стоковым, прошейте его снова используя
 ```cmd
-fastboot boot <путь\к\beryllium-uefi.img>
+fastboot flash recovery path\to\ofox.img reboot recovery
 ```
 
 #### Включите режим mass storage
-> После загрузки в UEFI используйте кнопки регулировки громкости для навигации по меню и кнопку питания для подтверждения
-- Выберите **UEFI Boot Menu**.
-- Выберите **USB Attached SCSI (UAS) Storage**.
-- Нажмите кнопку **питания** дважды чтобы подтвердить.
+> Если он попросит вас запустить его ещё раз, сделайте это
+```cmd
+adb shell msc
+```
 
 ### Diskpart
 > [!WARNING]
