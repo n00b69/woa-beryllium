@@ -14,10 +14,10 @@
 ### Boot to OFOX recovery
 > If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
-fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
+fastboot flash recovery path\to\ofox.img reboot recovery
 ```
 
-#### Enabling mass storage mode
+#### Włączanie trybu pamięci masowej
 > If it asks you to run it once again, do so
 ```cmd
 adb shell msc
@@ -31,7 +31,7 @@ diskpart
 ```
 
 #### Selecting the Windows partition
-> Use `list volume` to find it, replace "$" with the actual number of **WINF1**
+> Use `list volume` to find it, replace `$` with the actual number of **WINF1**
 ```diskpart
 select volume $
 ```
@@ -42,7 +42,7 @@ assign letter x
 ```
 
 #### Selecting the ESP partition
-> Use `list volume` to find it, replace "$" with the actual number of **ESPF1**
+> Use `list volume` to find it, replace `$` with the actual number of **ESPF1**
 ```diskpart
 select volume $
 ```
