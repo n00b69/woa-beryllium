@@ -123,8 +123,18 @@ remove letter y
 exit
 ```
 
-### Reboot to Android
-> To set up dualboot
+### Reboot to fastboot
+```cmd
+adb reboot bootloader
+```
+
+### Booting firstboot.img
+> Download **firstboot-paneltype.img** for your device's panel and replace **path\to** with the actual path to the image
+>
+> Use `adb shell panel` if you forgot what panel you have
+```cmd
+fastboot boot path\to\firstboot-paneltype.img
+```
 
 ## [Last step: Setting up dualboot](/guide/dualboot.md)
 
