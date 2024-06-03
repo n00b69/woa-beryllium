@@ -39,7 +39,7 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 > 
 > Если скрипт попросит запустить его ещё раз, то так и сделайте
 ```cmd
-adb shell partition $
+adb shell winpartition $
 ```
 
 #### Узнайте тип вашего дисплея 
