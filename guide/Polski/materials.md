@@ -29,7 +29,7 @@ Listę dedykowanego oprogramowania ARM znajdziesz także [pod tym linkiem](https
 > [!warning]
 > Wyłącz tryb hosta USB, jeśli używasz koncentratora USB Poweref, ponieważ może to nieodwracalnie uszkodzić urządzenie. Jeśli nie korzystasz z zasilanego koncentratora USB, włącz tryb hosta USB, w przeciwnym razie nie będziesz mógł używać żadnych urządzeń USB.
 
-Uruchom [Kontrola hosta USB](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/tag/USBHost), aby włączyć/wyłączyć tryb hosta USB, potwierdź, że chcesz wyłączyć/ włącz tryb hosta USB, a następnie potwierdź ponowne uruchomienie
+Uruchom [Kontrola hosta USB](https://github.com/Misha803/My-Scripts/releases/tag/USB-Host-Mode-Control), aby włączyć/wyłączyć tryb hosta USB, potwierdź, że chcesz wyłączyć/ włącz tryb hosta USB, a następnie potwierdź ponowne uruchomienie
 
 #### Skończone!
 
