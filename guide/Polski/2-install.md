@@ -124,9 +124,20 @@ remove letter y
 exit
 ```
 
-### Uruchom ponownie do Androida
-> Uruchom ponownie do Androida aby ustawić dualboot
+```cmd
+adb reboot bootloader
+```
 
+### Booting firstboot.img
+> Download **firstboot-paneltype.img** for your device's panel and replace **path\to** with the actual path to the image
+>
+> Use `adb shell panel` if you forgot what panel you have
+```cmd
+fastboot boot path\to\firstboot-paneltype.img
+```
+
+### Reboot to Android
+Your device should reboot by itself after +- 10 minutes of waiting, if it actually boots to Windows, complete the Windows setup and then press **Restart** in the start menu to boot back to Android for the last step.
 
 ## [Ostatni Krok: Ustawianie dualboot](dualboot.md)
 
