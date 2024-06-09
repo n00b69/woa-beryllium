@@ -129,7 +129,7 @@ adb reboot bootloader
 ```
 
 #### Booting firstboot.img
-> Download **firstboot-paneltype.img** for your device's panel and replace **path\to** with the actual path to the image
+> Download **firstboot-paneltype.img** for your device's panel and replace `path\to\firstboot-paneltype.img` with the actual path to the image
 >
 > Use `adb shell panel` if you forgot what panel you have
 ```cmd
