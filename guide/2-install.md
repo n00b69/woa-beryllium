@@ -136,6 +136,9 @@ adb reboot bootloader
 fastboot boot path\to\firstboot-paneltype.img
 ```
 
+### Reboot to Android
+Your device should reboot by itself after +- 10 minutes of waiting, if it actually boots to Windows, complete the Windows setup and then press **Restart** in the start menu to boot back to Android for the last step.
+
 ## [Last step: Setting up dualboot](/guide/dualboot.md)
 
 
