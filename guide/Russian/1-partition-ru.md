@@ -25,9 +25,9 @@
 >
 > Рекомендуется держать CMD открытым и использовать его на протяжении всего руководства.
 > 
-> Замените **path\to** на путь к папке platform-tools, например **C:\platform-tools**.
+> Замените `путь\к\platform-tools` на путь к папке platform-tools, например **C:\platform-tools**.
 ```cmd
-cd path\to\platform-tools
+cd путь\к\platform-tools
 ```
 
 #### Прошейте OFOX recovery
