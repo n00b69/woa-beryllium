@@ -18,7 +18,17 @@
 > 
 > Do not run all commands at once, execute them in order!
 
-### Flash the modded OFOX recovery
+### Opening CMD as an admin
+> Download **platform-tools** and extract the folder somewhere, then open CMD as an **administrator**.
+>
+> It is recommended to keep this window open and use it throughout the entire guide.
+> 
+> Replace **path\to** with the actual path to the platform-tools folder, for example **C:\platform-tools**.
+```cmd
+cd path\to\platform-tools
+```
+
+#### Flash the modded OFOX recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
 fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
