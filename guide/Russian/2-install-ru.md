@@ -58,12 +58,12 @@ exit
 ```
 
 ### Установка Windows
-> Замените `<путь\к\install.esd>` актуальным путём к install.esd (файл также может называться install.wim)
+> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim)
 ```cmd
-dism /apply-image /ImageFile:<путь\к\install.esd> /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:<путь\к\install.esd>`, затем замените `index:6` действтельным индексом Windows 11 Pro в вашем образе
+> Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом **Windows 11 Pro** в вашем образе
 
 ### Установка драйверов
 > Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
@@ -123,7 +123,20 @@ remove letter y
 exit
 ```
 
-### Перезагрузка в Android
-> Чтобы настроить двойную загрузку
+
+```cmd
+adb reboot bootloader
+```
+
+### Booting firstboot.img
+> Download **firstboot-paneltype.img** for your device's panel and replace **path\to** with the actual path to the image
+>
+> Use `adb shell panel` if you forgot what panel you have
+```cmd
+fastboot boot path\to\firstboot-paneltype.img
+```
+
+### Reboot to Android
+Your device should reboot by itself after +- 10 minutes of waiting, if it actually boots to Windows, complete the Windows setup and then press **Restart** in the start menu to boot back to Android for the last step.
 
 ## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)
