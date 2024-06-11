@@ -9,10 +9,10 @@
 
 - [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Boot into TWRP
+### Boot into OFOX
 > If MIUI has replaced your recovery, boot to fastboot and run
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot flash recovery path\to\ofox.img reboot recovery
 ```
 
 #### Formatting the Windows partition
