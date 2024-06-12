@@ -11,12 +11,12 @@ The project is in development. Expect some updates in the future.
 - [x] Bluetooth
 - [x] Brightness 
 - [ ] Camera
-- [x] LTE ```Problematic```
+- [x] LTE
 - [x] Charging ```VERY slow```
 - [x] Display
 - [x] Flashlight
 - [x] GPU  ```No x64 acceleration```
-- [ ] SD card ```Very unreliable```
+- [x] SD card ```Must be partially inserted before boot, then fully inserted when it gets detected```
 - [ ] SMS
 - [x] Touchscreen ```Breaks after sleeping```
 - [x] UFS
@@ -31,9 +31,4 @@ The project is in development. Expect some updates in the future.
 - [ ] Light sensor
 - [x] Magnetometer
 - [ ] Proximity
-
-#### Security
-- [ ] Security Processor ```Impossible to get working, Xiaomi broke the firmware```
-- [ ] TPM (Software Backed)
-
 
