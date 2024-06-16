@@ -58,6 +58,9 @@ exit
 ```
 
 ### Instalowanie Windowsa
+> [!WARNING]
+> NIE UŻYWAJ 24H2!!!
+
 > Zamień `path\to\install.esd` na rzeczywistą ścieżkę do pliku install.esd (może on również nosić nazwę install.wim)
 
 ```cmd
