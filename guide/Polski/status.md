@@ -6,7 +6,8 @@
 Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić się, ale nie należy się ich spodziewać często
 
 #### Funkcje
-- [x] Dzwięk
+- [x] Dzwięk (Speakers)
+- [x] Dzwięk (3.5mm)
 - [X] Wzkaźnik baterii
 - [x] Bluetooth
 - [x] Jasność 
@@ -16,6 +17,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [x] Wyświetlacz
 - [x] Latarka
 - [x] Karta Graficzna  ```Brak x64```
+- [x] SD card ```Must be partially inserted before boot, then fully inserted when it gets detected```
 - [ ] SMS
 - [x] Dotyk ```Breaks after sleeping```
 - [x] UFS
