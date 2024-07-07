@@ -9,12 +9,18 @@
   
 - [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
-- [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Uruchom do UEFI
-> Zastąp **<path\to\beryllium-uefi.img>** rzeczywistą ścieżką obrazu UEFI
+### Uruchom recovery OFOX
+> Jeśli Twój recovery został zastąpiony recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
-fastboot boot <path\to\beryllium-uefi.img>
+fastboot flash recovery path\to\ofox.img reboot recovery
+```
+
+#### Włączanie trybu pamięci masowej
+> Jeżeli ci mówi aby wykonać polecenie jescze raz to zrób to
+```cmd
+adb shell msc
 ```
 
 ### Diskpart
@@ -22,28 +28,10 @@ fastboot boot <path\to\beryllium-uefi.img>
 diskpart
 ```
 
-#### Znajdowanie telefonu
-> Spowoduje to wyświetlenie listy wszystkich podłączonych dysków
-```cmd
-lis dis
-```
-
-#### Wybieranie telefonu
-> Zastąp $ rzeczywistym numerem partycji telefonu (powinien być ostatnim)
-```cmd
-sel dis $
-```
-
-#### Lista partycji Twojego telefonu
-> Spowoduje to wyświetlenie listy partycji urządzenia
-```cmd
-lis par
-```
-
 #### Wybór partycji Windows
-> Zastąp $ numerem partycji systemu Windows (powinno być 23)
-```cmd
-sel par $
+> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **WINF1**
+```diskpart
+select volume $
 ```
 
 #### Dodaj literę do systemu Windows
