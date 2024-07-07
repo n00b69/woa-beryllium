@@ -5,6 +5,39 @@
 ## Rozwiązywanie problemów
 > Poniżej znajdziesz listę typowych problemów i ich rozwiązań
 
+## LTE i inne usługi sieciowe w Androidzie już nie działają
+> Czasami system Windows może wyczyścić partycje modemu, powodując utratę LTE w systemie Android. Aby to naprawić, musisz przywrócić modem, korzystając z kopii zapasowych, które, miejmy nadzieję, wykonałeś [podczas partycjonowania urządzenia](1-partition.md#backing-up-important-files). Jeśli nie wykonałeś tego kroku, prawdopodobnie nie będzie możliwości odzyskania danych.
+- Uruchom dowolne odzyskiwanie inne niż odzyskiwanie zapasów (polecenia ADB tam nie działają)
+- Otwórz CMD w folderze **narzędzia platformy**.
+- Przywróć cztery partycje, których kopię zapasową utworzono, używając poniższych poleceń. Zastąp „ścieżkę do” rzeczywistą ścieżką obrazów.
+```cmd
+adb shell dd if=path\to\fsc.bin of=/dev/block/by-name/fsc
+```
+
+```cmd
+adb shell dd if=path\to\fsg.bin of=/dev/block/by-name/fsg
+```
+
+```cmd
+adb shell dd if=path\to\modemst1.bin of=/dev/block/by-name/modemst1
+```
+
+```cmd
+adb shell dd if=path\to\modemst2.bin of=/dev/block/by-name/modemst2
+```
+- Uruchom ponownie urządzenie i sprawdź, czy działa LTE.
+> [!Note]
+> Jeśli to nadal nie zadziała, będziesz musiał wykonać kilka dodatkowych kroków;
+- Pobierz [wersję ROM dla swojego urządzenia](https://xmfirmwareupdater.com/miui/beryllium/)
+- Otwórz go, poszukaj pliku o nazwie **modem.img** i rozpakuj go.
+- Uruchom system w trybie fastboot (`adb restart bootloader`.
+- Wgraj plik **modem.img** poniższym poleceniem, zastępując `ścieżkę\do\modem.img` rzeczywistą ścieżką obrazu
+```cmd
+fastboot flash modem path\to\modem.img
+```
+
+##### Skończone!
+
 ## Nie można zamontować systemu Windows w systemie Android
 > Dzieje się tak, gdy zamykasz system Windows zamiast go ponownie uruchamiać.
 - Aby rozwiązać ten problem, uruchom system Windows, a następnie naciśnij „Uruchom ponownie”, a następnie, gdy ekran się wyłączy, uruchom system TWRP i stamtąd załaduj system Android.
