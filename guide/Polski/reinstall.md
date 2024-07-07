@@ -7,20 +7,20 @@
 ### Wymagania
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Boot into OFOX
-> If MIUI has replaced your recovery, boot to fastboot and run
+### Uruchom recovery OFOX
+> Jeśli Twój recovery został zastąpiony recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
 fastboot flash recovery path\to\ofox.img reboot recovery
 ```
 
-#### Formatting the Windows partition
+#### Formatowanie Windows
 ```cmd
 adb shell format
 ```
 
-## [Next step: Reinstalling Windows](2-install.md)
+## [Następny Krok: Ponowna instalacja Windows](2-install.md)
 
 
 
