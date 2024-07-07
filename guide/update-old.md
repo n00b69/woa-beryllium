@@ -28,14 +28,8 @@ adb shell msc
 diskpart
 ```
 
-#### List device volumes
-> To print a list of all the connected volumes, run
-```cmd
-list volume
-```
-
 #### Select Windows volume
-> Replace `$` with the actual number of **WINF1**
+> Use `list volume` to find it, replace `$` with the actual number of **WINF1**
 ```cmd
 select volume $
 ```
