@@ -18,6 +18,16 @@
 > 
 > Nie uruchamiaj wszystkich poleceń na raz, wykonuj je po kolei!
 
+### Otwieranie CMD jako administrator
+> Pobierz **platform-tools** i wypakuj gdzieś folder, a następnie otwórz CMD jako **administrator**.
+>
+> Zaleca się pozostawienie tego okna otwartego i korzystanie z niego przez cały przewodnik.
+> 
+> Zastąp `path\to\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
+```cmd
+cd path\to\platform-tools
+```
+
 ### Flashuj zmodyfikowane recovery OFOX
 > Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie fastboot) uruchom
 ```cmd
