@@ -9,16 +9,16 @@
   
 - [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
   
-- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Boot to OFOX recovery
-> If your recovery has been replaced by the stock recovery, flash it again using
+### Uruchom recovery OFOX
+> Jeśli Twój recovery został zastąpiony recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
 fastboot flash recovery path\to\ofox.img reboot recovery
 ```
 
 #### Włączanie trybu pamięci masowej
-> If it asks you to run it once again, do so
+> Jeżeli ci mówi aby wykonać polecenie jescze raz to zrób to
 ```cmd
 adb shell msc
 ```
@@ -31,7 +31,7 @@ diskpart
 ```
 
 #### Wybór partycji Windows
-> Use `list volume` to find it, replace `$` with the actual number of **WINF1**
+> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **WINF1**
 ```diskpart
 select volume $
 ```
@@ -42,7 +42,7 @@ assign letter x
 ```
 
 #### Wybieranie Partycji ESP
-> Use `list volume` to find it, replace `$` with the actual number of **ESPF1**
+> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **ESPF1**
 ```diskpart
 select volume $
 ```
