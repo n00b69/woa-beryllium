@@ -5,6 +5,39 @@
 ## Troubleshooting Issues
 > Below you will find a list of common problems and their solutions
 
+## LTE and other network services in Android no longer work
+> Sometimes Windows may wipe your modem partitions, resulting in the loss of LTE in Android. To fix this, you'll need to restore your modem using the backups that you hopefully made [while partitioning your device](1-partition.md#backing-up-important-files). If you did not do this step, there is likely no way to recover.
+- Boot into any recovery other than the stock recovery (ADB commands do not work there)
+- Open CMD in the **platform-tools** folder.
+- Restore the four partitions that you backed up using the below commands. Replace `path\to` with the actual path of the images.
+```cmd
+adb shell dd if=path\to\fsc.bin of=/dev/block/by-name/fsc
+```
+
+```cmd
+adb shell dd if=path\to\fsg.bin of=/dev/block/by-name/fsg
+```
+
+```cmd
+adb shell dd if=path\to\modemst1.bin of=/dev/block/by-name/modemst1
+```
+
+```cmd
+adb shell dd if=path\to\modemst2.bin of=/dev/block/by-name/modemst2
+```
+- Reboot your device and check if LTE works.
+> [!Note]
+> If it still does not work, you will have to do some additional steps;
+- Download the [stock rom for your device](https://xmfirmwareupdater.com/miui/beryllium/)
+- Open it, look for a file called **modem.img** and extract it.
+- Boot into fastboot mode (`adb reboot bootloader`).
+- Flash this **modem.img** with the below command, replacing `path\to\modem.img` with the actual path of the image
+```cmd
+fastboot flash modem path\to\modem.img
+```
+
+##### Finished!
+
 ## Cannot mount Windows in Android
 If mounting Windows produces an empty folder, you either don't have Windows installed, or your rom does not have mount support.
 
