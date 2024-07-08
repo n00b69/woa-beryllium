@@ -11,6 +11,8 @@
   
 - [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
+- [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+
 ### Boot to OFOX recovery
 > If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
