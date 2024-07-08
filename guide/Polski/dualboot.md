@@ -25,6 +25,8 @@ W tym przewodniku założono, że jesteś zrootowany, jeśli tak nie jest, post�
 - Naciśnij przycisk **SZYBKIE URUCHAMIANIE DO WINDOWS**.
 
 ### Konfiguracja — Windows
+> [!Tip]
+> If this is your first time booting Windows and you wish to skip the Microsoft Account login, press the **I don't have internet** button in the WiFi page, then when prompted, press the **Continue with limited setup** button.
 - Navigate to `C:\sta` and create a shortcut of **sta.exe** to your desktop, if one isn't already present
 
 #### Uruchamianie systemu Android
