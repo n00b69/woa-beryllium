@@ -11,6 +11,8 @@
   
 - [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
+- [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
+
 ### Uruchom recovery OFOX
 > Jeśli Twój recovery został zastąpiony recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
