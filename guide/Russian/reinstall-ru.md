@@ -9,18 +9,18 @@
 
 - [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Boot into OFOX
-> If MIUI has replaced your recovery, boot to fastboot and run
+### Прошейте OFOX recovery
+> Если ваше recovery было заменено стоковым, прошейте его снова используя
 ```cmd
 fastboot flash recovery path\to\ofox.img reboot recovery
 ```
 
-#### Formatting the Windows partition
+#### Отформатировать раздел Windows
 ```cmd
 adb shell format
 ```
 
-## [Next step: Reinstalling Windows](2-install.md)
+## [Следующий шаг: Установка Windows](2-install-ru.md)
 
 
 
