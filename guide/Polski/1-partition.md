@@ -47,7 +47,7 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 > 
 > Jeśli poprosi Cię o ponowne uruchomienie, zrób to
 ```cmd
-adb shell winpartition $
+adb shell partition $
 ```
 
 #### Sprawdzanie typu panelu dotykowego
