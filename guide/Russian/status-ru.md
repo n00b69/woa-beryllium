@@ -16,7 +16,7 @@
 - [x] Зарядка ```ОЧЕНЬ медленно```
 - [x] Дисплей
 - [x] GPU  ```Нет ускорения x64```
-- [x] SD карта ```Must be partially inserted before boot, then fully inserted when it gets detected```
+- [x] SD карта
 - [ ] СМС
 - [x] Touchscreen ```Не работает после спящего режима```
 - [x] UFS
