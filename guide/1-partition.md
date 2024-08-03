@@ -47,7 +47,7 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 > 
 > If it asks you to run it once again, do so
 ```cmd
-adb shell winpartition $
+adb shell partition $
 ```
 
 #### Checking your panel type
