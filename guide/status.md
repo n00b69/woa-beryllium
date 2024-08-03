@@ -13,11 +13,11 @@ The project is in development. Expect some updates in the future.
 - [x] Brightness 
 - [ ] Camera
 - [x] LTE
-- [x] Charging ```VERY slow```
+- [x] Charging ```VERY slow. Use QC 3.0```
 - [x] Display
 - [x] Flashlight
 - [x] GPU  ```No x64 acceleration```
-- [x] SD card ```Must be partially inserted before boot, then fully inserted when it gets detected```
+- [x] SD card
 - [ ] SMS
 - [x] Touchscreen ```Breaks after sleeping```
 - [x] UFS
