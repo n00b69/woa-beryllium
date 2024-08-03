@@ -17,7 +17,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [x] Wyświetlacz
 - [x] Latarka
 - [x] Karta Graficzna  ```Brak x64```
-- [x] SD card ```Must be partially inserted before boot, then fully inserted when it gets detected```
+- [x] SD card
 - [ ] SMS
 - [x] Dotyk ```Breaks after sleeping```
 - [x] UFS
