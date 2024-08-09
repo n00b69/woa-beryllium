@@ -11,6 +11,8 @@
   
 - [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
+- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
+
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 ### Boot to OFOX recovery
@@ -63,17 +65,24 @@ exit
 > [!Warning]
 > DO NOT USE 24H2!!!
 
-> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim)
+> Replace `path\to\install.esd` with the actual path of install.esd (it may also be named install.wim or 22631.2861.XXXXXXX.esd)
+
 ```cmd
 dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 ```
 
 > If you get `Error 87`, check the index of your image with `dism /get-imageinfo /ImageFile:path\to\install.esd`, then replace `index:6` with the actual index number of **Windows 11 Pro** in your image
 
+### Copying your boot.img into Windows
+- Drag and drop the **root.img** from the last page of the guide into the **WINF1** disk in Windows Explorer, then rename it to **boot.img**.
+
 ### Installing Drivers
-> Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
+- Unpack the driver archive, then open the `OfflineUpdater.cmd` file (if an error shows up, run `OfflineUpdaterFix.cmd` instead)
 
 > If it asks you to enter a letter, enter the drive letter of **WINF1** (which should be **X**), then press enter
+
+### Fixing touch
+- Right click the `touchfix.bat` file and run it as an Administrator
   
 #### Create Windows bootloader files
 ```cmd
@@ -115,9 +124,9 @@ fastboot boot path\to\firstboot-paneltype.img
 ```
 
 ### Reboot to Android
-Your device should reboot by itself after +- 10 minutes of waiting, if it actually boots to Windows, complete the Windows setup and then press **Restart** in the start menu to boot back to Android for the last step.
+Your device should reboot by itself after +- 10 minutes of waiting, after which you will be booted into Android, for the last step.
 
-## [Last step: Setting up dualboot](/guide/dualboot.md)
+## [Last step: Setting up dualboot](/guide/4-dualboot.md)
 
 
 
