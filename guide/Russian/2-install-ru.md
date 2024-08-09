@@ -95,37 +95,10 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Отвяжите буквы дисков
-> Чтобы они не остались после отключения устройства
+#### Удалите букву диска для ESP
+> Если это не сработает, проигнорируйте это и перейдите к следующей команде. Этот фантомный диск исчезнет при следующей перезагрузке ПК.
 ```cmd
-diskpart
-```
-
-#### Выберите раздел Windows телефона
-> Используйте `list volume` чтобы найти его, замените `$` номером раздела **WINF1**
-```cmd
-select volume $
-```
-
-#### Отвяжите букву X
-```cmd
-remove letter x
-```
-
-#### Выберите раздел ESP телефна
-> Используйте `list volume` чтобы найти его, замените `$` номером раздела **ESPF1**
-```cmd
-select volume $
-```
-
-#### Отвяжите букву Y
-```cmd
-remove letter y
-```
-
-#### Выйдите из diskpart
-```cmd
-exit
+mountvol y: /d
 ```
 
 ### Reboot to fastboot
