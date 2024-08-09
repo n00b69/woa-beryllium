@@ -5,16 +5,16 @@
 ## Tworzenie partycji
 
 ### Wymagania
-- [Mózg (najważniejsze ze wszystkich)](https://www.aliexpress.com/item/1005006118921197.html?spm=a2g0o.productlist.main.5.3e89775fPTGaZd&algo_pvid=37457a20-a74d-43af-9676-cb1a769a6949&algo_exp_id=37457a20-a74d-43af-9676-cb1a769a6949-2&pdp_npi=4%40dis%21PLN%2191.96%21142.88%21%21%21161.25%21250.53%21%40211b613917144991065558617ee81a%2112000035838292501%21sea%21PL%210%21AB&curPageLogUid=jokTM7dkBKeC&utparam-url=scene%3Asearch%7Cquery_from%3A)
+- Mózg (najważniejsze ze wszystkich)
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
 - [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-### Informacje
+### Uwagi
 > [!Warning]  
 > 
-> NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [czacie telegramowym](https://t.me/WinOnF1).
+> NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [Telegramie](https://t.me/WinOnF1).
 > 
 > Nie uruchamiaj wszystkich poleceń na raz, wykonuj je po kolei!
 
@@ -23,23 +23,31 @@
 >
 > Zaleca się pozostawienie tego okna otwartego i korzystanie z niego przez cały przewodnik.
 > 
-> Zastąp `path\to\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
+> Zastąp `ścieżka\do\platform-tools` rzeczywistą ścieżką do folderu platform-tools, na przykład **C:\platform-tools**.
 ```cmd
-cd path\to\platform-tools
+cd ścieżka\do\platform-tools
 ```
 
-### Flashuj zmodyfikowane recovery OFOX
-> Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie fastboot) uruchom
+#### Flashuj zmodyfikowane recovery OFOX
+> Otwórz okno CMD w folderze platform-tools, a następnie (gdy telefon jest w trybie fastboot) wpisz
 ```cmd
-fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
+fastboot flash recovery ścieżka\do\ofox-beryllium.img reboot recovery
 ```
 
-#### Tworzenie kopii zapasowych ważnych plików
+### Tworzenie kopii zapasowej ważnych plików
 > Spowoduje to utworzenie kopii zapasowej plików **fsc**, **fsg**, **modemst1** i **modemst2** w bieżącej ścieżce, w której otwarto CMD (na przykład **C:\platform-tools**). Przed kontynuowaniem upewnij się, że te pliki rzeczywiście tam są.
 >
+> Trzymaj tę kopię zapasową w bezpiecznym miejscu. Jeśli oprogramowanie Twojego urządzenia kiedykolwiek ulegnie uszkodzeniu, możesz potrzebować tej kopii, gdyż w przeciwnym wypadku telefon może już nigdy nie być w stanie wykonywać połączeń.
+> 
 > Jeśli chcesz utworzyć kopię zapasową czegoś innego, zrób to teraz. Twoje dane Androida zostaną usunięte w kolejnych krokach.
 ```cmd
 cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-name/%i of=/tmp/%i.bin & adb pull /tmp/%i.bin)"
+```
+
+#### Tworzenie kopii zapasowych obrazu rozruchu
+> Spowoduje to utworzenie kopii zapasowej obecnego obrazu rozruchu w bieżącej ścieżce
+```cmd
+adb pull /dev/block/by-name/boot boot.img
 ```
 
 ### Uruchom skrypt partycjonowania
@@ -59,8 +67,7 @@ adb shell panel
 #### Sprawdź, czy Android nadal się uruchamia
 - Po prostu uruchom ponownie telefon i sprawdź, czy Android nadal działa
 
-
-## [Następny Krok](2-install.md)
+## [Następny krok: Rootowanie telefonu](2-root.md)
 
 
 
