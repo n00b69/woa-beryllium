@@ -11,12 +11,14 @@
   
 - [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
+- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
+
 - [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 ### Uruchom recovery OFOX
 > Jeśli Twój recovery został zastąpiony recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
-fastboot flash recovery path\to\ofox.img reboot recovery
+fastboot flash recovery ścieżka\doo\ofox.img reboot recovery
 ```
 
 #### Włączanie trybu pamięci masowej
@@ -63,18 +65,23 @@ exit
 > [!WARNING]
 > NIE UŻYWAJ 24H2!!!
 
-> Zamień `path\to\install.esd` na rzeczywistą ścieżkę do pliku install.esd (może on również nosić nazwę install.wim)
-
+> Zamień `ścieżka\do\install.esd` na rzeczywistą ścieżkę do pliku install.esd (może on również nosić nazwę install.wim lub 22631.2861.XXXXXXX.esd)
 ```cmd
-dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
+dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
 ```
 
-> Jeśli pojawi się komunikat `Błąd 87`, sprawdź indeks obrazu za pomocą polecenia `dism /get-imageinfo /ImageFile:path\to\install.esd`, a następnie zastąp `index:6` rzeczywistym numerem indeksu systemu **Windows 11 Pro** na Twoim obrazie
+> Jeśli pojawi się komunikat `Błąd 87`, sprawdź indeks obrazu za pomocą polecenia `dism /get-imageinfo /ImageFile:ścieżka\do\install.esd`, a następnie zastąp `index:6` rzeczywistym numerem indeksu systemu **Windows 11 Pro** w Twoim obrazie
 
-### Instalowanie Sterowników
-> Wypakuj archiwum ze sterownikami, potem otwórz plik `OfflineUpdater.cmd`
+### Kopiowanie obrazu rozruchu do Windowsa
+- Zaznacz i upuść **root.img** z poprzedniego kroku do **WINF1** w eksploratorze plików, a następnie zmień mu nazwę na **boot.img**.
+
+### Instalowanie sterowników
+- Wypakuj archiwum ze sterownikami, a następnie otwórz plik `OfflineUpdater.cmd` (jeśli pojawi się błąd, otwórz `OfflineUpdaterFix.cmd`)
  
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być **X**), a następnie naciśnij enter.
+
+### Fixing touch
+- Right click the `touchfix.bat` file and run it as an Administrator
 
 #### Utwórz pliki bootloadera systemu Windows
 ```cmd
@@ -142,10 +149,10 @@ adb reboot bootloader
 fastboot boot path\to\firstboot-paneltype.img
 ```
 
-### Reboot to Android
-Your device should reboot by itself after +- 10 minutes of waiting, if it actually boots to Windows, complete the Windows setup and then press **Restart** in the start menu to boot back to Android for the last step.
+### Uruchamianie ponownie do Androida
+Telefon powinien uruchomić się ponownie sam po +- 10 minutach czekania, po których uruchomi się Android, aby wykonać ostatni krok.
 
-## [Ostatni Krok: Ustawianie dualboot](dualboot.md)
+## [Ostatni krok: Konfiguracja dualboot](4-dualboot.md)
 
 
 
