@@ -40,9 +40,11 @@ fastboot reboot
 - Postępuj zgodnie z instrukcjami na ekranie. Telefon powinien się uruchomić ponownie po kilku sekundach.
 
 ### Kopiowanie zrootowanego obrazu rozruchu
-> Gdy już Twój telefon się włączy
+> Gdy już twój telefon się włączy
+
+- A superuser request for Shell might appear on your phone's screen. If it does, grant it access.
 ```cmd
-adb shell "su -c cp dev/block/by-name/boot /sdcard/root.img"; adb pull /sdcard/root.img
+adb shell "su -c cp dev/block/by-name/boot /sdcard/root.img" & adb pull /sdcard/root.img
 ```
 
 ## [Następny krok: Instalacja Windowsa](3-install.md)
