@@ -5,7 +5,7 @@
 ## Instalacja Windowsa
 
 ### Wymagania
-- [Windows dla ARM](https://worproject.com/esd)
+- [Windows na ARM](https://worproject.com/esd)
   
 - [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
   
@@ -15,48 +15,48 @@
 
 - [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-### Uruchom recovery OFOX
-> Jeśli Twój recovery został zastąpiony recovery domyślnym, sflashuj go ponownie za pomocą
+### Uruchomienie recovery OFOX
+> Jeśli recovery zostało zastąpione recovery domyślnym, sflashuj go ponownie za pomocą
 ```cmd
-fastboot flash recovery ścieżka\doo\ofox.img reboot recovery
+fastboot flash recovery ścieżka\do\ofox-beryllium.img reboot recovery
 ```
 
 #### Włączanie trybu pamięci masowej
-> Jeżeli ci mówi aby wykonać polecenie jescze raz to zrób to
+> Jeżeli zostałeś poproszony, aby wykonać polecenie jeszcze raz, zrób to
 ```cmd
 adb shell msc
 ```
 
 ### Diskpart
 > [!WARNING]
-> NIE USUWAJ ŻADNYCH PARTYCJI W DISKPART!!!! TO USUNIE CAŁĄ TWOJĄ UFS!!!! OZNACZA TO, ŻE TWOJE URZĄDZENIE ZOSTANIE TRWAŁE USZKODZONE BEZ ROZWIĄZANIA! (z wyjątkiem zabrania urządzenia do Xiaomi lub flashowania go za pomocą EDL, co prawdopodobnie będzie kosztować)
+> NIE USUWAJ ŻADNYCH PARTYCJI W DISKPART!!!! TO USUNIE CAŁĄ ZAWARTOŚĆ PAMIĘCI!!!! OZNACZA TO, ŻE TWOJE URZĄDZENIE ZOSTANIE TRWALE USZKODZONE BEZ ROZWIĄZANIA! (z wyjątkiem wysłania go do Xiaomi lub flashowania go za pomocą EDL)
 ```cmd
 diskpart
 ```
 
-#### Wybór partycji Windows
-> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **WINF1**
+#### Wybieranie partycji Windows
+> Wpisz `list Volume`, aby ją znaleźć, zamień `$` na rzeczywistą liczbę **WINF1**
 ```diskpart
 select volume $
 ```
 
-#### Dodaj literę do systemu Windows
+#### Dodanie litery do systemu Windows
 ```cmd
 assign letter x
 ```
 
-#### Wybieranie Partycji ESP
+#### Wybieranie partycji ESP
 > Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **ESPF1**
 ```diskpart
 select volume $
 ```
 
-#### Dodaj literę do ESP
+#### Dodanie literę do ESP
 ```cmd
 assign letter y
 ```
 
-#### Wyjdź z Diskpart
+#### Wyjście z Diskpart
 ```cmd
 exit
 ```
