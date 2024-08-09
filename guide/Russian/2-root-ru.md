@@ -41,8 +41,10 @@ fastboot reboot
 
 ### Скопируйте патченый boot образ
 > После загрузки устройства
+
+- На экране вашего телефона вероятно появится запрос суперпользователя на использование Shell. Если это произойдет, предоставьте ему доступ.
 ```cmd
-adb shell "su -c cp dev/block/by-name/boot /sdcard/root.img"; adb pull /sdcard/root.img
+adb shell "su -c cp dev/block/by-name/boot /sdcard/root.img" & adb pull /sdcard/root.img
 ```
 
 ## [Следующий шаг: Установка Windows](3-install-ru.md)
