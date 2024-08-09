@@ -42,7 +42,7 @@ fastboot reboot
 ### Kopiowanie zrootowanego obrazu rozruchu
 > Gdy już Twój telefon się włączy
 ```cmd
-adb pull /dev/block/by-name/boot root.img
+adb shell "su -c cp dev/block/by-name/boot /sdcard/root.img"; adb pull /sdcard/root.img
 ```
 
 ## [Następny krok: Instalacja Windowsa](3-install.md)
