@@ -11,6 +11,8 @@
   
 - [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
+- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
+
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 ### Прошейте OFOX recovery
@@ -63,18 +65,24 @@ exit
 > [!Warning]
 > НЕ ИСПОЛЬЗУЙТЕ 24H2!!!
 
-> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim)
+> Замените `путь\к\install.esd` актуальным путём к install.esd (файл также может называться install.wim или 22631.2861.XXXXXXX.esd)
 ```cmd
 dism /apply-image /ImageFile:путь\к\install.esd /index:6 /ApplyDir:X:\
 ```
 
 > Если вы получите `Error 87`, проверьте индекс вышего образа используя `dism /get-imageinfo /ImageFile:путь\к\install.esd`, затем замените `index:6` действтельным индексом **Windows 11 Pro** в вашем образе
 
+### Копирование вашего boot.img в Windows
+- Перетащите **root.img** на диск **WINF1** в проводнике Windows, затем переименуйте его в **boot.img**.
+
 ### Установка драйверов
-> Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` 
+- Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` (Если появляется ошибка, запустите `OfflineUpdaterFix.cmd`)
 
 > Введите букву диска **WINF1** (должна быть **X**) затем нажмите Enter
-  
+
+### Fixing touch
+- Right click the `touchfix.bat` file and run it as an Administrator
+
 #### Создайте файлы загрузчика Windows
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
@@ -114,7 +122,7 @@ adb reboot bootloader
 fastboot boot путь\к\firstboot-paneltype.img
 ```
 
-### Reboot to Android
-Your device should reboot by itself after +- 10 minutes of waiting, if it actually boots to Windows, complete the Windows setup and then press **Restart** in the start menu to boot back to Android for the last step.
+### Перезагрузка в Android
+Ваше устройство должно перезагрузиться само после +- 10 минут ожидания, после чего вы загрузитесь в Android для последнего шага.
 
-## [Последний шаг: Настройка двойной загрузки](dualboot-ru.md)
+## [Последний шаг: Настройка двойной загрузки](4-dualboot-ru.md)
