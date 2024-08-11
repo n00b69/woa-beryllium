@@ -11,19 +11,19 @@
 - Open CMD in the **platform-tools** folder.
 - Restore the four partitions that you backed up using the below commands. Replace `path\to` with the actual path of the images.
 ```cmd
-adb shell dd if=path\to\fsc.bin of=/dev/block/by-name/fsc
+adb push path\to\fsc.bin /cache/ & adb shell dd if=/cache/fsc.bin of=/dev/block/by-name/fsc
 ```
 
 ```cmd
-adb shell dd if=path\to\fsg.bin of=/dev/block/by-name/fsg
+adb push path\to\fsg.bin /cache/ & adb shell dd if=/cache/fsg.bin of=/dev/block/by-name/fsg
 ```
 
 ```cmd
-adb shell dd if=path\to\modemst1.bin of=/dev/block/by-name/modemst1
+adb push path\to\modemst1.bin /cache/ & adb shell dd if=/cache/modemst1.bin of=/dev/block/by-name/modemst1
 ```
 
 ```cmd
-adb shell dd if=path\to\modemst2.bin of=/dev/block/by-name/modemst2
+adb push path\to\modemst2.bin /cache/ & adb shell dd if=/cache/modemst2.bin of=/dev/block/by-name/modemst2
 ```
 - Reboot your device and check if LTE works.
 > [!Note]
