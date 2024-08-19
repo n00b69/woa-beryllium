@@ -20,7 +20,7 @@ fastboot flash recovery path\to\ofox.img reboot recovery
 adb shell format
 ```
 
-## [Следующий шаг: Установка Windows](2-install-ru.md)
+## [Следующий шаг: Установка Windows](3-install-ru.md)
 
 
 
