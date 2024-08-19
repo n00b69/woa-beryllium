@@ -20,7 +20,7 @@ fastboot flash recovery path\to\ofox.img reboot recovery
 adb shell format
 ```
 
-## [Next step: Reinstalling Windows](2-install.md)
+## [Next step: Reinstalling Windows](3-install.md)
 
 
 
