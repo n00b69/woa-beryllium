@@ -11,8 +11,6 @@
   
 - [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-- [Touch fix script](https://github.com/n00b69/woa-beryllium/releases/download/Files/touchfix.bat)
-
 - [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 ### Uruchomienie recovery OFOX
@@ -79,9 +77,6 @@ dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
 - Wypakuj archiwum ze sterownikami, a następnie otwórz plik `OfflineUpdater.cmd` (jeśli pojawi się błąd, otwórz `OfflineUpdaterFix.cmd`)
  
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być **X**), a następnie naciśnij enter.
-
-### Fixing touch
-- Right click the `touchfix.bat` file and run it as an Administrator
 
 #### Utwórz pliki bootloadera systemu Windows
 ```cmd
