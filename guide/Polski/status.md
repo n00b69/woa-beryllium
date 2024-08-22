@@ -7,7 +7,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 
 #### Funkcje
 - [x] Dzwięk (Głośniki)
-- [x] Dzwięk (3.5mm)
+- [ ] Dzwięk (3.5mm)
 - [X] Wzkaźnik baterii
 - [x] Bluetooth
 - [x] Jasność 
@@ -19,7 +19,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [x] Karta Graficzna  ```Brak x64```
 - [x] SD card
 - [ ] SMS
-- [x] Dotyk ```Breaks after sleeping```
+- [x] Dotyk
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
