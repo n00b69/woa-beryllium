@@ -18,7 +18,7 @@
 - [x] GPU  ```Нет ускорения x64```
 - [x] SD карта
 - [ ] СМС
-- [x] Touchscreen ```Не работает после спящего режима```
+- [x] Touchscreen
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
