@@ -19,7 +19,7 @@ The project is in development. Expect some updates in the future.
 - [x] GPU  ```No x64 acceleration```
 - [x] SD card
 - [ ] SMS
-- [x] Touchscreen ```Breaks after sleeping```
+- [x] Touchscreen
 - [x] UFS
 - [x] USB
 - [x] Wi-Fi
