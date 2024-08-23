@@ -44,7 +44,21 @@ fastboot reboot
 
 - На экране вашего телефона вероятно появится запрос суперпользователя на использование Shell. Если это произойдет, предоставьте ему доступ.
 ```cmd
-adb shell "su -c cp dev/block/by-name/boot /sdcard/rooted_boot.img" & adb pull /sdcard/rooted_boot.img
+adb shell "su -c cp /dev/block/by-name/boot /sdcard/rooted_boot.img" & adb pull /sdcard/rooted_boot.img
 ```
 
 ## [Следующий шаг: Установка Windows](3-install-ru.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
