@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
 
-- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Модифицированный OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 ### Запустите OFOX
 > Если ваше recovery было заменено на стоковое, прошейте его ещё раз в fastboot с помощью:
