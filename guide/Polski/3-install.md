@@ -5,11 +5,11 @@
 ## Instalacja Windowsa
 
 ### Wymagania
+- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+
 - [Windows na ARM](https://worproject.com/esd)
   
 - [Sterowniki](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-  
-- [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 - [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
