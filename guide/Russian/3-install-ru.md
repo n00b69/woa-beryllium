@@ -9,7 +9,7 @@
   
 - [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
   
-- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Модифицированный OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
