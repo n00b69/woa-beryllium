@@ -5,11 +5,11 @@
 ## Установка Windows
 
 ### Требования
+- [Модифицированный OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+
 - [Образ ARM Windows](https://worproject.com/esd)
   
 - [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-  
-- [Модифицированный OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
@@ -104,15 +104,15 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 mountvol y: /d
 ```
 
-### Reboot to fastboot
+### Перезагрузитесь в fastboot
 ```cmd
 adb reboot bootloader
 ```
 
-#### Booting firstboot.img
+#### #### Загрузитесь в firstboot.img
 > Download **firstboot-paneltype.img** for your device's panel and replace `путь\к\firstboot-paneltype.img` with the actual path to the image
 >
-> Use `adb shell panel` if you forgot what panel you have
+> Use `adb shell panel` in the modified recovery if you forgot what panel you have
 ```cmd
 fastboot boot путь\к\firstboot-paneltype.img
 ```
