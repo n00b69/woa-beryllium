@@ -139,7 +139,7 @@ adb reboot bootloader
 #### Booting firstboot.img
 > Download **firstboot-paneltype.img** for your device's panel and replace **path\to** with the actual path to the image
 >
-> Reboot to recovery and use `adb shell panel` if you forgot what panel you have
+> Reboot to recovery and use `adb shell panel` in the modified recovery if you forgot what panel you have
 ```cmd
 fastboot boot path\to\firstboot-paneltype.img
 ```
