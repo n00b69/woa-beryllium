@@ -5,11 +5,11 @@
 ## Installing Windows
 
 ### Prerequisites
+- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+
 - [Windows on ARM image](https://worproject.com/esd)
   
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
-  
-- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
@@ -113,7 +113,7 @@ adb reboot bootloader
 #### Booting firstboot.img
 > Download **firstboot-paneltype.img** for your device's panel and replace `path\to\firstboot-paneltype.img` with the actual path to the image
 >
-> Reboot to recovery and use `adb shell panel` if you forgot what panel you have
+> Reboot to recovery and use `adb shell panel`  in the modified recovery if you forgot what panel you have
 ```cmd
 fastboot boot path\to\firstboot-paneltype.img
 ```
