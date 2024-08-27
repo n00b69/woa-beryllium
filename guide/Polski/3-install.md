@@ -98,37 +98,10 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
-### Usuń przypisanie litery dysku
-> Żeby nie pozostał tam po odłączeniu urządzenia
+#### Remove the drive letter for ESP
+> If this does not work, ignore it and skip to the next command. This phantom drive will disappear the next time you reboot your PC.
 ```cmd
-diskpart
-```
-
-#### Wybierz partycję systemu Windows w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **WINF1**
-```część dysku
-sel vol $
-```
-
-#### Usuń przypisanie litery X
-```część dysku
-remove letter x
-```
-
-#### Wybierz głośność systemu ESP w telefonie
-> Użyj `list Volume`, aby go znaleźć, zamień `$` na rzeczywistą liczbę **ESPF1**
-```część dysku
-sel vol $
-```
-
-#### Usuń przypisanie litery Y
-```część dysku
-remove letter y
-```
-
-#### Wyjdź z dysku
-```część dysku
-exit
+mountvol y: /d
 ```
 
 ### Reboot to fastboot
