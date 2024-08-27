@@ -109,7 +109,7 @@ mountvol y: /d
 adb reboot bootloader
 ```
 
-#### #### Загрузитесь в firstboot.img
+#### Загрузитесь в firstboot.img
 > Download **firstboot-paneltype.img** for your device's panel and replace `путь\к\firstboot-paneltype.img` with the actual path to the image
 >
 > Use `adb shell panel` in the modified recovery if you forgot what panel you have
