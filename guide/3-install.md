@@ -7,13 +7,13 @@
 ### Prerequisites
 - [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-- [Windows on ARM image](https://worproject.com/esd)
+- [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-### Boot to OFOX recovery
+### Boot into OFOX recovery
 > If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
 fastboot flash recovery path\to\ofox.img reboot recovery
