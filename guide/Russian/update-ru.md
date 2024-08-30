@@ -48,14 +48,14 @@ exit
 
 ### Установка драйверов 
 > [!Note]
-> This process will take +- 20 minutes. Do not worry, this is normal.
+> Этот процесс займёт +- 20 минут. Не волнуйтесь, это нормально.
 
 - Распакуйте пакет драйверов, затем откройте файл `OfflineUpdater.cmd` (Если появляется ошибка, запустите `OfflineUpdaterFix.cmd`)
 
 > Введите букву диска **WINF1** (должна быть **X**) затем нажмите Enter
 
 ### Reboot your device
-> Make sure to also change the UEFI image in Android, otherwise you may face a "blue screen of death" (BSoD) when booting Windows later.
+> Не забудьте также заменить образ UEFI в Android, иначе вы можете столкнуться с "синим экраном смерти" (BSoD) при последующей загрузке в Windows.
 ```cmd
 adb reboot
 ```
