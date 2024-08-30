@@ -5,7 +5,7 @@
 ## Разметка устройства 
 
 ### Требования 
-- Мозг (самый важный из всех)
+- Разблокированный Загрузчик
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
