@@ -5,9 +5,9 @@
 ## Tworzenie partycji
 
 ### Wymagania
-- Mózg (najważniejsze ze wszystkich)
+- Odblokowany bootloader
 
-- [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
+- [ADB i Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
 - [Zmodyfikowane recovery OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
