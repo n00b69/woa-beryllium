@@ -28,9 +28,9 @@
 - Нажмите **БЫСТРАЯ ЗАГРУЗКА В WINDOWS** в приложении или воспользуйтесь только что созданным переключателем на панели быстрых настроек.
 
 > [!Important]
-> If you ever update or change your Android ROM, make sure to create a new **boot.img** backup (after rooting your phone!) and place it inside the **C:\ folder** in Windows, overwriting the old file.
->
-> You can use the **BACK UP BOOT IMAGE** feature in the WOA Helper app to do so.
+> Если вы когда-либо обновите или измените ПРОШИВКУ Android, обязательно создайте новую резервную копию boot.img (после рутирования телефона!) и поместите ее в папку C:\ в Windows, перезаписав старый файл.
+> 
+> Для этого вы можете использовать функцию **БЭКАП ОБРАЗА BOOT** в приложении WOA Helper.
 
 ## Готово!
 
