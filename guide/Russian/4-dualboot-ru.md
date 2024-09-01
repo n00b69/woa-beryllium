@@ -5,8 +5,6 @@
 ## Dualboot гайд
 
 ### Требования
-- [Magisk](https://github.com/topjohnwu/Magisk/releases/latest)
-
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
 - [Приложение WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
@@ -28,5 +26,36 @@
 
 #### Загрузка в Windows
 - Нажмите **БЫСТРАЯ ЗАГРУЗКА В WINDOWS** в приложении или воспользуйтесь только что созданным переключателем на панели быстрых настроек.
-  
+
+> [!Important]
+> If you ever update or change your Android ROM, make sure to create a new **boot.img** backup (after rooting your phone!) and place it inside the **C:\ folder** in Windows, overwriting the old file.
+>
+> You can use the **BACK UP BOOT IMAGE** feature in the WOA Helper app to do so.
+
 ## Готово!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
