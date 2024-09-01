@@ -27,7 +27,7 @@ adb shell msc
 
 ### Diskpart
 > [!WARNING]
-> NIE USUWAJ ŻADNYCH PARTYCJI W DISKPART!!!! TO USUNIE CAŁĄ ZAWARTOŚĆ PAMIĘCI!!!! OZNACZA TO, ŻE TWOJE URZĄDZENIE ZOSTANIE TRWALE USZKODZONE BEZ ROZWIĄZANIA! (z wyjątkiem wysłania go do Xiaomi lub flashowania go za pomocą EDL)
+> NIE USUWAJ ŻADNYCH PARTYCJI W DISKPART!!!! TO USUNIE CAŁĄ ZAWARTOŚĆ PAMIĘCI!!!! OZNACZA TO, ŻE TWOJE URZĄDZENIE ZOSTANIE TRWALE USZKODZONE BEZ ROZWIĄZANIA! (z wyjątkiem wysłania go do Xiaomi lub flashowania go za pomocą [EDL](edl.md))
 ```cmd
 diskpart
 ```
@@ -78,12 +78,12 @@ dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
  
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być **X**), a następnie naciśnij enter.
 
-#### Utwórz pliki bootloadera systemu Windows
+#### Tworzenie plików bootloadera systemu Windows
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
 
-#### Włącz tryb testowy
+#### Włączanie trybu testowego
 ```cmd
 bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
 ```
@@ -104,7 +104,7 @@ bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 mountvol y: /d
 ```
 
-### Reboot to fastboot
+### Uruchamianie ponownie w trybie fastboot
 ```cmd
 adb reboot bootloader
 ```
