@@ -79,6 +79,7 @@ dism /apply-image /ImageFile:ścieżka\do\install.esd /index:6 /ApplyDir:X:\
 > Jeśli poprosi Cię o podanie litery, wpisz literę dysku **WINF1** (która powinna być **X**), a następnie naciśnij enter.
 
 #### Tworzenie plików bootloadera systemu Windows
+> If any error shows up, such as "Failure when attempting to copy boot files", open `diskpart` again and assign any new letter to **ESPDIPPER**, then replace the letter `Y` in the next commands with the letter that you just added.
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
 ```
@@ -113,6 +114,9 @@ adb reboot bootloader
 > Download **firstboot-paneltype.img** for your device's panel and replace **path\to** with the actual path to the image
 >
 > Reboot to recovery and use `adb shell panel` in the modified recovery if you forgot what panel you have
+
+> [!Important]
+> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup
 ```cmd
 fastboot boot path\to\firstboot-paneltype.img
 ```
