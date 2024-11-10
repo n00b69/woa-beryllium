@@ -115,6 +115,9 @@ adb reboot bootloader
 > Download **firstboot-paneltype.img** for your device's panel and replace `path\to\firstboot-paneltype.img` with the actual path to the image
 >
 > Reboot to recovery and use `adb shell panel`  in the modified recovery if you forgot what panel you have
+
+> [!Important]
+> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup
 ```cmd
 fastboot boot path\to\firstboot-paneltype.img
 ```
