@@ -38,6 +38,16 @@ fastboot flash modem path\to\modem.img
 
 ##### Skończone!
 
+## LTE in Windows does not work
+> [!Note]
+> You may have to follow the steps above to restore your modem first
+- In Android, find your APN settings. It should be located in `Connections` > `Mobile Networks` > `Access Point Names`.
+- Write the information of your current APN settings down, then boot into Windows.
+- In `Cellular Settings`, click on `Mobile operator settings` > `APN settings` and add the APN settings you wrote down earlier.
+- Enable **Cellular**. It may say `No Internet Access`, but it should still work. 
+
+##### Finished!
+
 ## Nie można zamontować systemu Windows w systemie Android
 > Dzieje się tak, gdy zamykasz system Windows zamiast go ponownie uruchamiać.
 - Aby rozwiązać ten problem, uruchom system Windows, a następnie naciśnij „Uruchom ponownie”, a następnie, gdy ekran się wyłączy, uruchom system TWRP i stamtąd załaduj system Android.
