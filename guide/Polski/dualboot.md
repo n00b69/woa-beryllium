@@ -7,7 +7,7 @@
 ### Wymagania
 - [Obraz UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-- [WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
+- [WOA Helper](https://github.com/n00b69/woa-helper/releases/tag/APK)
 
 ## Przewodnik Dualboot
 W tym przewodniku założono, że jesteś zrootowany, jeśli tak nie jest, postępuj zgodnie z [tym przewodnikiem](root.md)
