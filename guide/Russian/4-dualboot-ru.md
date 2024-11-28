@@ -7,7 +7,7 @@
 ### Требования
 - [Образ UEFI](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-- [Приложение WOA Helper](https://github.com/Marius586/WoA-Helper-update/releases/tag/WOA)
+- [Приложение WOA Helper]https://github.com/n00b69/woa-helper/releases/tag/APK)
 
 ## Руководство по настройке двойной загрузки
 В этом руководстве предполагается, что у вас есть root-права, если это не так, пожалуйста, сначала следуйте [этому руководству](root-ru.md).
