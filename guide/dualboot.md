@@ -9,8 +9,8 @@
 
 - [WOA Helper app](https://github.com/n00b69/woa-helper/releases/tag/APK)
 
-## Dualboot guide
-This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
+## Setting up the dualboot app
+> This guide assumes you are rooted, if you aren't, please follow [this guide](root.md) first.
 
 ### Setup - Android
 - Download and install the **WOA Helper** app, then open it and grant it root access.
