@@ -62,7 +62,7 @@ adb shell panel
 ### Partitioning your device
 > There are two methods to partition your device. Please select the method you would like to use below. 
 
-#### Method 1: Manual partitioning 
+#### Method 1: Automatic partitioning 
 
 <details>
   <summary><strong>Click here for method 1</strong></summary> 
