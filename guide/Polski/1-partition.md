@@ -53,6 +53,12 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 adb pull /dev/block/by-name/boot boot.img
 ```
 
+#### Sprawdzanie typu panelu dotykowego
+> Zapamiętaj (**Tianma** lub **EBBG**), będziesz go potrzebować w dalszej części instrukcji
+```cmd
+adb shell panel
+```
+
 ### Przewodnik dotyczący partycjonowania
 > There are two methods to partition your device. Please select the method you would like to use below. 
 
