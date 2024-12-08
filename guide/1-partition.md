@@ -62,7 +62,7 @@ adb shell panel
 ### Partitioning your device
 > There are two methods to partition your device. Please select the method you would like to use below. 
 
-#### Method 1: Automatic partitioning 
+#### Method 1: Manual partitioning 
 
 <details>
   <summary><strong>Click here for method 1</strong></summary> 
@@ -142,7 +142,7 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPF1
 
 </details>
 
-#### Method 2: Manual partitioning 
+#### Method 2: Automatic partitioning 
 
 <details>
   <summary><strong>Click here for method 2</strong></summary> 
