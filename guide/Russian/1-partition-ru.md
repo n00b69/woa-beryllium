@@ -61,16 +61,16 @@ adb pull /dev/block/by-name/boot boot.img
 adb shell panel
 ```
 
-### Partitioning your device
-> There are two methods to partition your device. Please select the method you would like to use below. 
+### Ебашим разметку на твоём телефоне
+> Наебашить разметку на телефоне можно двумя путями. Выбери тот который тебе по душе. 
 
-#### Method 1: Manual partitioning 
+#### Путь 1: Наебашить самим 
 
 <details>
-  <summary><strong>Click here for method 1</strong></summary> 
+  <summary><strong>Тыкни здесь для инструкций</strong></summary> 
 
 #### Размантируйте data
-> Ignore any possible errors and continue
+> Забей хуй на все ошибки и следуй инструкции
 ```cmd
 adb shell umount /dev/block/by-name/userdata
 ```
@@ -95,7 +95,7 @@ rm $
 #### Заново создать userdata
 > Замените **1611MB** с прежним начальным значением **userdata** который мы только что удалили (вероятно, это 1611МБ)
 >
-> Замените **32GB** с конечным значением, которое вы хотите, чтобы **userdata** имела. In this example your available usable space in Android will be 32GB-1611MB = **30GB**
+> Замените **32GB** с конечным значением, которое вы хотите, чтобы **userdata** имела. На примере этой хуйни место в Андроиде будет 32ГБ-1611МБ = **30ГБ** нахуй
 ```cmd
 mkpart userdata ext4 1611MB 32GB
 ```
@@ -133,7 +133,7 @@ quit
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
 
 ### Форматирование дисков Windows и ESP
-> Reboot into the modded recovery, then run the below two commands
+> Зайди в рекавери и ебани эти 2 команды
 ```cmd
 adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINF1
 ``` 
@@ -144,10 +144,10 @@ adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPF1
 
 </details>
 
-#### Method 2: Automatic partitioning 
+#### Путь 2: Дать машине наебашить разметку
 
 <details>
-  <summary><strong>Click here for method 2</strong></summary> 
+  <summary><strong>Тыкни здесь для инструкций</strong></summary> 
 
 ### Запустите скрипт разметки 
 > Замените **$** объёмом памяти, который вы хотите выделить для Windows (не добавляйте ГБ, просто введите число).
