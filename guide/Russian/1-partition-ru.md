@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Модифицированный OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Модифицированный OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
 ### Заметки 
 > [!WARNING]  
@@ -17,6 +17,8 @@
 > НЕ ПЕРЕЗАГРУЖАЙТЕ ТЕЛЕФОН! Если вы считаете, что допустили ошибку, обратитесь за помощью в [Telegram чате](https://t.me/WinOnF1).
 > 
 > Не выполняйте все команды сразу, выполняйте их по порядку!
+>
+> ВЫ МОЖЕТЕ СЛОМАТЬ СВОЕ УСТРОЙСТВО С ПОМОЩЬЮ ПРИВЕДЕННЫХ НИЖЕ КОМАНД, ЕСЛИ БУДЕТЕ ВЫПОЛНЯТЬ ИХ НЕПРАВИЛЬНО!!!
 
 ### Открыть CMD от имени администратора
 > Скачайте **platform-tools** и распакуйте его куда-нибудь, затем откройте CMD от имени **администратора**.
@@ -53,6 +55,100 @@ cmd /c "for %i in (fsg,fsc,modemst1,modemst2) do (adb shell dd if=/dev/block/by-
 adb pull /dev/block/by-name/boot boot.img
 ```
 
+#### Узнайте тип вашего дисплея 
+> Запомните вывод (**Tianma** or **EBBG**), это понадобится вам позже
+```cmd
+adb shell panel
+```
+
+### Partitioning your device
+> There are two methods to partition your device. Please select the method you would like to use below. 
+
+#### Method 1: Manual partitioning 
+
+<details>
+  <summary><strong>Click here for method 1</strong></summary> 
+
+#### Размантируйте data
+> Ignore any possible errors and continue
+```cmd
+adb shell umount /dev/block/by-name/userdata
+```
+
+#### Подгатовка к разметке
+```cmd
+adb shell parted /dev/block/sda
+``` 
+
+#### Отобразить текущую таблицу разделов
+> Parted выведет список разделов, userdata должна быть последним разделом в списке.
+```cmd
+print
+```
+
+#### Удалить userdata
+> Замените **`$`** номером раздела **`userdata`**, должен быть **`21`**
+```cmd
+rm $
+```
+
+#### Заново создать userdata
+> Замените **1611MB** с прежним начальным значением **userdata** который мы только что удалили (вероятно, это 1611МБ)
+>
+> Замените **32GB** с конечным значением, которое вы хотите, чтобы **userdata** имела. In this example your available usable space in Android will be 32GB-1611MB = **30GB**
+```cmd
+mkpart userdata ext4 1611MB 32GB
+```
+
+#### Создать раздел ESP
+> Замените **32GB** с конечным значением **userdata**
+>
+> Замените **32.3GB** тем значением, которое вы использовали ранее, добавив к нему **0.3GB**
+```cmd
+mkpart esp fat32 32GB 32.3GB
+```
+
+#### Создать раздел Windows
+> Замените **32.3GB** с конечным значением **esp**
+```cmd
+mkpart win ntfs 32.3GB -0MB
+```
+
+#### Сделать ESP загрузочным
+> Используйте `print` чтобы отобразиь все разделы. Замените `$` с вашим номером раздела ESP, который должен быть **`22`**
+```cmd
+set $ esp on
+```
+
+#### Выйти из parted
+```cmd
+quit
+```
+
+### Отформатировать data
+- Отформатируйте все данные в TWRP, иначе Android не загрузится.
+- (Перейдите к `Wipe` > `Format data` > напечатайте `yes`)
+
+#### Проверьте, запускается ли Android 
+- Просто перезагрузите телефон и посмотрите, загружается ли Android
+
+### Форматирование дисков Windows и ESP
+> Reboot into the modded recovery, then run the below two commands
+```cmd
+adb shell mkfs.ntfs -f /dev/block/by-name/win -L WINF1
+``` 
+
+```cmd
+adb shell mkfs.fat -F32 -s1 /dev/block/by-name/esp -n ESPF1
+```
+
+</details>
+
+#### Method 2: Automatic partitioning 
+
+<details>
+  <summary><strong>Click here for method 2</strong></summary> 
+
 ### Запустите скрипт разметки 
 > Замените **$** объёмом памяти, который вы хотите выделить для Windows (не добавляйте ГБ, просто введите число).
 > 
@@ -61,14 +157,10 @@ adb pull /dev/block/by-name/boot boot.img
 adb shell partition $
 ```
 
-#### Узнайте тип вашего дисплея 
-> Запомните вывод (**Tianma** or **EBBG**), это понадобится вам позже
-```cmd
-adb shell panel
-```
-
 ### Проверьте, запускается ли Android 
 - Просто перезагрузите телефон и посмотрите, загружается ли Android
+
+</details>
 
 ## [Следующий шаг: Получение root прав](2-root-ru.md)
 
