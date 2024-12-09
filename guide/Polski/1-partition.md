@@ -17,6 +17,8 @@
 > NIE URUCHAMIAJ PONOWNIE TELEFONU! Jeśli uważasz, że popełniłeś błąd, poproś o pomoc na [Telegramie](https://t.me/WinOnF1).
 > 
 > Nie uruchamiaj wszystkich poleceń na raz, wykonuj je po kolei!
+>
+> MOŻESZ ZNISZCZYĆ SWOJE URZĄDZENIE ZA POMOCĄ PONIŻSZYCH POLECEŃ, JEŚLI ZROBISZ JE ŹLE!!!
 
 ### Otwieranie CMD jako administrator
 > Pobierz **platform-tools** i wypakuj gdzieś folder, a następnie otwórz CMD jako **administrator**.
