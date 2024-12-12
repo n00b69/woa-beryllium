@@ -116,7 +116,7 @@ adb reboot bootloader
 > Use `adb shell panel` in the modified recovery if you forgot what panel you have
 
 > [!Important]
-> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup
+> Remove your USB cable right after leaving the fastboot screen, or Windows may crash in the initial setup, which will then require a reinstall
 ```cmd
 fastboot boot путь\к\firstboot-paneltype.img
 ```
