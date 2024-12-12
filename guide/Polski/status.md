@@ -12,12 +12,12 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [x] Bluetooth
 - [x] Jasność 
 - [ ] Kamera
-- [x] LTE ```Problematyczne```
+- [x] LTE
 - [x] Ładowanie ```BARDZO Powolne```
 - [x] Wyświetlacz
 - [x] Latarka
 - [x] Karta Graficzna  ```Brak x64```
-- [x] SD card
+- [x] Karta SD
 - [ ] SMS
 - [x] Dotyk
 - [x] UFS
