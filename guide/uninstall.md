@@ -19,14 +19,15 @@ If you want to relock your bootloader you'll need your partition table to be sto
 adb reboot bootloader
 ```
 
-#### Restore GPT
+### Restore GPT
 > Replace ```path\to\gpt_both0.bin``` with the path to the gpt_both0.bin file.
 
 ```cmd
 fastboot flash partition:0 path\to\gpt_both0.bin
 ```
 
-#### Erase userdata to avoid a bootloop and restore FS size
+#### Erase userdata
+> To avoid a bootloop and restore FS size
 ```cmd
 fastboot -w
 ```
