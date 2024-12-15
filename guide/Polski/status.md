@@ -12,7 +12,7 @@ Ten projekt nie jest aktywnie aktulizowany, aktualizacje mogą w końcu pojawić
 - [x] Bluetooth
 - [x] Jasność 
 - [ ] Kamera
-- [x] LTE
+- [x] LTE ```if LTE does not work, follow``` [these steps](troubleshooting.md#lte-in-windows-does-not-work)
 - [x] Ładowanie ```BARDZO Powolne```
 - [x] Wyświetlacz
 - [x] Latarka
