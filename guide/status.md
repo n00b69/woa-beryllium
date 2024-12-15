@@ -12,7 +12,7 @@ The project is in development. Expect some updates in the future.
 - [x] Bluetooth
 - [x] Brightness 
 - [ ] Camera
-- [x] LTE ```if LTE does not work, follow [these steps](troubleshooting.md#lte-in-windows-does-not-work)```
+- [x] LTE ```if LTE does not work, follow``` [these steps](troubleshooting.md#lte-in-windows-does-not-work)
 - [x] Charging ```VERY slow. Use QC 3.0```
 - [x] Display
 - [x] Flashlight
