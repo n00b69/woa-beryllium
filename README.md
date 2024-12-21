@@ -38,6 +38,7 @@ All the files here have been contributed by other users, here you will find a gu
 
 ## Maintainers
 [<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
+[<img alt="2Petro" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/171992640?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/2Petro)
 
 
 ## Contributors
