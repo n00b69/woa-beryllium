@@ -13,6 +13,7 @@ All the files here have been contributed by other users, here you will find a gu
 
 **IF YOU AREN'T COMFORTABLE MODDING YOUR PHONE OR ITS PARTITION TABLE OR YOU ARE PARANOID OF BRICKING YOUR DEVICE CLICK AWAY NOW!!! YOU HAVE BEEN WARNED, YOU ARE ON YOUR OWN IF YOU BRICK YOUR DEVICE!!! AGAIN! YOU HAVE BEEN WARNED!!!**
 
+
 ## Get started
 - [Project status](guide/status.md)
 
@@ -21,6 +22,7 @@ All the files here have been contributed by other users, here you will find a gu
 - [No PC installation instructions](https://github.com/Kumar-Jy/woaPocoF1-withoutPC)
 
 - [Troubleshooting](guide/troubleshooting.md)
+
 
 ## Miscellaneous
 - [Dualboot setup](guide/dualboot.md)
@@ -32,6 +34,11 @@ All the files here have been contributed by other users, here you will find a gu
 - [Reinstall instructions](guide/reinstall.md)
 
 - [Uninstall instructions](guide/uninstall.md)
+
+
+## Maintainers
+[<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
+
 
 ## Contributors
 [<img alt="adomerlee" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/109386069?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/adomerlee)
@@ -55,7 +62,6 @@ All the files here have been contributed by other users, here you will find a gu
 [<img alt="n00b69" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/83274506?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/n00b69)
 [<img alt="TAOCroatia" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/34100820?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TAOcroatia)
 [<img alt="Kumar-Jy" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/20044626?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Kumar-Jy)
-[<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
 [<img alt="TrustedFloppa" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/85476585?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/TrustedFloppa)
 [<img alt="Misha803" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/118528504?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Misha803)
 [<img alt="Dawid2849" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/77780707?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/Dawid2849)
