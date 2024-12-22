@@ -20,6 +20,8 @@ W tym przewodniku założono, że posiadasz roota, a jeśli tak nie jest, postę
 ### Konfiguracja — Windows
 > [!Tip]
 > Jeśli to będzie pierwszy raz, gdy uruchamiasz Windowsa i chcesz pominąć logowanie do konta Microsoft, wciśnij przycisk **Nie mam Internetu** w etapie WiFi, a gdy zapytany, wciśnij **Kontynuuj z ograniczoną konfiguracją**.
+>
+> If there is no such button, press the **SIM card** button at the top of the screen (the one that says **Connected**), and press **Disconnect**.
 
 #### Uruchamianie systemu Android
 - Uruchom nowy skrót na pulpicie (możesz także przypiąć go do menu startowego/paska zadań, aby mieć łatwiejszy dostęp)
