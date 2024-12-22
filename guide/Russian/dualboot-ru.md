@@ -25,6 +25,8 @@
 ### Установка - Windows
 > [!Tip]
 > Если вы загружаете Windows впервые и хотите пропустить вход в учетную запись Microsoft, нажмите кнопку **У меня нет интернета** на странице Wi-Fi, а затем при появлении соответствующего запроса нажмите кнопку **Продолжить с ограниченной настройкой**.
+>
+> If there is no such button, press the **SIM card** button at the top of the screen (the one that says **Connected**), and press **Disconnect**.
 - Перейдите к `C:\sta` и создайте ярлык **sta.exe** на своём рабочем столе.
 
 #### Загрузка на Android
