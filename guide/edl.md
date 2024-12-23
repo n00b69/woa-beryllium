@@ -28,7 +28,7 @@
 
 ### Flashing the stock rom
 - Copy and paste the full path to the images folder in the extracted fastboot rom from the first stepn then press **enter** to start flashing the rom.
-> It should look something like: C:\Users\Pidoraz\Downloads\polaris_global_images_V12.0.3.0.QDGMIXM_20201228.0000.00_10.0_global\images
+> It should look something like: `C:\Users\Pidoraz\Downloads\polaris_global_images_V12.0.3.0.QDGMIXM_20201228.0000.00_10.0_global\images`
 
 #### Reboot to Android
 > After it finishes flashing the ROM (this might take around 5 minutes), simply reboot the device to boot back into Android.
