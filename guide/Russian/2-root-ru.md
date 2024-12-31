@@ -41,13 +41,18 @@ fastboot reboot
 
 ### Скопируйте патченый boot образ
 > После загрузки устройства
-- На экране вашего телефона вероятно появится запрос суперпользователя на использование Shell. Если это произойдет, предоставьте ему доступ.
-- If the command fails, open **Magisk**, click on `Superuser`, find **Shell**, and grant it access.
 ```cmd
 adb shell "su -c cp /dev/block/by-name/boot /sdcard/rooted_boot.img" & adb pull /sdcard/rooted_boot.img
 ```
+- На экране вашего телефона вероятно появится запрос суперпользователя на использование Shell. Если это произойдет, предоставьте ему доступ.
+- If the command fails, open **Magisk**, click on `Superuser`, find **Shell**, and grant it access.
 
 ## [Следующий шаг: Установка Windows](3-install-ru.md)
+
+
+
+
+
 
 
 
