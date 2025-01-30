@@ -9,7 +9,7 @@
 
 - [ADB & Fastboot](https://developer.android.com/studio/releases/platform-tools)
   
-- [Модифицированный OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Модифицированный OFOX](https://github.com/Kumar-Jy/Windows-in-PocoF1-Without-PC/releases/tag/Modified-Recovery)
 
 ### Заметки 
 > [!WARNING]  
