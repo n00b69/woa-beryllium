@@ -5,46 +5,64 @@
 ## Дополнительные материалы
 > Ниже вы найдете список настроек и материалов для ARM Windows на вашем устройстве 
 
-## Список поддерживаемых приложений/игр
-Это ни в коем случае не полный список, в нём просто перечислены приложения/игры, которые были протестированы сообществом
-[Ссылку можно найти здесь](https://docs.google.com/spreadsheets/d/1XYuoySgYQE0HL573sA-0RGMX7I4lt5rWJuQ8Z8yRJNY/edit?usp=drivesdk)
 
-Вы также можете ознакомиться со списком специализированного программного обеспечения ARM [по этой ссылке](https://armrepo.ver.lt/)
+### List of supported apps/games
+> These are by no means comprehensive lists, they do however list apps/games that have been tested by the community
 
-##### Готово!
+- [Renegade Google Sheets list](https://docs.google.com/spreadsheets/d/1XYuoySgYQE0HL573sA-0RGMX7I4lt5rWJuQ8Z8yRJNY/edit?usp=drivesdk)
 
-## Скрыть диск D (раздел модема)
-> [!NOTE]
-> Это рекомендуется, поскольку этот диск не следует модифицировать, хотя некоторые приложения могут попытаться выполнить запись на него
+- [ARM Repo (native ARM software)](https://armrepo.ver.lt/)
 
-- Откройте окно командной строки и запустите ```diskpart```
-- Выполните ```list volume``` чтобы отобразить все доступные тома
-- Выберите диск, которой имеет букву D используя ```select volume $```, заменяя "$" номером тома
-- Удалите букву используя```remove letter d```
-- Выйдите из diskpart введя ```exit```
+- [News & supported applications](https://windowsonarm.org/)
 
-##### Готово!
+#### Finished!
 
-## Включение/Выключение режима USB-хоста
+
+### Toggling USB host mode
 > [!Warning]
-> Отключите режим USB-хостинга, если вы используете USB-хаб с питанием, так как это может привести к необратимому повреждению вашего устройства. Если вы не используете USB-хаб с питанием, включите режим USB-хостинга, иначе вы не сможете использовать никакие USB-устройства.
+> Disable USB host mode if you use a powered USB hub, as this can irreversibly damage your device. If you don't use a powered USB hub, enable USB host mode or you will not be able to use any USB devices.
 
-Запустите [USB Host Mode Control](https://github.com/Misha803/My-Scripts/releases/tag/USB-Host-Mode-Control) чтобы включить/выключить режим USB-хостинга и подтвердите что вы хотите включить/выключить режим USB-хостинга.
+- Run [USB Host Control](https://github.com/Misha803/My-Scripts/releases/tag/USB-Host-Mode-Control) to enable/disable USB host mode, then confirm that you want to disable/enable USB host mode.
+- If USB host mode is currently enabled and USB does not work, turn it off, then back on.
 
-##### Готово!
+#### Finished!
 
-## Установка Microsoft Office / Microsoft 365
-- Скачайте этот [ISO образ](https://mega.nz/file/hjAiSL4T#G7kOKpsUFpyL2UW9RQmY2e96urcQW5xZKdc7ciaNOy8) на ваш планшет
-- Щелкните правой кнопкой мыши на iso-файле и выберите "Смонтировать", чтобы открыть его в проводнике
-- Дважды щелкните по `Office Tool Plus.exe`, чтобы запустить мастер установки
-- В появившемся окне нажмите `Да`
-- Дождитесь завершения установки
 
-##### Готово!
+### Install Microsoft Office
+- Go to [Gravesoft's Office installer page](https://gravesoft.dev/office_c2r_links).
+- Download the installer that fits your purposes. Make sure you select `Online x64`.
+- Open the `setup.exe` and follow any instructions provided within.
 
-## Активация Windows / Office
-Следуйте инструкциям от Massgravel [здесь](https://github.com/massgravel/Microsoft-Activation-Scripts)
+#### Finished!
 
-##### Готово!
+
+### Activate Windows / Office
+- Follow the instructions by Massgravel [here](https://github.com/massgravel/Microsoft-Activation-Scripts)
+
+#### Finished!
+
+
+### Making the keyboard float
+> [!WARNING]  
+> Make sure these steps are done on the device running Windows, not your computer!
+
+- Open CMD as an administrator and run ```reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Scaling /v MonitorSize```
+- Press `y` then enter.
+- Reboot your device.
+
+##### Finished!
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
