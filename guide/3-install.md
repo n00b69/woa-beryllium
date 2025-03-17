@@ -5,7 +5,7 @@
 ## Installing Windows
 
 ### Prerequisites
-- [Modded OFOX recovery](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
+- [Modded recovery](https://github.com/Kumar-Jy/Windows-in-PocoF1-Without-PC/releases/tag/Modified-Recovery)
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
   
@@ -16,7 +16,7 @@
 ### Boot into OFOX recovery
 > If your recovery has been replaced by the stock recovery, flash it again using
 ```cmd
-fastboot flash recovery path\to\ofox.img reboot recovery
+fastboot flash recovery path\to\modded_recovery.img reboot recovery
 ```
 
 #### Enabling mass storage mode
