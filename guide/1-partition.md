@@ -31,10 +31,10 @@ cd path\to\platform-tools
 > [!Note]
 > If your device is not detected in fastboot or recovery mode, you'll have to install USB drivers [using this guide](troubleshooting.md#device-is-not-recognized-in-fastboot-or-recovery)
 
-#### Flash the modded OFOX recovery
+#### Flash the modded recovery
 > Open a CMD window inside the platform-tools folder, then (while your phone is in fastboot mode) run
 ```cmd
-fastboot flash recovery path\to\ofox-beryllium.img reboot recovery
+fastboot flash recovery path\to\modded_recovery.img reboot recovery
 ```
 
 ### Backing up important files
