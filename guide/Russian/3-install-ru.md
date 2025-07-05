@@ -7,7 +7,7 @@
 ### Требования
 - [Модифицированный OFOX](https://github.com/n00b69/woa-beryllium/releases/tag/Recovery)
 
-- [Образ ARM Windows](https://arkt-7.github.io/woawin/)
+- [Образ ARM Windows](https://arkt-7.github.io/woawin#23h2l)
   
 - [Драйвера](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
