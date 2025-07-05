@@ -7,7 +7,7 @@
 ### Prerequisites
 - [Modded recovery](https://github.com/Kumar-Jy/Windows-in-PocoF1-Without-PC/releases/tag/Modified-Recovery)
 
-- [Windows on ARM image](https://arkt-7.github.io/woawin/)
+- [Windows on ARM image](https://arkt-7.github.io/woawin#23h2l)
   
 - [Drivers](https://github.com/n00b69/woa-beryllium/releases/tag/Drivers)
 
