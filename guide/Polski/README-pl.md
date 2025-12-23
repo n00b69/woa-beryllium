@@ -39,6 +39,8 @@ Wszystkie pliki tutaj zostały przesłane przez innych użytkowników, tutaj zna
 ## Maintainers
 [<img alt="temblor55" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/72646712?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/temblor55)
 [<img alt="2Petro" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/171992640?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/2Petro)
+[<img alt="N1kroks" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/117468042?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/N1kroks)
+[<img alt="remtrik" src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/69907487?v=4&w=45&fit=cover&mask=circle&maxage=7d" />](https://github.com/remtrik)
 
 
 ## Współtwórcy
