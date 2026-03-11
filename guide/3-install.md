@@ -13,10 +13,10 @@
 
 - [UEFI image](https://github.com/n00b69/woa-beryllium/releases/tag/UEFI)
 
-### Boot into OFOX recovery
-> If your recovery has been replaced by the stock recovery, flash it again using
+### Boot into MODDED-TWRP recovery
+> reboot to bootloader and boot into MODDED-TWRP using
 ```cmd
-fastboot flash recovery path\to\modded_recovery.img reboot recovery
+fastboot boot path\to\modded_recovery.img
 ```
 
 #### Enabling mass storage mode
